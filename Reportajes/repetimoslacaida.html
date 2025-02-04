@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paginación debajo del capítulo */
+.pagination-container {
+    margin-top: 30px;
+}
+
+/* Estilos de los botones de paginación */
+.page-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.page-button.active {
+    background-color: #155724;
+    box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.5);
+}
+
+/* Distribución en tres filas */
+@media (max-width: 768px) {
+    .page-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 250px;
+      }
+
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+/* Estilos para imágenes */
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para diferentes posiciones de imagen */
+.img-arriba {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.img-abajo {
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    .capitulo-texto {
+        font-size: 1rem;
+    }
+
+    .img-capitulo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .img-arriba, .img-abajo {
+        width: 90%;
+    }
+}
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Caida del Imperio</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+        <li><a href="index.html">indice de Articulos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+        <header class="text-center p-3 bg-success text-white">
+            <h1>REPETIMOS LA CAIDA</h1>
+        </header>
+    
+        <div class="container mt-4">
+            <!-- Sección con imagen a la izquierda -->
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="ma/cai (2).png" class="img-fluid img-capitulo" alt="Imagen 1">
+                </div>
+                <div class="col-md-8">
+                    <article class="capitulo-texto">
+                        1. Emisión masiva de deuda:
+                        Roma: Durante los últimos siglos del Imperio, Roma empezó a nanciar sus operaciones militares y de administración mediante la emisión masiva de moneda y la devaluación de la misma. La escasez de metales
+                        preciosos llevó a que las monedas contenían cada vez menos plata y oro, lo que redujo su valor.
+                        Actualidad: Muchos países han aumentado signicativamente su deuda nacional y, a menudo, emiten deuda
+                        para estimular la economía, incluso en tiempos de crecimiento. Además, la eliminación del patrón oro en los
+                        años 70 permitió a las economías depender de la impresión de moneda respaldada solo en conanza, lo que
+                        muchos críticos ven como un camino hacia una deuda insostenible.
+                        2. Devaluación de la moneda:
+                        Roma: La devaluación de la moneda romana, especialmente a medida que se reducía el contenido de metales
+                        preciosos, contribuyó a una inación signicativa, lo que disminuyó el poder adquisitivo de sus ciudadanos y
+                        la conanza en la economía.
+                        Actualidad: Desde la eliminación del patrón oro, las monedas duciarias han experimentado devaluaciones, y
+                        en algunos casos, las políticas monetarias han incentivado la inación para promover el crecimiento. Esto ha
+                        creado problemas de poder adquisitivo, sobre todo en poblaciones con menos acceso a activos que pueden
+                        protegerse contra la inación.
+                        3. Creciente brecha entre ricos y pobres:
+                        Roma: En sus últimos siglos, el Imperio Romano vio un aumento en la desigualdad económica. Los terratenientes y las élites acumulaban poder y recursos, mientras que la clase trabajadora y campesina sufría con
+                        impuestos elevados y salarios bajos. Esto minó el bienestar general y aumentó las tensiones sociales.
+                        Actualidad: Hoy en día, la brecha entre los más ricos y los pobres sigue creciendo. Las políticas económicas a
+                        menudo favorecen a quienes tienen acceso a activos nancieros, mientras que la mayoría de la población
+                        sufre la pérdida de poder adquisitivo debido a la inación y la falta de acceso a esos activos de protección.
+                        4. Políticas scales y recesiones:
+                        Roma: Las recesiones en el Imperio Romano agravaron la crisis económica. El aumento de impuestos y las
+                        reformas scales fallidas ahogaron la economía y redujeron la capacidad del estado de nanciar sus necesidades básicas.
+                        Actualidad: Aunque las economías modernas han desarrollado herramientas como el estímulo scal, el alto
+                        nivel de endeudamiento limita las políticas efectivas para manejar recesiones. La insistencia en políticas
+                        expansivas, como las bajas tasas de interés y la emisión de deuda, es criticada por su potencial para generar
+                        crisis futuras.
+                        Documentación y Estudios:
+                        Hay varios estudios y autores que analizan la caída del Imperio Romano desde una perspectiva económica y
+                        establecen paralelismos con las economías modernas. Algunos de los más inuyentes son:
+                        "The History of Money" de Jack Weatherford: Explora cómo la degradación de las monedas y la inación
+                        impactaron civilizaciones antiguas.
+                        "The Decline and Fall of the Roman Empire" de Edward Gibbon: Aunque es más un análisis político y social,
+                        Gibbon destaca la inuencia económica en la caída del Imperio
+                    </article>
+                </div>
+            </div>
+    
+            <!-- Sección con imagen a la derecha -->
+            <div class="row align-items-center flex-row-reverse mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="ma/cai (1).png" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+                <div class="col-md-8">
+                    <article class="capitulo-texto">
+                        <p>
+
+                            Estudios del Fondo Monetario Internacional y el Banco Mundial: Estos estudios a menudo señalan cómo la
+                            deuda, la desigualdad y la falta de políticas responsables pueden llevar a colapsos económicos, usando
+                            ejemplos históricos para contextualizar la situación actual.
+                            En conclusión, el análisis de las políticas económicas actuales, como el endeudamiento masivo, la devaluación
+                            de la moneda y el aumento de la desigualdad, tiene resonancias históricas con la caída del Imperio Romano.
+                            Aunque hay diferencias importantes en las estructuras económicas y políticas, los factores subyacentes que
+                            afectaron al Imperio podrían presentar desafíos similares en el contexto actual.
+
+                            1. Crisis Política y Corrupción
+                            Inestabilidad en el Liderazgo: Roma sufrió frecuentes cambios de emperador y luchas internas por el poder.
+                            La falta de un sistema de sucesión claro llevó a luchas constantes entre aspirantes al trono, lo que debilitó la
+                            autoridad imperial.
+                            Corrupción y Nepotismo: La corrupción se convirtió en un problema profundo, con líderes y funcionarios que
+                            abusaban de su poder para enriquecerse. Esto erosionó la conanza de la ciudadanía en el gobierno y debilitó la administración.
+                            División del Imperio: El emperador Diocleciano dividió el imperio en dos (Occidente y Oriente) para facilitar la
+                            administración. Aunque esta medida tenía sentido organizativo, a largo plazo debilitó la cohesión y facilitó
+                            que las dos mitades evolucionaran de forma separada, debilitando su defensa común.
+
+                            2. Presión Militar y Ataques Bárbaros
+                            Invasiones Externas: A partir del siglo III, Roma enfrentó una presión creciente de tribus “bárbaras” como los
+                            godos, hunos, visigodos, vándalos y otros grupos germánicos. Estas tribus asaltaron y saquearon varias partes
+                            del Imperio, y en el año 410 d.C., los visigodos saquearon Roma.
+                            Dependencia de Soldados Extranjeros: La falta de soldados romanos nativos llevó a Roma a depender de
+                            mercenarios y tropas extranjeras. Aunque útiles a corto plazo, estas tropas no siempre eran leales al Imperio y,
+                            en muchos casos, causaron problemas internos.
+                            Costos Militares Elevados: El Imperio Romano gastaba grandes cantidades de dinero en su ejército para
+                            proteger las fronteras y sofocar las revueltas. Esto contribuyó a la carga scal sobre la población y agravó los
+                            problemas nancieros.
+
+                            3. Crisis Social y Pérdida de Valores Cívicos
+                            Desigualdad Social Creciente: La sociedad romana estaba muy estraticada, con una brecha amplia entre
+                            ricos y pobres. A medida que la desigualdad aumentaba, el descontento social también creció, debilitando la
+                            cohesión de la sociedad.
+                            Pérdida de Valores Cívicos: La ética de servicio a la patria y los valores cívicos de los ciudadanos romanos
+                            fueron decayendo. Muchos ciudadanos ya no sentían lealtad hacia Roma ni veían el servicio militar o civil
+                            como algo honorable.
+                            Éxodo Rural y Abandono de las Ciudades: La economía rural comenzó a ser más atractiva debido a los altos
+                            impuestos y la inseguridad en las ciudades, lo que debilitó la base urbana de Roma y su capacidad de recaudar impuestos y mantener una economía vigorosa.
+
+                            4. Factores Ambientales y Crisis Agrícolas
+                            Agotamiento de los Recursos Naturales: La expansión romana sobreexplotó muchos recursos, incluyendo
+                            suelos y minas, lo que eventualmente agotó las tierras y redujo la producción agrícola y minera.
+                            Crisis Alimentaria y Epidemias: La producción agrícola insuciente llevó a una escasez de alimentos, lo que
+                            incrementó los precios y causó hambrunas en distintas regiones. Además, hubo epidemias devastadoras
+                            como la peste antonina (siglo II d.C.) y la peste de Cipriano (siglo III d.C.), que diezmaron a la población y
+                            debilitaron aún más al Imperio.
+                            E
+                        </p>
+                    </article>
+                </div>
+            </div>
+    
+            <!-- Imagen arriba -->
+            <div class="row align-items-center flex-row-reverse mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="ma/cai (3).png" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+                <div class="col-md-8">
+                    <article class="capitulo-texto">
+                        <p>
+                            5. Cambio en las Estructuras Económicas y el Comercio
+                            Descentralización Económica: La economía romana comenzó a depender cada vez más de una estructura
+                            local, con menos comercio entre las provincias. Las redes comerciales que mantenían a Roma como el
+                            centro del Imperio se desintegraron, debilitando su poder económico.
+                            Inación y Crisis Monetaria: Como mencionamos antes, la devaluación de la moneda y la inación contribuyeron
+                             a una pérdida de conanza en la economía y a una espiral de pobreza para los ciudadanos. Esto
+                            debilitó aún más las instituciones y el ejército, ya que las recompensas y salarios que recibían eran cada vez
+                            menos valiosos.
+
+                            6. Factores Culturales y Religiosos
+                            Cambio de Religión Ocial: La adopción del cristianismo como religión ocial en el siglo IV trajo ciertos
+                            cambios en la estructura de poder y en la forma en que los ciudadanos percibían su relación con el Imperio.
+                            Aunque el cristianismo no fue la causa directa de la caída, alteró la cohesión cultural, pues algunos romanos
+                             ya no sentían el mismo deber hacia el estado, y la iglesia adquirió un rol cada vez más prominente en la
+                            vida pública.
+                            División Cultural entre Oriente y Occidente: Con el tiempo, las dos mitades del Imperio se diferenciaron
+                            culturalmente: el Imperio de Oriente se helenizó y conservó una economía y cultura próspera, mientras
+                            que Occidente, más rural y debilitado, se volvió cada vez más vulnerable.
+
+                            7. Problemas Administrativos y Burocracia Ineciente
+                            Burocracia Sobrecargada y Costosa: La administración imperial se volvió cada vez más compleja y costosa,
+                            con funcionarios que a menudo duplicaban tareas y una falta de eciencia que dicultaba responder a las
+                            crisis rápidamente.
+                            Exceso de Regulaciones y Altos Impuestos: Para sostener el ejército y la administración, Roma implementó
+                            altos impuestos y regulaciones. Esto agobió a los campesinos y pequeños propietarios, quienes a menudo
+                            abandonaban sus tierras, lo que agravó la recesión económica.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+    
+            <!-- Paginación debajo del capítulo -->
+
+    
+        </div>
+     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const totalCapitulos = 32;
+    const paginationContainer = document.getElementById("pagination");
+
+    // Generar los botones de paginación en 3 filas
+    let filaActual = document.createElement("div");
+    filaActual.classList.add("d-flex", "justify-content-center");
+
+    for (let i = 1; i <= totalCapitulos; i++) {
+        let button = document.createElement("button");
+        button.classList.add("page-button");
+        button.textContent = i;
+        button.dataset.capitulo = i;
+        button.addEventListener("click", function () {
+            seleccionarCapitulo(i);
+        });
+
+        filaActual.appendChild(button);
+
+        // Insertar una nueva fila cada 10 botones
+        if (i % 10 === 0 || i === totalCapitulos) {
+            paginationContainer.appendChild(filaActual);
+            filaActual = document.createElement("div");
+            filaActual.classList.add("d-flex", "justify-content-center");
+        }
+    }
+});
+
+// Función para manejar la selección del capítulo
+function seleccionarCapitulo(capitulo) {
+    document.querySelectorAll(".page-button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    let seleccionado = document.querySelector(`.page-button[data-capitulo="${capitulo}"]`);
+    if (seleccionado) {
+        seleccionado.classList.add("active");
+        alert(`Capítulo ${capitulo} seleccionado`);
+    }
+}
+
+
+</script>
+

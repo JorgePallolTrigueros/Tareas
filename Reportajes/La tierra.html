@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paginación debajo del capítulo */
+.pagination-container {
+    margin-top: 30px;
+}
+
+/* Estilos de los botones de paginación */
+.page-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.page-button.active {
+    background-color: #155724;
+    box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.5);
+}
+
+/* Distribución en tres filas */
+@media (max-width: 768px) {
+    .page-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 250px;
+      }
+
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>LA TIERRA</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+        <li><a href="index.html">indice de Articulos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+        <header class="text-center p-3 bg-success text-white">
+            <h1>LA TIERRA</h1>
+        </header>
+    
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Imágenes a los lados -->
+                <div class="col-md-3 text-center">
+                    <img src="imagen1.jpg" class="img-fluid img-capitulo" alt="Imagen 1">
+                </div>
+                
+                <div class="col-md-6">
+                    <article class="capitulo-texto">
+                      ¿Cuántos años tiene el universo?
+                      El universo tiene aproximadamente 13.8 mil millones de años, según las estimaciones actuales basadas en observaciones de la radiación de fondo de microondas
+                      y la expansión cósmica. Esta cifra proviene de estudios detallados sobre el Big
+                      Bang y la velocidad a la que el universo se ha ido expandiendo desde ese momento.
+                      ¿Qué es el universo visible?
+                      Sí, el universo visible (o universo observable) es la porción del universo que
+                      podemos detectar desde la Tierra, dado el tiempo que la luz ha tenido para viajar
+                      desde esos puntos hasta nosotros, en un universo de 13.8 mil millones de años. Es
+                      lo que alcanzamos a "ver" o medir con nuestros instrumentos, teniendo en cuenta
+                      la velocidad nita de la luz. Esto no signica que el universo "termina" ahí, solo
+                      que más allá de esa distancia, la luz no ha tenido tiempo suciente para llegarnos
+                      debido a la expansión del espacio.
+                      ¿El universo sigue expandiéndose?
+                      Sí, el universo sigue expandiéndose, y lo hace a un ritmo acelerado. Esto fue
+                      demostrado en 1998 por observaciones de supernovas lejanas. La expansión
+                      parece ser impulsada por una forma de energía llamada energía oscura, que
+                      contrarresta la atracción gravitacional de la materia y está impulsando el espacio
+                      mismo hacia afuera a una velocidad creciente.
+                      ¿El universo visible sigue ampliándose?
+                      Efectivamente, el universo visible también se amplía. A medida que el universo
+                      sigue expandiéndose, las galaxias que ya están dentro del horizonte visible se
+                      alejan más, y la luz de otras que antes estaban fuera de nuestro alcance también
+                      va alcanzándonos, por lo que el límite del universo visible se extiende lentamente
+                      con el tiempo. Sin embargo, a largo plazo, muchas galaxias cruzarán una "línea de
+                      no retorno" donde se moverán tan rápido debido a la expansión que su luz nunca
+                      podrá alcanzarnos.
+                      ¿La Vía Láctea llegó a pertenecer al universo invisible?
+                      En un sentido histórico, la Vía Láctea siempre ha formado parte del universo
+                      visible tal como lo conocemos. Sin embargo, si retrocedemos en el tiempo hacia
+                      los primeros instantes del universo, el horizonte visible estaba mucho más
+                      cercano debido a la corta edad del universo. A medida que el universo fue
+                      expandiéndose y envejeciendo, ese horizonte creció y más galaxias pasaron a ser
+                      visibles. Aunque la Vía Láctea misma no fue "invisible" en su historia, se encuentra
+                      en una región de espacio que fue parte de lo que ahora llamamos nuestro
+                      universo observable.
+                      ¿La Vía Láctea llegó a pertenecer al universo invisible?En un sentido histórico, la
+                      Vía Láctea siempre ha formado parte del universo visible tal como lo conocemos.
+                      Sin embargo, si retrocedemos en el tiempo hacia los primeros instantes del
+                      universo, el horizonte visible estaba mucho más cercano debido a la corta edad
+                      del universo. A medida que el universo fue expandiéndose y envejeciendo, ese
+                      horizonte creció y más galaxias pasaron a ser visibles. Aunque la Vía Láctea misma
+                      no fue "invisible" en su historia, se encuentra en una región de espacio que fue
+                      parte de lo que ahora llamamos nuestro universo observable.
+
+                        
+
+
+
+
+                      ¡Estas preguntas abarcan una parte fascinante de la historia de la Tierra y de la
+                      humanidad! Vamos por partes:
+                      1. ¿Cómo fue la Tierra al principio? ¿Cómo se construyó? ¿Cómo se formó?
+                      La Tierra se formó hace unos 4,500 millones de años a partir de materiales que
+                      se unieron por gravedad en el disco de gas y polvo que rodeaba al Sol joven.
+                      Durante sus primeros cientos de millones de años, la Tierra era un lugar
+                      extremadamente hostil, con temperaturas altísimas debido a impactos
+                      constantes de meteoritos y la actividad volcánica. Esta etapa se conoce como
+                      el eón Hádico. A medida que la Tierra se enfrió, se formaron los océanos y una
+                      atmósfera primitiva, y se dieron las condiciones para el surgimiento de la vida.
+                      2. ¿Hubo algo antes de los dinosaurios?
+                      Sí, mucho antes de los dinosaurios, la Tierra pasó por diversas eras geológicas
+                      y fue hogar de otras formas de vida. La vida en el planeta comenzó con
+                      organismos microscópicos (bacterias) en los océanos hace aproximadamente
+                      3,800 millones de años. Luego, hace unos 540 millones de años comenzó el
+                      Período Cámbrico, una explosión de vida con muchos organismos multicelulares. Antes de los dinosaurios, los reptiles dominaban durante el Período
+                      Pérmico, y antes de eso hubo eras con dominancia de peces y anbios.
+                      3. ¿Cuánto duraron los dinosaurios?
+                      Los dinosaurios dominaron la Tierra durante la era Mesozoica, que se divide
+                      en tres períodos: Triásico, Jurásico y Cretácico. Esta era comenzó hace unos
+                      230 millones de años y terminó hace aproximadamente 65 millones de años,
+                      lo que signica que los dinosaurios vivieron en la Tierra por unos 165 millones
+                      de años.
+                      4. ¿Cómo se extinguieron los dinosaurios?
+                      La extinción de los dinosaurios ocurrió al nal del Período Cretácico y se
+                      debió, en gran parte, al impacto de un enorme asteroide en lo que hoy es la
+                      Península de Yucatán, México. Este impacto liberó cantidades colosales de
+                      energía, generando incendios masivos, tsunamis y una gran nube de polvo
+                      que bloqueó la luz del sol, enfrió el clima y afectó la fotosíntesis, lo cual alteró
+                      toda la cadena alimenticia. Además del asteroide, el vulcanismo masivo y
+                      cambios climáticos contribuyeron al evento de extinción.
+                      5. ¿Cuántos años lleva la Tierra?
+                      La Tierra lleva existiendo alrededor de 4,500 millones de años. Durante ese
+                      tiempo, ha pasado por cambios geológicos, climáticos y biológicos profundos.
+                      6. ¿Cuánto duró cada una de las civilizaciones del hombre?
+                      La historia de las civilizaciones humanas conocidas comienza hace unos 6,000
+                      años con el surgimiento de las primeras ciudades y civilizaciones. Aquí
+                      algunos ejemplos aproximados:
+                      Civilización Sumeria (Mesopotamia): Desde aproximadamente 4000 a.C. hasta
+                      2000 a.C. (unos 2000 años).
+                      Egipto Antiguo: Desde aproximadamente 3100 a.C. hasta 332 a.C., cuando fue
+                      conquistado por Alejandro Magno (alrededor de 2700 años).
+                      Civilización Harappa (Valle del Indo): Aproximadamente desde 3300 a.C. hasta
+                      1300 a.C. (unos 2000 años).
+                      Civilización Maya: Desde aproximadamente 2000 a.C. hasta el siglo XVI,
+                      cuando los conquistadores españoles llegaron a América (unos 3500 años,
+                      con períodos de esplendor y declive).
+                      Imperio Romano: Desde aproximadamente 27 a.C. hasta 476 d.C. para el
+                      Imperio Romano de Occidente (unos 500 años), aunque el Imperio Romano
+                      de Oriente, o Imperio Bizantino, continuó hasta 1453 d.C. (unos 1500 años en
+                      total).
+                      Cada civilización tuvo su auge y caída debido a factores como guerras,
+                      cambios climáticos, agotamiento de recursos y transformaciones culturales.
+
+
+
+
+                      ¡Claro! Hablemos de las etapas o fases de la evolución humana,
+                      especialmente aquellas que llevaron al Homo sapiens.
+                      1. Australopithecus (~4 a 2 millones de años atrás)
+                      Los primeros homínidos conocidos del género Australopithecus
+                      vivieron en África. Estos seres ya caminaban en dos patas, aunque sus
+                      cerebros eran pequeños en comparación con los humanos modernos.
+                      No son Homo sapiens, pero son nuestros ancestros lejanos y parte
+                      crucial de la evolución humana.
+                      2. Homo habilis (~2.4 a 1.4 millones de años atrás)
+                      Considerado uno de los primeros miembros del género Homo, el
+                      Homo habilis es conocido por su habilidad para hacer herramientas
+                      sencillas de piedra.
+                      Vivió en África y tenía un cerebro más grande que los Australopithecus.
+                      3. Homo erectus (~1.9 millones a 110,000 años atrás)
+                      El Homo erectus fue uno de los primeros en salir de África y se
+                      distribuyó por Asia y Europa.
+                      Tenían cuerpos más parecidos a los humanos modernos y se cree que
+                      lograron dominar el fuego y mejorar las herramientas.
+                      Homo erectus es muy importante en nuestra evolución por su
+                      adaptación a distintos entornos y su éxito al vivir en diversas regiones
+                      del mundo.
+                      4. Homo heidelbergensis (~700,000 a 200,000 años atrás)
+                      Este grupo se considera el antecesor directo de los neandertales en
+                      Europa y del Homo sapiens en África.
+                      Vivieron en África y Europa y fueron los primeros homínidos en
+                      construir refugios y cazar animales grandes.
+                      5. Homo neanderthalensis (Neandertales) (~400,000 a 40,000 años
+                      atrás)
+                      Los neandertales habitaron Europa y partes de Asia. Tenían cerebros
+                      grandes y un cuerpo adaptado para el frío.
+                      Sabemos que los neandertales tenían cultura, cuidaban de sus
+                      heridos, enterraban a sus muertos y probablemente tenían lenguaje.
+                      Desaparecieron hace aproximadamente 40,000 años, pero hay
+                      evidencia de que tuvieron contacto y descendencia con los primeros
+                      Homo sapiens.
+                      6. Homo sapiens (nuestros antepasados directos) (~300,000 años
+                      hasta la actualidad)
+                      Los Homo sapiens aparecieron hace aproximadamente 300,000 años
+                      en África.
+                      Los Homo sapiens modernos desarrollaron herramientas avanzadas,
+                      arte, cultura y lenguaje complejo. Hace unos 70,000 años, comenzaron a migrar fuera de África, poblando el resto del planeta.
+                      A lo largo del tiempo, desarrollaron civilizaciones y comenzaron a
+                      transformar el entorno en mayor medida que cualquier otra especie
+                      humana.
+                      Resumen de los momentos clave en la evolución de Homo sapiens:
+                      Primeras etapas en África: Desde hace aproximadamente 300,000
+                      años, con comunidades pequeñas y cazadores-recolectores.
+                      Revolución cognitiva (~70,000 años atrás): Expansión de capacidades
+                      cognitivas y habilidades de comunicación, lo que permitió el desarrollo de cultura, arte y organización social compleja.
+                      Revolución agrícola (~10,000 años atrás): Los humanos comenzaron a
+                      cultivar y domesticar animales, dando inicio a asentamientos permanentes y a las primeras sociedades agrícolas.
+                      Surgimiento de civilizaciones (~6,000 años atrás): Aparecen las
+                      primeras ciudades y civilizaciones organizadas en Mesopotamia,
+                      Egipto, el valle del Indo y China.
+                      Cada etapa fue esencial para que los humanos alcanzaran el desarrollo social, cultural y tecnológico que hoy conocemos.
+
+
+
+
+                    </article>
+                </div>
+    
+                <div class="col-md-3 text-center">
+                    <img src="imagen2.jpg" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+            </div>
+    
+            <div class="text-center mt-4">
+                <img src="imagen3.jpg" class="img-fluid img-capitulo img-arriba" alt="Imagen 3">
+            </div>
+    
+            <article class="capitulo-texto">
+            </article>
+    
+            <div class="text-center mt-4">
+                <img src="imagen4.jpg" class="img-fluid img-capitulo img-abajo" alt="Imagen 4">
+            </div>
+            <article class="capitulo-texto">
+
+            </article>
+    
+            <div class="text-center mt-4">
+                <img src="imagen4.jpg" class="img-fluid img-capitulo img-abajo" alt="Imagen 4">
+            </div> 
+        </div>
+            <!-- Paginación debajo del capítulo -->
+            <div class="pagination-container text-center mt-5">
+                <div id="pagination" class="d-flex flex-wrap justify-content-center"></div>
+            </div>
+    
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const totalCapitulos = 32;
+    const paginationContainer = document.getElementById("pagination");
+
+    // Generar los botones de paginación en 3 filas
+    let filaActual = document.createElement("div");
+    filaActual.classList.add("d-flex", "justify-content-center");
+
+    for (let i = 1; i <= totalCapitulos; i++) {
+        let button = document.createElement("button");
+        button.classList.add("page-button");
+        button.textContent = i;
+        button.dataset.capitulo = i;
+        button.addEventListener("click", function () {
+            seleccionarCapitulo(i);
+        });
+
+        filaActual.appendChild(button);
+
+        // Insertar una nueva fila cada 10 botones
+        if (i % 10 === 0 || i === totalCapitulos) {
+            paginationContainer.appendChild(filaActual);
+            filaActual = document.createElement("div");
+            filaActual.classList.add("d-flex", "justify-content-center");
+        }
+    }
+});
+
+// Función para manejar la selección del capítulo
+function seleccionarCapitulo(capitulo) {
+    document.querySelectorAll(".page-button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    let seleccionado = document.querySelector(`.page-button[data-capitulo="${capitulo}"]`);
+    if (seleccionado) {
+        seleccionado.classList.add("active");
+        alert(`Capítulo ${capitulo} seleccionado`);
+    }
+}
+
+
+
+</script>
+

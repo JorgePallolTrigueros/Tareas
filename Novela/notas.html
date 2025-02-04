@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de la Novela</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .note-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .note-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2d5d34;
+        }
+
+        .note-response {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .btn-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .btn-edit, .btn-delete {
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+
+        .btn-edit {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .btn-edit:hover {
+            background-color: #e0a800;
+        }
+
+        .btn-delete {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .btn-delete:hover {
+            background-color: #c82333;
+        }
+
+        .add-note-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn-add-note {
+            background-color: #28a745;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-add-note:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Notas para la Novela
+</header>
+
+<div class="container">
+    <div id="notes-container">
+        <div class="note-card">
+            <div class="note-title">Necesitas incluir estos temas en la novela</div>
+            <div class="note-response">Ejemplo: Introducir un conflicto basado en la mitología clásica.</div>
+            <div class="btn-container">
+                <button class="btn-edit" onclick="editNote(this)">Editar</button>
+                <button class="btn-delete" onclick="deleteNote(this)">Eliminar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div id="notes-container">
+            <div class="note-card">
+                <div class="note-title">Necesitas incluir estos temas en la novela</div>
+                <div class="note-response">
+    Raimond Carter     ----          Kratos</br>
+    Lucke              ----          Briadeo</br>
+    Hulck              ----          Hades</br>
+    Mateo              ----          Artemisa</br>
+    Yuto               ----          Persefone</br>
+    Alexei             ----          Ares</br>
+    Nikos              ----          Apolo</br>
+    Akira              ----          Hera</br>
+    Tailot             ----          Hebe</br>
+    Rafael             ----          Zeus</br>
+    Celestia           ----          Afrodita</br>
+    Emil               ----          Hefestos</br>
+    Kayet              ----          Hermes</br>
+    Alberto            ----          Poseidon</br>
+    Robie              ----          Bia</br>
+    Lidia              ----          Hestia</br>
+    Irene              ----          Demeter</br>
+</div>
+<div class="btn-container">
+    <button class="btn-edit" onclick="editNote(this)">Editar</button>
+    <button class="btn-delete" onclick="deleteNote(this)">Eliminar</button>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div id="notes-container">
+            <div class="note-card">
+                <div class="note-title">Necesitas incluir estos temas en la novela</div>
+                <div class="note-response">
+
+    LAS PRUEBAS QUE TENGO HASTA AHORA
+
+
+    <h3><b>1</b></h3>
+    <b>Prueba de Renuncia: (De que materia estas echo):</b></br>
+    Gea Manda a Tifon tras despertar Javix del coma</br>
+    Javix ve en las lluvias torrenciales</br>
+    Hablamos de la crisis del planeta</br>
+    Javix que su familia del barrio, estan en peligro porque sabe wue </br>
+    hiran a rescatarlo.El hermano de Camilo se esconde en la furgo</br>
+    
+    
+    
+    <h3><b>2</b></h3>
+    <b>Cogerle una de las sabanas a Pothos:</b></br>
+    Debera superar el Duelo</br>
+    Descripcion de la casa de Photos </br>
+    
+    
+    
+    
+    <h3><b>3</b></h3>
+    <b>Pasar una noche en la casa de Abdero y Hermes:</b></br>
+    Es una fiesta 
+    En la que debera superar la envidia y los Celos de los que han pasado una vida mejor
+    
+    
+    <h3><b>4</b></h3>
+    <b>Centro Comercial:</b></br>
+    Athenea Hera y Afrodita, venden la masculinidad
+    
+    
+    
+    <h3><b>5</b></h3>
+    <b> La super estrella de la television :</b></br>
+    Helena de Troya </br>
+    Los colaboradores de el estudio</br>
+    -Kakia</br>
+    -Veritas</br>
+    -La musa</br>
+    -Epimeteo</br>
+    
+    
+    
+    <h3><b>6</b></h3>
+    <b>Miedo a la muerte</b></br>
+    Caos-- Estara con las primordiaes para </br>
+    Keras--Durante la travesia persegira a Javix tras el corte de luz</br>
+    Macaria--Durante la travesia persegira a Javix tras el corte de luz</br>
+    Hades</br>
+    Persefone</br>
+</div>
+<div class="btn-container">
+    <button class="btn-edit" onclick="editNote(this)">Editar</button>
+    <button class="btn-delete" onclick="deleteNote(this)">Eliminar</button>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div id="notes-container">
+            <div class="note-card">
+                <div class="note-title">Necesitas incluir estos temas en la novela</div>
+                <div class="note-response">
+                    Van en coche a la reunion
+                    Psique va a la ciudad
+                    -Paris en su cuarto
+                    -Gea en su despacho lleno de gigantes
+                    -Sisifo
+                    -
+                    Eros y Hercules estan en el Insti
+                    Athenea provoca el accidente
+                    Hercules se pone de los nervios
+                    Javix cae al patio
+                    Hecate los manda dentro del espiritu
+                    Acaban en su espiritualidad parece dentro de un reloj. 
+                    Es todo muy racionalidad y lleno de libros
+                    Javix esta en medio de todo.
+                    Esta mirando al techo esta oscuro 
+                    En ese momento aparecen keras, Tananatos y Macaria
+                    y Melínoe que se desdibuja en la de sus padres
+
+                </div>
+                <div class="btn-container">
+                    <button class="btn-edit" onclick="editNote(this)">Editar</button>
+                    <button class="btn-delete" onclick="deleteNote(this)">Eliminar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="notes-container">
+                <div class="note-card">
+                    <div class="note-title">Necesitas incluir estos temas en la novela</div>
+                    <div class="note-response">
+                        Camilo en la guerra de Troya 
+
+                        -Camilo tiene que ver a la madre de Aithor se le revuelve las tripas. Sabe lo que ha eche
+                        
+                        LA CONFESIÓN DE JAVIX
+                            El entrenamiento forzoso
+                            El tener que malvivir en una cueva
+                            El accidente que no lo era
+                            Las sospechas tras los asesinatos
+                            La confesión de Aithor
+                            Los ojos rosa y violeta
+                            El perdón de sus agresores
+                            El acoso en el instituto 
+                            El descubrimiento de el crimen de Madeleine
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn-edit" onclick="editNote(this)">Editar</button>
+                        <button class="btn-delete" onclick="deleteNote(this)">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+        <div class="container">
+            <div id="notes-container">
+                <div class="note-card">
+                    <div class="note-title">Necesitas incluir estos temas en la novela</div>
+                    <div class="note-response">
+                        Camiilo esta lleno de ira descontrolada. Seofrece para llevar a Javix a la sala Ghiby.
+                         Los hermanos jugaban en una habitacion con llena de colchones . Mientras sube Camilo esta
+                          en tension y conteniedose las lagrimas. Esta lleno de ira verguenza tristeza y asco. Potos
+                           y Hercules le acompañan desde atras. No se dan cuenta de que los colegas de Javix le acompañana junto al ares . 
+                        Ni Hercules ni Eros se dan cuenta que todos empizan a ser suplantados por los dioses mallores
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn-edit" onclick="editNote(this)">Editar</button>
+                        <button class="btn-delete" onclick="deleteNote(this)">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="container">
+            <div id="notes-container">
+                <div class="note-card">
+                    <div class="note-title">Necesitas incluir estos temas en la novela</div>
+                    <div class="note-response">
+                        
+                        
+                        Las guerras que se ganharon y cuya intencion no perdura</br>
+                        Las seudociencias</br>
+                        Las deficiencias energeticas</br>
+                        Las bitcoins como rteligion</br>
+                        El periodismo " Las guerras de declaraciones" </br>
+                        En que creia antes “Midas”</br>
+                        Las personas no rescatadas</br>
+                        La obsesion de la Edad</br>
+                        Las Sectas</br>
+                        La verdad de un echo depende de los likes</br>
+                        El feminismo</br>
+                        La Masculinidad toxica</br>
+                        Crisis Masculina</br>
+                        Las distintas Masculinidades</br>
+                        Los Woke</br>
+                        La realidad lo escribe en las redes sociales</br>
+                        Volver a un tiempo que no exitio</br>
+                        La caida del imperio Romano</br>
+                        Hombres, Caballeros, obreroo</br>
+                        Hombres LOVE Hombria</br>
+                        La masculinidad y la religion</br>
+                        La masculinidad y la sociedad</br>
+                        La masculinidad como concepto</br>
+                        La musculinidad y la cultura</br>
+                        Pederastria</br>
+                        Msturbacion</br>
+                    
+                    
+                    
+                    
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn-edit" onclick="editNote(this)">Editar</button>
+                        <button class="btn-delete" onclick="deleteNote(this)">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <div class="add-note-container">
+        <button class="btn-add-note" onclick="addNote()">Agregar Nueva Nota</button>
+    </div>
+</div>
+
+<script>
+    function addNote() {
+        const notesContainer = document.getElementById("notes-container");
+        
+        let noteTitleText = prompt("Ingrese el tema de la nota:");
+        let noteResponseText = prompt("Ingrese la respuesta o comentario:");
+        
+        if (noteTitleText && noteResponseText) {
+            let noteCard = document.createElement("div");
+            noteCard.className = "note-card";
+
+            let noteTitle = document.createElement("div");
+            noteTitle.className = "note-title";
+            noteTitle.textContent = noteTitleText;
+
+            let noteResponse = document.createElement("div");
+            noteResponse.className = "note-response";
+            noteResponse.textContent = noteResponseText;
+
+            let btnContainer = document.createElement("div");
+            btnContainer.className = "btn-container";
+
+            let btnEdit = document.createElement("button");
+            btnEdit.className = "btn-edit";
+            btnEdit.textContent = "Editar";
+            btnEdit.onclick = function () { editNote(btnEdit); };
+
+            let btnDelete = document.createElement("button");
+            btnDelete.className = "btn-delete";
+            btnDelete.textContent = "Eliminar";
+            btnDelete.onclick = function () { deleteNote(btnDelete); };
+
+            btnContainer.appendChild(btnEdit);
+            btnContainer.appendChild(btnDelete);
+
+            noteCard.appendChild(noteTitle);
+            noteCard.appendChild(noteResponse);
+            noteCard.appendChild(btnContainer);
+
+            notesContainer.appendChild(noteCard);
+        }
+    }
+
+    function editNote(button) {
+        let noteCard = button.parentElement.parentElement;
+        let noteTitle = noteCard.querySelector(".note-title");
+        let noteResponse = noteCard.querySelector(".note-response");
+
+        let newTitle = prompt("Editar el título de la nota:", noteTitle.textContent);
+        let newResponse = prompt("Editar la respuesta o comentario:", noteResponse.textContent);
+
+        if (newTitle && newResponse) {
+            noteTitle.textContent = newTitle;
+            noteResponse.textContent = newResponse;
+        }
+    }
+
+    function deleteNote(button) {
+        if (confirm("¿Seguro que deseas eliminar esta nota?")) {
+            button.parentElement.parentElement.remove();
+        }
+    }
+</script>
+
+</body>
+</html>

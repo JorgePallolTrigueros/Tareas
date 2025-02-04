@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas - Escritura de Novela</title>
+    <style>
+
+nav {
+      background-color: #f2f2f2;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        .tarea {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 400px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tarea span {
+            font-size: 1.1em;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .tarea.completada span {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .reset {
+            background: #d9534f;
+        }
+
+        .reset:hover {
+            background: #c9302c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lista de Tareas - Escritura de Novela</h1>
+</header>
+
+
+<nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="organigrama.html">Organigrama Semanal</a></li>
+      <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+    </ul>
+  </nav>
+
+<main>
+    <h2>Pasos para Escribir la Novela</h2>
+    <div id="contenedor"></div>
+    <button class="reset" onclick="resetearTareas()">Restablecer Tareas</button>
+</main>
+
+<script>
+    // Definir lista de tareas
+    const tareasIniciales = [
+        { id: 1, descripcion: "Definir la idea principal", completada: false },
+        { id: 2, descripcion: "Crear los personajes principales", completada: false },
+        { id: 3, descripcion: "Desarrollar la estructura de la historia", completada: false },
+        { id: 4, descripcion: "Escribir el primer capítulo", completada: false },
+        { id: 5, descripcion: "Revisar y editar el primer capítulo", completada: false },
+        { id: 6, descripcion: "Escribir el segundo capítulo", completada: false },
+        { id: 7, descripcion: "Desarrollar la trama secundaria", completada: false },
+        { id: 8, descripcion: "Corregir inconsistencias en la historia", completada: false },
+        { id: 9, descripcion: "Finalizar la escritura del libro", completada: false },
+        { id: 10, descripcion: "Revisión final y corrección de estilo", completada: false },
+        { id: 11, descripcion: "Publicar o enviar a editoriales", completada: false }
+    ];
+
+    // Cargar datos de LocalStorage o inicializar con valores por defecto
+    let tareas = JSON.parse(localStorage.getItem("tareas")) || tareasIniciales;
+
+    // Mostrar tareas en la página
+    function mostrarTareas() {
+        const contenedor = document.getElementById("contenedor");
+        contenedor.innerHTML = "";
+
+        tareas.forEach((tarea, index) => {
+            let div = document.createElement("div");
+            div.className = `tarea ${tarea.completada ? "completada" : ""}`;
+            div.innerHTML = `
+                <span>${tarea.descripcion}</span>
+                <button onclick="marcarComoCompletada(${index})">
+                    ${tarea.completada ? "✔ Hecho" : "✔ Completar"}
+                </button>
+            `;
+            contenedor.appendChild(div);
+        });
+    }
+
+    // Marcar tarea como completada
+    function marcarComoCompletada(index) {
+        tareas[index].completada = !tareas[index].completada; // Alternar estado
+        localStorage.setItem("tareas", JSON.stringify(tareas));
+        mostrarTareas();
+    }
+
+    // Restablecer tareas
+    function resetearTareas() {
+        if (confirm("¿Estás seguro de que quieres restablecer las tareas?")) {
+            localStorage.removeItem("tareas");
+            tareas = [...tareasIniciales];
+            mostrarTareas();
+        }
+    }
+
+    // Inicializar la página con los datos almacenados
+    mostrarTareas();
+</script>
+
+</body>
+</html>

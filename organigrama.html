@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama Semanal</title>
+    <style>
+
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    /* Contenedor general para centrar las "cards" de los días */
+    .organigrama {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center; /* Centra horizontalmente */
+    }
+
+    .dia {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      flex: 1 1 200px;
+      max-width: 200px;
+      text-align: center; /* Centra el contenido interno (el título) */
+    }
+
+    .dia h3 {
+      margin-top: 0;
+    }
+
+    .suobli {
+      font-size: 10px;
+      flex: auto;
+      color: #53705b;
+    }
+
+    hr {
+      margin: 0.5rem 0;
+    }
+
+    /* ==== ESTILOS PARA LAS LISTAS DE TAREAS ==== */
+    /* Lista principal de tareas */
+    .tarea-lista {
+      list-style-type: none; /* Quita los ítems de la lista en las tareas principales */
+      margin: 0;
+      padding: 0;
+      text-align: left; /* Alinea a la izquierda los ítems */
+    }
+
+    .tarea-lista > li {
+      margin-bottom: 1rem; /* Espacio entre tareas */
+    }
+
+    /* ==== ESTILOS PARA LAS LISTAS DE SUBTAREAS ==== */
+    .subtarea-lista {
+      list-style-type: disc;    /* Usa viñetas para subítems */
+      margin-left: 1.5rem;      /* Sangría */
+      color: green;             /* Texto verde para subtareas */
+      font-size: 0.9rem;        /* Fuente un poco más pequeña */
+      margin-top: 0.5rem;       /* Espacio antes de la sub-lista */
+    }
+
+    .subtarea-lista li {
+      margin-bottom: 0.3rem; /* Espacio entre sub-tareas */
+    }
+
+    /* Enlaces dentro de las subtareas */
+    .subtarea-lista li a {
+      text-decoration: none; /* Sin subrayado */
+      color: green;          /* Mismo color que el texto */
+    }
+
+    .subtarea-lista li a:hover {
+      text-decoration: underline; /* Subraya al pasar el ratón */
+    }
+
+    /* ==== DIV DE TAREAS OBLIGATORIAS ==== */
+    .tareas-obligatorias {
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border: 2px solid #6ba161;   /* Borde rojo */
+      border-radius: 10px;        /* Bordes redondeados */
+      background-color: #e8ecd2;  /* Fondo ligeramente rosado */
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .Impresiones {
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border: 2px solid #7ab982;   /* Borde rojo */
+      border-radius: 10px;        /* Bordes redondeados */
+      background-color: #cbf8bd;  /* Fondo ligeramente rosado */
+      font-weight: bold;
+      text-align: center;
+    }
+    h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: #01c739;
+}
+
+.Primer {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: #01c739;
+}
+
+
+    /* =================== ESTILOS PARA EL MODAL =================== */
+    .modal {
+      display: none;               /* Oculto por defecto */
+      position: fixed;             /* Posición fija en la pantalla */
+      z-index: 1000;               /* Se superpone a otros elementos */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;             /* Scroll si es necesario */
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 5% auto;             /* Centrado vertical y horizontal */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 60%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .col {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+.Orden {
+  text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+
+}
+
+.tareas-obligatorias {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border: 2px solid #6ba161;
+    border-radius: 10px;
+    background-color: #e8ecd2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tareas-obligatorias a {
+    color: #4CAF50; /* Choose a color that fits your design */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Optional: if you want to make it bold */
+}
+
+.tareas-obligatorias a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+    color: #388e3c; /* Darker shade for hover effect */
+}
+
+        .organigrama {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Organigrama Semanal</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+    </ul>
+</nav>
+
+
+
+
+    <div class="organigrama">
+      <!-- ==================== LUNES ==================== -->
+      <div class="dia">
+        <h3>Lunes</h3>
+        <hr>
+
+          <div class="tareas-obligatorias">
+            IMPRIMIR</br>
+            <span class="suobli"> Los Lunes Voy ha imprimer a salir del trabajo lo realizado </span></br>
+          </div>
+
+
+
+
+          <span class="Primer">TAREAS OBLIGATORIAS</span>
+      
+
+
+        <!-- Div de tareas obligatorias -->
+        <div class="tareas-obligatorias">
+          REGISTRO</br>
+          <span class="suobli"> 10 de Articulos </span></br>
+          <span class="suobli"> 10 de Tienda </span></br>
+          <span class="suobli"> 10 de Enfrentamiento</span></br>
+          <span class="suobli"> Escuchr pol Guise </span></br>
+          PARIS 2024</br>
+          <span class="suobli">Rugby</span></br>
+          <span class="suobli">Halterofilia</span></br>
+          <span class="suobli">Lanzamiento de Jabalina</span></br>
+          <span class="suobli">Lanzamiento de peso</span></br>
+          <span class="suobli">Boxeo</span></br>
+          <span class="suobli">Gimnsia</span></br>
+          <span class="suobli">Judo</span></br>
+          <span class="suobli">Lucha</span></br>
+
+        </div>
+
+        <div class="Impresiones">
+          DESARROLLO</br>
+          <span class="suobli"> Personaje El Olimpo del siglo XXI</span></br>
+          <span class="suobli">  10 imagenes de NFL con el Pront</span></br>
+        </div>
+
+
+      </div>
+
+      <!-- ==================== MARTES ==================== -->
+      <div class="dia">
+        <h3>Martes</h3>
+        <hr>
+
+        <span class="Primer">TAREAS OBLIGATORIAS</span>
+
+
+
+        <div class="tareas-obligatorias">
+          REGISTRO</br>
+          <span class="suobli"> 10 de Articulos </span></br>
+          <span class="suobli"> 10 de Tienda </span></br>
+          <span class="suobli"> 10 de Enfrentamiento</span></br>
+          <span class="suobli"> Escuchr pol Guise </span></br>
+        </div>
+
+
+
+        <!-- Div de tareas obligatorias -->
+        <div class="tareas-obligatorias">
+          Tareas obligatorias de Martes</br>
+          <span class="suobli"> 10 de Articulos </span></br>
+          <span class="suobli"> 10 de Tienda </span></br>
+          <span class="suobli"> 10 de Enfrentamiento</span></br>
+          <span class="suobli"> Escuchr pol Guise </span></br>
+        </div>
+
+        <div class="Impresiones">
+          Tareas Rellenar impresiones</br>
+          <span class="suobli"><a href="Olimpo.html">El Olimpo del siglo XXI</a> </span></br>
+        </div>
+
+
+      </div>
+
+      <!-- ==================== MIÉRCOLES ==================== -->
+      <div class="dia">
+        <h3>Miércoles</h3>
+        <hr>
+
+
+
+
+
+
+    <span class="Primer">TAREAS OBLIGATORIAS</span>
+
+
+
+
+      </div>
+
+      <!-- ==================== JUEVES ==================== -->
+      <div class="dia">
+        <h3>Jueves</h3>
+        <hr>
+
+        <!-- Div de tareas obligatorias -->
+        <div class="tareas-obligatorias">
+          Tareas obligatorias de Jueves</br>
+          <span class="suobli"> 10 de Articulos </span></br>
+          <span class="suobli"> 10 de Tienda </span></br>
+          <span class="suobli"> 10 de Enfrentamiento</span></br>
+          <span class="suobli"> Escuchr pol Guise </span></br>
+        </div>
+
+        <div class="tareas-obligatorias">
+          LAS PAGINAS</br>
+          <span class="suobli"> Pagina de diseñador - Fotografo "Boonstrapstudio" </span></br>
+        </div>
+
+        <div class="Impresiones">
+          Tareas Rellenar impresiones</br>
+          <span class="suobli"> El Olimpo del siglo XXI</span></br>
+        </div>
+
+
+
+        <span class="Primer">TAREAS OBLIGATORIAS</span>
+
+
+      </div>
+
+      <!-- ==================== VIERNES ==================== -->
+      <div class="dia">
+        <h3>Viernes</h3>
+        <hr>
+        
+        <span class="Primer">TAREAS OBLIGATORIAS</span>
+
+
+      </div>
+
+      <!-- ==================== SÁBADO ==================== -->
+      <div class="dia">
+        <h3>Sábado</h3>
+        <hr>
+
+        <!-- Div de tareas obligatorias -->
+        <div class="tareas-obligatorias">
+          Tareas obligatorias de Sábado</br>
+          <span class="suobli"> 10 de Articulos </span></br>
+          <span class="suobli"> 10 de Tienda </span></br>
+          <span class="suobli"> 10 de Enfrentamiento</span></br>
+          <span class="suobli"> Escuchr pol Guise </span></br>
+        </div>
+
+
+        <span class="Primer">TAREAS OBLIGATORIAS</span>
+
+        <div class="Impresiones">
+          Tareas Rellenar impresiones</br>
+          <span class="suobli"> El Olimpo del siglo XXI</span></br>
+        </div>
+
+      </div>
+
+      <!-- ==================== DOMINGO ==================== -->
+      <div class="dia">
+        <h3>Domingo</h3>
+        <hr>
+ 
+        <!-- Div de tareas obligatorias -->
+        <div class="tareas-obligatorias">
+          Tareas obligatorias de Domingo</br>
+
+     
+           <span class="suobli"> 10 de Articulos </span></br>
+           <span class="suobli"> 10 de Tienda </span></br>
+           <span class="suobli"> 10 de Enfrentamiento</span></br>
+           <span class="suobli"> Escuchr pol Guise </span></br>
+
+        </div>
+        
+        
+        <span class="Primer">TAREAS OBLIGATORIAS</span>
+
+
+
+        <div class="Impresiones">
+          Tareas Rellenar impresiones</br>
+          <span class="suobli"> El Olimpo del siglo XXI</span></br>
+        </div>
+      </div>
+    </div> <!-- .organigrama -->
+  </main>
+
+
+
+
+
+
+
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>cvbcn 
+    <img style="width: 600px;" >
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+ document.addEventListener('DOMContentLoaded', function () {
+  const openModalButtons = document.querySelectorAll('.openModal'); // Enlaces con clase .openModal
+  const closeButtons = document.querySelectorAll('.close'); // Botón de cerrar en cada modal
+
+  openModalButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const modalId = button.getAttribute('data-modal'); // Obtén el ID del modal
+      const modal = document.getElementById(modalId); // Busca el modal
+      if (modal) {
+        modal.style.display = 'block'; // Muestra el modal si existe
+      } else {
+        console.error(`Modal con ID "${modalId}" no encontrado.`);
+      }
+    });
+  });
+
+  closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal'); // Encuentra el modal más cercano
+      if (modal) {
+        modal.style.display = 'none'; // Oculta el modal
+      }
+    });
+  });
+
+  // Cerrar modal al hacer clic fuera del contenido
+  window.addEventListener('click', (event) => {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = 'none'; // Oculta si el clic es fuera del contenido
+      }
+    });
+  });
+});
+  </script>
+</body>
+</html>

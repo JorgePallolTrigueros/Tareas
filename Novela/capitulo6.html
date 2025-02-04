@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paginación debajo del capítulo */
+.pagination-container {
+    margin-top: 30px;
+}
+
+/* Estilos de los botones de paginación */
+.page-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.page-button.active {
+    background-color: #155724;
+    box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.5);
+}
+
+/* Distribución en tres filas */
+@media (max-width: 768px) {
+    .page-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 250px;
+      }
+
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>El Bullin, un mito griego </h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+        <header class="text-center p-3 bg-success text-white">
+            <h1>MI PSIQUE</h1>
+        </header>
+    
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Imágenes a los lados -->
+                <div class="col-md-3 text-center">
+                    <img src="imagen1.jpg" class="img-fluid img-capitulo" alt="Imagen 1">
+                </div>
+                
+                <div class="col-md-6">
+                    <article class="capitulo-texto">
+                        <p>Bueno, os ha quedado claro que ahora, a pesar de tener
+una tecnología igual a la vuestra, teníamos que tener
+mucho cuidado con ella.
+Anuncio de Programación
+El programa estaba muy bien. Tenía mucha audiencia. Al
+principio, siempre salían los tres: Helios, Ceo y Epimeteo,
+dando un resumen de lo que se vería en el programa. Helios empezó enumerando sus chismes. Comentó que vio a
+Atenea y a Mirmex con el grupo de las diosas virginales,
+Hestia y Artemisa, en una heladería, insinuando la posible continuidad de un viejo romance. Mencionó también
+la celebración del aniversario de Hefestos y su esposa, la
+enésima bronca y reconciliación de Zeus y Hera y, cómo
+no, algo sobre Anteros. Pero poco concluyente
+Mi hermano Potos me susurró al oído: “—Ves, al menos
+no ha salido su nombre.” Era cierto y lo peor es que yo
+tampoco lo sabia y eso si que no. Ahora sí tenía curiosidad. Me acerqué a mi hermano y le dije en voz baja: “—
+Tú, galán, ¿quién era tu novia?”- Anteros me contesto con
+una mirada furiosa. Potos rapidamente subió el volumen.
+“—Vamos a oír las noticias de Epimeteo.”
+Lo que me parecía raro, no, lo siguiente. Es que Potos no
+parecía ser asiduo a esas noticias, más bien a las necrológicas. Epimeteo se puso a narrar las hazañas del heroe
+de la semana. Por enesima vez Heracles. Comentó cómo
+arrestó a un gigante lestingome ayer por la noche, que
+había sembrado el caos en una de las polis; era un asesino
+en serie, que habia sido molesto. Pusieron las declaraciones del general Perseo y “La Hora de la Justicia” (Recuerdo que son ministras), es decir, la diosa Dice . Ambos
+estuvieron alabando su hazaña. Pero en esa imagen habia
+algo raro para los tres. Heracles parecia triste y serio.
+La relación que teníamos los Erotes con Heracles era, más
+o menos, difícil dependiendo de a quién le preguntaras.
+Era una relacion que ni el propio Heracles era conciente de cuanto nos debia . Pero con Potos, era espedial,
+tenían aprecio mutuo. Le oí decir: “—Ánimo, pequeño,”
+mientras enfocaban las cámaras. Lo dijo muy bajo para
+no molestarme. Ya que me dolia tambien que jamas nos
+dio las gracias pòr lo que habiamos echo por el. Aunque
+no lo supiera
+El hecho de que Potos me hubiera cortado cuando Anteros iba a soltar el nombre de su pareja me mosqueaba.
+Por último, comenzó la tertulia de opinión con temas de
+actualidad tanto de esta dimensión como de la vuestra.
+En ella estaba Bulbo, la payasa, una colaboradora recurrente, junto a Momo y Coalemo (el sarcasmo y la estupidez), que iban con menos frecuencia. Metían comentarios ingeniosos para que la gente no se fuera aburrida a
+la competencia. Animaban la tertulia. La tertulia estaba
+polarizada por otros dos dioses: uno apoyaba la concordia y el buen rollo, y el otro daba discursos que te hacían
+sentir que debías coger un arma y empezar a incendiar el
+barrio. El primero, el del buen rollo, era apoyado principalmente por una de las hijas de Hefesto. Sin embargo, no
+era el primer anunciante de su tecnología.
+¿Cómo es que Hefesto se ha convertido en un magnate?, preguntaréis. Fácil. El dios de la forja y ahora de la
+tecnología, fue el primer dios que ha currado en toda su
+existencia, en toda la historia. Aunque en la Hélade trabajaba, o mejor dicho, era explotado por el resto de nuestra
+familia, ahora se había hecho capitalista. Por un lado, es 
+
+
+lo más comprensible si queréis mi opinión. Aparte, de entonces es el principal sponsor de la cadena.
+quedarse cojo para toda su eternidad. Desde la época
+micénica era uno de los pocos que era independiente
+
+Todos, con el tiempo, hemos pensado que ya en esa época
+se comportaba, cómo decirlo sin ambajes, como un ser
+neuroatípico. Tenía todos los puntos segun vosotros : Primero un trauma infantil. ¿Que uno de tus padres te arroje
+al mar desde el Olimpo? Yo diría que sí, al menos. Esto,
+claro, le provocó un gran rechazo personal. Otro punto la
+exclusión social, esta la recibia de su propia familia. Por
+esa época, se le pedían armas o lo que fuera, casi como
+una orden. Se le consideraba tan tonto y con tal falta
+de entendimiento de los sentimientos que fue fácil para
+Poseidón burlarse de su sobrino y vengarse de su sobrina
+Atenea. Si ya le costaba entender algún gesto, no te digo
+ya una relación. Poseidón le engañó y donde solo había
+gratitud por la creación de armas para sus héroes, Hefesto, por manipulación, entendió deseo. La cosa acabó mal.
+Si a eso le sumamos la vez que Hefesto consiguió inmovilizar a su esposa y a uno de sus amantes en pleno acto
+e invitó a su familia para que se apiadase de él, comprendiera y compartiera su dolor, ¿qué hizo nuestra familia?
+Premio: se rieron de él en la cara y del hecho en sí.
+Otro aspecto en relación con los neuroatípicos es, sin
+duda, su resiliencia y habilidades únicas. Hefesto encontró en la forja y luego en la técnología un mundo que le
+ayudó a encontrar un orden. Al igual que muchos neuroatípicos, posee talentos y habilidades únicas , no solo
+por ser un dios , esta otras sobresalieron cuando se le dio
+la oportunidad. Su madre real Tetis le ayudo. Perfeccionó
+su trabajo, lo evolucionó al mismo ritmo que vosotros.
+Su capacidad de adaptación y superación era reconocida
+incluso por los dioses que no le eran muy queridos: Hera,
+con su madre tuvo malos momentos (repito, no tiréis
+a vuestros hijos a los ríos), Ares, Afrodita y Atenea por
+motivos obvios.
+Llegó a ser aceptado. Quien más lo aceptó fue su tía Hestia, quien le cedió su asiento como uno de los 12. Hefesto
+es un gran tipo. Se encuentra entre los cinco dioses más
+ricos de la dimensión. Pero no solo es dinero lo que lo define. Es muy generoso, sobre todo con los que le apoyaron
+desde la Hélade. Psique estaba entre ellos, así que aunque
+yo era un posible hijo de Afrodita y de Ares, no me lo
+tomaba en cuenta. Siempre me caía un regalo y nuestros
+arcos siempre estaban actualizados. Detrás de él estaba su
+hermana Hebe, quien siempre ganaba un óvulo por cada
+crío que cumplía 14 años e inauguraba la toga de hombre,
+como un baile de debutantes.
+Pero volvamos a Hefesto. Fue el dios de la riqueza, Pluto,
+a quien también se le atribuía ser mi padre, quien le
+convenció alrededor de los tiempos de la Revolución Industrial de que debía cobrar dinero por su trabajo. Cuando Hefesto pretendió cobrar a Zeus por un carro, este
+amenazó a Pluto, diciéndole que le haría lo mismo que a
+su padre Iaso: es decir, fulminarlo. Gracias a la suerte, la
+madre de Pluto, Deméter, y hermana de Zeus apareció y
+se acabaron las amenazas.
+Después de eso, Hefesto empezó a ganarse la vida y desde
+
+Luego, por otra parte de la tertulia, estaba un miembro del séquito de papi Ares que daba la réplica, y cuya
+política era siempre acabar con todo y que sobreviviera el
+mejor. Hablaban tanto de noticias de vuestra dimensión
+como de la nuestra.
+Para animar la tertulia estaba el retornado dios de la
+burla, Momo, que había sido perdonado tras el incidente
+en el que se atrevió a meterse con Atenea, Poseidón, Zeus
+y Afrodita en la antigua Hélade. Eso sí, vivía en el estudio.
+Aún había resquemor por parte de los dioses, por lo que
+fue expulsado. Lo aceptó, y tuvo el morro de decir que
+mientras el estudio no lo hubiera hecho Atenea, perfecto.
+Luego Coalemo, el dios de la imprudencia y la estupidez,
+había sido una exigencia del mismo Zeus, en contra de la
+opinión de los tres titanes.
+Pero si me preguntan, un total acierto. Los tres le daban
+un punto para que la gente siguiera fiel durante cinco
+horas. Era el programa con más audiencia.
+Dejé a mis hermanos en el sofá viendo la tele. Recogí los
+cigarros y las botellas de alcohol de la marca Dionisio.
+Aparté las mariposas que revoloteaban sobre Anteros y
+me fui con mi amada Psique, que cocinaba una ingente
+cantidad de tortitas. Dejé todo aquello en la mesa. Me
+desabroché la camisa, dejando mi cuerpo prácticamente
+desnudo, mostrando mis abdominales. La luz del alba
+nos rodeaba. Me acerqué a ella, la abracé por detrás, tensé
+mis músculos y empecé a desprender las endorfinas y mi
+aroma más exquisito, el que desprendíamos los Erotes en
+nuestras entrevistas y presentaciones. Me puse como un
+pavo real.
+“—Ahora no, corazón” —dijo con su voz dulce mientras
+preparaba las tortitas.
+Me lo dijo con un beso al que respondí: “—¿Por qué no?
+Ya sabes cómo me pones cuando haces tortitas.”
+Señaló la pantalla que había frente a la vitrocerámica.
+Psique mi pequeña criatura es delgada, hermosa y delicada, 
+una visión de perfección que nunca deja d
+
+</p>
+</article>
+</div>
+
+<div class="col-md-3 text-center">
+<img src="imagen2.jpg" class="img-fluid img-capitulo" alt="Imagen 2">
+</div>
+</div>
+
+<div class="text-center mt-4">
+<img src="imagen3.jpg" class="img-fluid img-capitulo img-arriba" alt="Imagen 3">
+</div>
+
+
+
+</div>
+<!-- Paginación debajo del capítulo -->
+<div class="pagination-container text-center mt-5">
+<div id="pagination" class="d-flex flex-wrap justify-content-center"></div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<script> 
+  document.addEventListener("DOMContentLoaded", function () {
+      const totalCapitulos = 32;
+      const paginationContainer = document.getElementById("pagination");
+  
+      let filaActual = document.createElement("div");
+      filaActual.classList.add("d-flex", "justify-content-center", "flex-wrap", "mb-2");
+  
+      for (let i = 1; i <= totalCapitulos; i++) {
+          let button = document.createElement("button");
+          button.classList.add("page-button", "btn", "btn-primary", "m-1"); // Agrega estilos Bootstrap si lo usas
+          button.textContent = i;
+          button.dataset.capitulo = i;
+  
+          // Al hacer clic, se redirige al capítulo
+          button.addEventListener("click", function () {
+              seleccionarCapitulo(i);
+          });
+  
+          filaActual.appendChild(button);
+  
+          // Insertar una nueva fila cada 10 botones
+          if (i % 10 === 0 || i === totalCapitulos) {
+              paginationContainer.appendChild(filaActual);
+              filaActual = document.createElement("div");
+              filaActual.classList.add("d-flex", "justify-content-center", "flex-wrap", "mb-2");
+          }
+      }
+  });
+  
+  // Función para manejar la selección del capítulo y redirigir
+  function seleccionarCapitulo(capitulo) {
+      // Quitar la clase "active" de todos los botones
+      document.querySelectorAll(".page-button").forEach(btn => {
+          btn.classList.remove("active");
+      });
+  
+      // Añadir la clase "active" al botón seleccionado
+      let seleccionado = document.querySelector(`.page-button[data-capitulo="${capitulo}"]`);
+      if (seleccionado) {
+          seleccionado.classList.add("active");
+  
+          // Redirigir al capítulo correspondiente
+          window.location.href = `capitulo${capitulo}.html`;
+      }
+  }
+  </script>
+  

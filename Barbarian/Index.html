@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.modal-content {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde pastel a verde esmeralda */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5); /* Sombra en tono verde neón */
+}
+
+/* Estilo del encabezado */
+.modal-header {
+    background: #1abc9c; /* Verde turquesa */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Estilo del botón de cierre */
+.btn-close {
+    filter: invert(1); /* Hace el botón blanco */
+}
+
+/* Estilo del cuerpo del modal */
+.modal-body {
+    font-size: 1.1em;
+    padding: 20px;
+    background: #2ecc71; /* Verde pastel */
+    border-radius: 10px;
+}
+
+/* Pie de modal con sombra */
+.modal-footer {
+    background: rgba(39, 174, 96, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Botón de cierre mejorado */
+.btn-secondary {
+    background: #16a085; /* Verde oscuro */
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background: #2ecc71; /* Verde claro al pasar el mouse */
+}
+
+/* Animación de aparición del modal */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.pequeno {
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1%;
+}
+
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.link-success {
+    color: #198754;
+    text-decoration: none;
+}
+
+a {
+    color: #0f5132;
+    text-decoration: none;
+    text-decoration-style: double;
+    text-anchor: start;
+    text-size-adjust: inherit;
+    text-emphasis: greenyellow;
+    font-variant: petite-caps;
+}
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Los Barbarian</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-2"> <!-- Ocupa 4 de 12 columnas -->
+                <div class="card h-100">
+                    <img src="ima/tg.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <h5 class="card-title">Listas de Capitulos</h5>
+                  <p class="card-text">
+                    <p>
+                        <a href="capitulo.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El Coche fantástico Rejas</a></br>
+                        <span class="alff"> Los dos hermanos y el gran Strongman se hicieron
+                            colegas. Los dos hermanos Los Indios son secuestrados, van de la zona de seguridad , ahora son
+                            escoltas de un chico y su s padres. Estos ejercían de
+                            hermanos mayores.Cuando vieron intentar entrar
+                            a la mansion</span></p>
+
+                            <a href="capitulo2y.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El Coche fantástico Rejas</a></br>
+                            <span class="alff"> Los dos hermanos y el gran Strongman se hicieron
+                                colegas. Los dos hermanos Los Indios son secuestrados, van de la zona de seguridad , ahora son
+                                escoltas de un chico y su s padres. Estos ejercían de
+                                hermanos mayores.Cuando vieron intentar entrar
+                                a la mansion</span></p>
+
+                                <a href="capitulo3.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El Coche fantástico Rejas</a></br>
+                                <span class="alff"> Los dos hermanos y el gran Strongman se hicieron
+                                    colegas. Los dos hermanos Los Indios son secuestrados, van de la zona de seguridad , ahora son
+                                    escoltas de un chico y su s padres. Estos ejercían de
+                                    hermanos mayores.Cuando vieron intentar entrar
+                                    a la mansion</span></p>                                
+                        
+                        <a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El Coche fantástico Rejas</a></br>
+                        <span class="alff"> Los dos hermanos y el gran Strongman se hicieron
+                        colegas. Los dos hermanos Los Indios son secuestrados, van de la zona de seguridad , ahora son
+                        escoltas de un chico y su s padres. Estos ejercían de
+                        hermanos mayores.Cuando vieron intentar entrar
+                        a la mansion</span></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El Coche fantástico carcel</a></br>
+                        <span class="alff"> Los tes hombres son llevados tras noquear los a un
+                         edificio, les acojona con llevarlos a la cárcel y antes
+                        on una tasser, confiesan de todos . Luego descubren la verdad. Es un secuest</span>
+                        </p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Equipo A Barco</a></br>
+                        <span class="alff"> > Los dos hermanos caen uno el exterior de la proa,
+                        cae en la trampa, por una chica. . Lo llevan a un
+                        camarote. El otro esta en el comedor y le convencen para que vaya a ver a su hermano nokeado en
+                        un camarote de un Strongman Calvo Grande que
+                        al verlos cren que son bandidos. Una gran pelea,
+                        pensaban dejarlo</span></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Equipo A escoltas</a>
+<p></p>
+                        <span class="alff"> Los hermanos conocieron a una de sus mayores
+                        pesadillas cuando estuvieron custodiando a una
+                        modelo. Esta estaba en la playa usando vio como
+                        un hombre fuerte y musculoso se ahoab en u playa
+                        privada</span>
+                    </p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Bud Spencer Mafia</a>
+                        <p></p><span class="alff"> El tío grande ha conseguido empleo de segurata
+                        en el empleo del padre. Son victimas ota vez del
+                        secuestro del crio , pero los tres están muy comprometidos y el que al principio caen, deciden ir
+                        a por el. Tras haber sido victimas del swy los dos
+                        melenas siguen custodiando al crio</span>
+                    </p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Equipo A muchos luchadores</a>
+                        <p></p><span class="alff"> a por todas para rescatar al chico,han descubierto que todo es pr su padre , por lo que deciden
+                        que no deben ir a por todos.</span> </p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-10"> <!-- Ocupa 8 de 12 columnas -->
+                <div class="card h-100">
+                <img src="ima/sadelea_image_taken_through_the_bars._Face_of_pain_and_sufferin_0d93b607-d8dc-4037-b7fd-1915e94ef2e2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="text-center mb-3">
+                        <button id="btn-daz" class="btn btn-success">Imágenes Daz</button>
+                        <button id="btn-real" class="btn btn-success">Imágenes Reales</button>
+                        <button id="btn-ia" class="btn btn-success">Imágenes IA</button>
+                    </div>
+                
+                                    <div class="card-group">
+                                        <div class="card" id="card1">
+                                            <img src="ima/1.png" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ethan</h5>
+                                                <p class="card-text">Descripción física: Alto, musculoso, con una larga melena oscura que cae sobre sus hombros. Su cuerpo es resultado de años de entrenamiento intenso. Suele vestir una camiseta de tirantes azul y pantalones cortos ajustados, resaltando cada fibra de sus músculos.
+                                                    Personalidad: Más serio y disciplinado que su hermano. Tiene un fuerte sentido del deber y, aunque no le gusta ser un simple adorno en la mansión, acepta su situación con pragmatismo. Es protector con Ethan y suele ser el primero en reaccionar ante cualquier amenaza.
+                                                    Historia: Creció en un barrio violento, donde descubrió el culturismo como una forma de escapar de la pobreza y la delincuencia. En la mansión, se siente atrapado en un trabajo donde su físico es más importante que sus habilidades. Sin embargo, cuando son arrestados, es el primero en tratar de mantener la calma y encontrar una salida.</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card2">
+                                            <img src="ima/2.png" class="card-img-top" alt="Zeus">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Clifford</h5>
+                                                <p class="card-text">Descripción física: Idéntico a Clifton en apariencia: alto, musculoso y con una larga melena oscura. La única diferencia visual es que suele vestir una camiseta de tirantes roja en lugar de azul, facilitando la distinción entre ambos. Su físico también es imponente, con músculos bien definidos por su entrenamiento riguroso.
+                                                    Personalidad: Más relajado y despreocupado que su hermano. Aunque es fuerte, a veces subestima los peligros y confía demasiado en su físico en lugar de en la estrategia. Tiende a bromear incluso en situaciones tensas, pero en el fondo, tiene miedo de perder la estabilidad que ha logrado.
+                                                    Historia: Creció junto a Clifton en un ambiente peligroso, usando el culturismo como un escape de la violencia. Aunque disfruta de la vida cómoda en la mansión, siente que hay algo más allá de ser un simple adorno. Su actitud despreocupada lo lleva a ser menos precavido, lo que a veces complica las situaciones en las que se encuentran.</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card3">
+                                            <img src="ima/toro2.png" class="card-img-top" alt="Atenea">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Alex "El Toro" Mendoza</h5>
+                                                <p class="card-text">Descripción: Ex-marine con un pasado oscuro, ahora reformado y dedicado a ayudar a jóvenes que han sido utilizados por el crimen organizado.
+                                                    Personalidad: Fuerte, disciplinado y con un sentido de justicia inquebrantable. Aunque parece rudo, tiene un lado compasivo y busca redimir a aquellos que aún pueden cambiar.
+                                                    Historia: Conoce a Clifton y Ethan en prisión y detecta que, pese a su apariencia de tipos duros, están aterrorizados. Les ofrece la oportunidad de redimirse, ayudándolos a encontrar un camino diferente al de la violencia.</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+
+
+                                    <div class="card-group">
+                                        <div class="card" id="card1">
+                                            <img src="ima/sadelea_Photo_bodybulder_A_man_with_brown_hair_wearing_a_black__261961ee-4ddc-45ac-a3c2-fb12b9449000.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Mike</h5>
+                                                <p class="card-text">Descripción: Un hombre sádico y manipulador, experto en interrogatorios y tortura. Disfruta tener el control sobre sus víctimas.
+                                                    Personalidad: Sarcástico, cruel y calculador. No siente remordimiento y se burla de sus enemigos mientras los somete a tortura psicológica y física.
+                                                    Historia: Captura a Clifton y Ethan y los interroga con métodos brutales, usando un dispositivo de dolor para forzarlos a hablar. Su verdadero objetivo es descubrir el paradero de Bonnie. Tiene una obsesión personal con los gemelos, posiblemente por una pelea humillante en el pasado.</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card2">
+                                            <img src="ima/5.png" class="card-img-top" alt="Zeus">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Bonnie</h5>
+                                                <p class="card-text">Descripción: Mujer misteriosa cuyo secuestro desata los eventos principales de la historia.
+                                                    Historia: Su desaparición es el detonante de la acusación contra Clifton y Ethan. Se desconoce su relación con Margot y Mike, pero parece ser clave en la conspiración que rodea a los gemelos..</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card3">
+                                            <img src="ima/4.png" class="card-img-top" alt="Atenea">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Margot</h5>
+                                                <p class="card-text">Descripción: Mujer poderosa, controladora y manipuladora. Disfruta de la apariencia física de Clifton y Ethan, exigiendo que entrenen con ropa ajustada para su deleite.
+                                                    Personalidad: Fría y calculadora. Usa su dinero y poder para influenciar a quienes la rodean, sin preocuparse demasiado por el bienestar de sus empleados.
+                                                    Historia: Al parecer, tiene un papel oculto en los problemas legales de Clifton y Ethan, ya que les ordenó silenciar a ciertas personas. Su verdadera intención no está completamente clara..</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="card-group">                                    
+                                        <div class="card" id="card1">
+                                            <img src="ima/3.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Linda Serrano</h5>
+                                                <p class="card-text">Linda Serrano es una abogada de 38 años, inteligente y tenaz. Con cabello castaño oscuro ondulado y ojos marrón intenso, su mirada analítica la convierte en una estratega formidable. Viste un elegante traje azul marino y transmite autoridad con su porte seguro. No se deja intimidar y lucha por la justicia con meticulosa precisión. Su reputación se basa en defender casos difíciles, como el de Clifton y Ethan, descubriendo la verdad detrás de la conspiración que los involucra. Perspicaz y pragmática, desafía a poderosos adversarios, demostrando que la justicia no solo pertenece a los privilegiados..</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card1">
+                                            <img src="ima/sadelea_Photo_bodybulder_A_man_with_brown_hair_wearing_a_black__261961ee-4ddc-45ac-a3c2-fb12b9449000.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Mike</h5>
+                                                <p class="card-text">Descripción: Un hombre sádico y manipulador, experto en interrogatorios y tortura. Disfruta tener el control sobre sus víctimas.
+                                                    Personalidad: Sarcástico, cruel y calculador. No siente remordimiento y se burla de sus enemigos mientras los somete a tortura psicológica y física.
+                                                    Historia: Captura a Clifton y Ethan y los interroga con métodos brutales, usando un dispositivo de dolor para forzarlos a hablar. Su verdadero objetivo es descubrir el paradero de Bonnie. Tiene una obsesión personal con los gemelos, posiblemente por una pelea humillante en el pasado.</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>                                        <div class="card" id="card1">
+                                            <img src="ima/ima (25).png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Mike</h5>
+                                                <p class="card-text">Descripción: Un hombre sádico y manipulador, experto en interrogatorios y tortura. Disfruta tener el control sobre sus víctimas.
+                                                    Personalidad: Sarcástico, cruel y calculador. No siente remordimiento y se burla de sus enemigos mientras los somete a tortura psicológica y física.
+                                                    Historia: Captura a Clifton y Ethan y los interroga con métodos brutales, usando un dispositivo de dolor para forzarlos a hablar. Su verdadero objetivo es descubrir el paradero de Bonnie. Tiene una obsesión personal con los gemelos, posiblemente por una pelea humillante en el pasado.</p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>          
+
+                                    </div>
+
+
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+          <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    // Función para cambiar la imagen según el botón seleccionado
+    function cambiarImagen(tipo) {
+        personajes.forEach(personaje => {
+            let imgElement = document.querySelector(`#${personaje.id} .card-img-top`);
+            if (imgElement) {
+                imgElement.src = personaje.imagenes[tipo];
+            }
+        });
+    }
+
+    // Función para abrir el modal con los datos del personaje
+    function abrirModal(personajeId) {
+        let personaje = personajes.find(p => p.id === personajeId);
+        if (personaje) {
+            document.getElementById("modalTitulo").textContent = personaje.nombre;
+            document.getElementById("modalDescripcion").textContent = personaje.descripcionLarga;
+            document.getElementById("modalImagen").src = document.querySelector(`#${personajeId} .card-img-top`).src;
+            let modal = new bootstrap.Modal(document.getElementById("modalPersonaje"));
+            modal.show();
+        }
+    }
+
+    // Asignar eventos a los botones de cambio de imagen
+    document.getElementById("btn-daz").addEventListener("click", () => cambiarImagen("daz"));
+    document.getElementById("btn-real").addEventListener("click", () => cambiarImagen("real"));
+    document.getElementById("btn-ia").addEventListener("click", () => cambiarImagen("ia"));
+
+    // Asignar eventos a los botones "Saber más"
+    document.querySelectorAll(".btn-saber-mas").forEach(btn => {
+        btn.addEventListener("click", function () {
+            abrirModal(this.dataset.personaje);
+        });
+    });
+});

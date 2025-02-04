@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 250px;
+      }
+
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Organigrama Semanal</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <p>Consulta las tareas y responsabilidades que tienes cada día de la semana.</p>
+    
+          <!-- ==================== LUNES ==================== -->
+      
+            <h3>Creacion de la Tabla</h3>
+            <hr>
+            CREATE DATABASE IF NOT EXISTS generador_novelas;
+            USE generador_novelas;
+            
+  
+            <hr>
+
+
+
+            DROP TABLE IF EXISTS Personajes;
+            
+            CREATE TABLE Personajes (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                nombre VARCHAR(100) NOT NULL,
+                clase VARCHAR(50),
+                etnia VARCHAR(50),
+                elemento VARCHAR(50)
+            ) ENGINE=InnoDB;
+
+
+
+            <hr>
+
+            INSERT INTO Personajes (nombre, clase, etnia, elemento)
+            VALUES 
+            ('Mashato', 'Asiatico', 'Luchador Kids', 'Tokio'),
+
+
+Siguiente Pront
+Ayudame a crear	Historias
+
+
+Genero: Accion y Artes Marciales o peleas;Protagonistas:5 chicos comprendidos entre 20 a 25 años. Aspecto con las caracteristicas fisicas de Jamal Mixon, Quinton Aaron Geron Mixon. Los enemigos deben ser entre 5 a 15 da igual las caracteristicas
+
+Planea los escenarios.
+
+
+Debe tener escenas de lucha (aproximadamente 8)
+Las peleas deberan ser en el que participen de uno a cinco de los protas y X de los enemigos que 
+
+Las peleas pueden ser perdidas o ganadas  por parte de los protagonistas, Debe haber de las siguientes clases
+	Dramaticas
+	Comicas (Ya sea usando el sobre peso de los protas) 
+	Artes marciales 
+
+  <main>
+    <div class="container">
+      
+      <!-- Fila para "AEROPUERTO" (ocupa toda la fila) -->
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="card text-center">
+            <h2 class="card-title p-3">ENFRENTAMIENTO</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acordeón donde se generarán los personajes agrupados -->
+      <div class="accordion" id="accordionPersonajes"></div>
+
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Datos de los personajes organizados en categorías
+    const personajes = [
+
+
+
+          { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "  <b>Nombre:</b> Mashato<br><b>Grupo:</b> Asiatico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Tokio<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Franki<br><b>Grupo:</b> Asiatico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Tokio<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Gafas Sumo<br><b>Grupo:</b> Asiatico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Tokio<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> El mas grande<br><b>Grupo:</b> Asiatico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Tokio<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Ethan Suplee<br><b>Grupo:</b> Asiatico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Tokio<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Ron Lester<br><b>Grupo:</b> Asiatico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Tokio<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Avion Verde<br><b>Grupo:</b> Asiatico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Tokio<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> El chico de la nieve<br><b>Grupo:</b> Caucasico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Nevada<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Juanca<br><b>Grupo:</b> Caucasico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Nevada<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Juanca IA<br><b>Grupo:</b> Caucasico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Nevada<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Dave<br><b>Grupo:</b> Caucasico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Nevada<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Dave IA<br><b>Grupo:</b> Caucasico<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Nevada<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Jamal<br><b>Grupo:</b> Afroamericano<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Brokling<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Geron<br><b>Grupo:</b> Afroamericano<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Brokling<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Law<br><b>Grupo:</b> Afroamericano<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Brokling<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Clinic<br><b>Grupo:</b> Afroamericano<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Brokling<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Beca<br><b>Grupo:</b> Afroamericano<br><b>Banda:</b> Luchador Kids<br><b>Origen:</b> Brokling<br>" },
+       { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Garden<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Cantante<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Hawaii 5.0 moreno<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Honda<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Rosa<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Barba blana<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Niko Brando<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Boya trip<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> live joven<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> life mallor<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Tuiasopo<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Magnun Aeropuerto<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Magnun Taller<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Sin Rastro<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Rojo<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Lost<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Pool<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br<b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Armagedon<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Hawaii calvo<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+      { img: "enfrenta/images.jfif", titulo: "Personajes", texto: "<b>Nombre:</b> Hawaii calvo<br><b>Grupo:</b> Hawaii<br><b>Banda:</b> Gicnasio Azul<br><b>Origen:</b> Hawaii<br>" },
+
+
+
+
+
+
+
+
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+      { img: "imagen/personaje9.png", titulo: "Novela", texto: "Información sobre Abela Kay." },
+      { img: "imagen/personaje10.png", titulo: "Novela", texto: "Historia completa de Abela Kay." },
+
+
+
+      { img: "imagen/personaje11.png", titulo: "Extra", texto: "Curiosidades del personaje Extra 1." },
+      { img: "imagen/personaje12.png", titulo: "Extra", texto: "Historia interesante del Extra 2." },
+      { img: "imagen/personaje11.png", titulo: "Extra", texto: "Curiosidades del personaje Extra 1." },
+      { img: "imagen/personaje12.png", titulo: "Extra", texto: "Historia interesante del Extra 2." },
+      { img: "imagen/personaje11.png", titulo: "Extra", texto: "Curiosidades del personaje Extra 1." },
+      { img: "imagen/personaje12.png", titulo: "Extra", texto: "Historia interesante del Extra 2." },
+      { img: "imagen/personaje11.png", titulo: "Extra", texto: "Curiosidades del personaje Extra 1." },
+      { img: "imagen/personaje12.png", titulo: "Extra", texto: "Historia interesante del Extra 2." },
+      { img: "imagen/personaje11.png", titulo: "Extra", texto: "Curiosidades del personaje Extra 1." },
+      { img: "imagen/personaje12.png", titulo: "Extra", texto: "Historia interesante del Extra 2." }
+
+
+
+    ];
+
+    // Agrupar personajes por título
+    const grupos = {};
+    personajes.forEach(personaje => {
+      if (!grupos[personaje.titulo]) {
+        grupos[personaje.titulo] = [];
+      }
+      grupos[personaje.titulo].push(personaje);
+    });
+
+    // Generar el acordeón dinámicamente
+    const accordion = document.getElementById("accordionPersonajes");
+    let index = 1;
+
+    for (const titulo in grupos) {
+      let personajesHTML = "";
+
+      grupos[titulo].forEach(personaje => {
+        personajesHTML += `
+          <div class="col">
+            <div class="card">
+              <img src="${personaje.img}" alt="Imagen">
+              <div class="card-body">
+                <h5 class="card-title">${personaje.titulo}</h5>
+                <p class="card-text">${personaje.texto}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      // Añadir la sección del acordeón
+      accordion.innerHTML += `
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading${index}">
+            <button class="accordion-button ${index > 1 ? "collapsed" : ""}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="${index === 1}" aria-controls="collapse${index}">
+              ${titulo}
+            </button>
+          </h2>
+          <div id="collapse${index}" class="accordion-collapse collapse ${index === 1 ? "show" : ""}" aria-labelledby="heading${index}" data-bs-parent="#accordionPersonajes">
+            <div class="accordion-body">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                ${personajesHTML}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      index++;
+    }
+  </script>
+
+</body>
+</html>

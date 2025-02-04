@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas - Diseñador/Fotógrafo</title>
+    <style>
+    nav {
+      background-color: #f2f2f2;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tarea {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            width: 45%; /* Ajuste del ancho para que dos tareas quepan en una fila */
+            background: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tarea {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            width: 45%;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tarea span {
+            font-size: 1.1em;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .tarea.completada span {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .reset {
+            background: #d9534f;
+        }
+
+        .reset:hover {
+            background: #c9302c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lista de Tareas - Diseñador/Fotógrafo</h1>
+</header>
+
+<nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="organigrama.html">Organigrama Semanal</a></li>
+      <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+    </ul>
+  </nav>
+
+
+<main>
+    <h2>Plan de Trabajo</h2>
+    <div id="contenedor"></div>
+    <button class="reset" onclick="resetearTareas()">Restablecer Tareas</button>
+</main>
+
+<script>
+
+const tareasFotografo = [
+    { id: 1, descripcion: "Diseñar la página de presentación", completada: false },
+    { id: 2, descripcion: "Crear la galería de fotos", completada: false },
+    { id: 3, descripcion: "Desarrollar la página de servicios", completada: false },
+    { id: 4, descripcion: "Crear el formulario de contacto", completada: false },
+    { id: 5, descripcion: "Escribir artículos para el blog", completada: false },
+    { id: 6, descripcion: "Optimizar el SEO del sitio", completada: false },
+    { id: 7, descripcion: "Revisar el diseño responsive", completada: false },
+    { id: 8, descripcion: "Investigación y diseño", completada: false },
+    { id: 9, descripcion: "Selección de plataforma", completada: false },
+    { id: 10, descripcion: "Desarrollo de contenido", completada: false },
+    { id: 11, descripcion: "Optimización móvil", completada: false },
+    { id: 12, descripcion: "SEO y marketing", completada: false },
+    { id: 13, descripcion: "Pruebas y lanzamiento", completada: false },
+    { id: 14, descripcion: "Definir el Público Objetivo", completada: false },
+    { id: 15, descripcion: "Determina quiénes son tus clientes ideales.", completada: false },
+    { id: 16, descripcion: "Explora sitios web de fotógrafos y diseñadores de renombre para obtener inspiración", completada: false },
+    { id: 17, descripcion: "Elige una paleta de colores que complemente tus fotos y diseños", completada: false },
+    { id: 18, descripcion: "Elige fuentes que reflejen el tono de tu marca y sean legibles en diversos dispositivos", completada: false },
+    { id: 19, descripcion: "Decide si tu sitio será minimalista, contemporáneo, clásico, etc", completada: false },
+    { id: 20, descripcion: "Si aún no tienes un logotipo, considera crear uno o contratar a un diseñador", completada: false },
+    { id: 21, descripcion: "Pagina Inicio", completada: false },
+    { id: 22, descripcion: "Pagina Redes Sociales", completada: false },
+    { id: 23, descripcion: "Contacto", completada: false },
+    { id: 24, descripcion: "Galeria", completada: false }
+];
+
+
+if (!localStorage.getItem("tareasFotografo")) {
+    localStorage.setItem("tareasFotografo", JSON.stringify(tareasFotografo));
+}
+
+
+function mostrarTareas() {
+    const contenedor = document.getElementById("contenedor");
+    contenedor.innerHTML = "";
+
+    tareas.forEach((tarea, index) => {
+        let div = document.createElement("div");
+        div.className = `tarea ${tarea.completada ? "completada" : ""}`;
+        div.innerHTML = `
+            <span>${tarea.descripcion}</span>
+            <button onclick="marcarComoCompletada(${index})">
+                ${tarea.completada ? "✔ Hecho" : "✔ Completar"}
+            </button>
+        `;
+        contenedor.appendChild(div);
+    });
+}
+
+function marcarComoCompletada(index) {
+    tareas[index].completada = !tareas[index].completada;
+    localStorage.setItem("tareasFotografo", JSON.stringify(tareas));
+    mostrarTareas();
+}
+
+
+
+
+if (!localStorage.getItem("tareasFotografo")) {
+    localStorage.setItem("tareasFotografo", JSON.stringify(tareasFotografo));
+}
+
+let tareas = JSON.parse(localStorage.getItem("tareasFotografo"));
+
+function mostrarTareas() {
+    const contenedor = document.getElementById("contenedor");
+    contenedor.innerHTML = "";
+
+    tareas.forEach((tarea, index) => {
+        let div = document.createElement("div");
+        div.className = `tarea ${tarea.completada ? "completada" : ""}`;
+        div.innerHTML = `
+            <span>${tarea.descripcion}</span>
+            <button onclick="marcarComoCompletada(${index})">
+                ${tarea.completada ? "✔ Hecho" : "✔ Completar"}
+            </button>
+        `;
+        contenedor.appendChild(div);
+    });
+}
+
+function marcarComoCompletada(index) {
+    tareas[index].completada = !tareas[index].completada;
+    localStorage.setItem("tareasFotografo", JSON.stringify(tareas));
+    mostrarTareas();
+}
+
+function resetearTareas() {
+    localStorage.setItem("tareasFotografo", JSON.stringify(tareasFotografo));
+    tareas = [...tareasFotografo];
+    mostrarTareas();
+}
+
+mostrarTareas();
+</script>
+
+
+
+</body>
+</html>
+

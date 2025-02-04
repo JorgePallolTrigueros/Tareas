@@ -1,0 +1,1269 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.modal-content {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde pastel a verde esmeralda */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5); /* Sombra en tono verde neón */
+}
+
+/* Estilo del encabezado */
+.modal-header {
+    background: #1abc9c; /* Verde turquesa */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Estilo del botón de cierre */
+.btn-close {
+    filter: invert(1); /* Hace el botón blanco */
+}
+
+/* Estilo del cuerpo del modal */
+.modal-body {
+    font-size: 1.1em;
+    padding: 20px;
+    background: #2ecc71; /* Verde pastel */
+    border-radius: 10px;
+}
+
+/* Pie de modal con sombra */
+.modal-footer {
+    background: rgba(39, 174, 96, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Botón de cierre mejorado */
+.btn-secondary {
+    background: #16a085; /* Verde oscuro */
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background: #2ecc71; /* Verde claro al pasar el mouse */
+}
+
+/* Animación de aparición del modal */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.pequeno {
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1%;
+}
+
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.link-success {
+    color: #198754;
+    text-decoration: none;
+}
+
+a {
+    color: #0f5132;
+    text-decoration: none;
+    text-decoration-style: double;
+    text-anchor: start;
+    text-size-adjust: inherit;
+    text-emphasis: greenyellow;
+    font-variant: petite-caps;
+}
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>Music</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-2"> <!-- Ocupa 4 de 12 columnas -->
+                <div class="card h-100">
+                    <img src="ima/DALL·E 2025-01-31 22.35.46 - A futuristic and artistic cover illustration representing music. The image features a glowing treble clef and musical notes emerging from a neon-lit s.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <h5 class="card-title">Listas de Capitulos</h5>
+                  <p class="card-text">
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-10"> <!-- Ocupa 8 de 12 columnas -->
+                <div class="card h-100">
+                <img src="ima/sadelea_Portada_del_trabajo_de_musica_0d8f8eda-fd17-4ab2-a2be-e55b743082fb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    <div class="text-center mb-3">
+                        <button id="btn-daz" class="btn btn-success">Imágenes Daz</button>
+                        <button id="btn-real" class="btn btn-success">Imágenes Reales</button>
+                        <button id="btn-ia" class="btn btn-success">Imágenes IA</button>
+                    </div>
+
+            <div class="col-md-10"> <!-- Ocupa 8 de 12 columnas -->
+
+<main class="container">
+    <div class="text-center mb-4">
+        <select id="continentFilter" class="form-select w-50 mx-auto">
+            <option value="all">Mostrar todo</option>
+            <option value="asia">Asia</option>
+            <option value="america">América</option>
+            <option value="europa">Europa</option>
+        </select>
+    </div>
+
+    <div id="cardsContainer" class="row g-3"></div>
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="songModal" tabindex="-1" aria-labelledby="songModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="songModalLabel">Canción</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <h4 id="songTitle"></h4>
+                <p id="songLyrics"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const data = [
+            { 
+                continent: "asia", 
+                title: "Loveable - Kim Jong Kook", 
+                image: "https://i.imgur.com/6aJHYqJ.jpg", 
+                lyrics: `You're loveable
+Oh, desde la cabeza hasta los pies, eres adorable
+Oh, estoy tan orgulloso de que seas mi mujer
+Disfruto esperando y ahora incluso el aire es dulce
+Te amo tanto así
+Incluso cuando las cosas son difíciles en el mundo, cuando te veo
+Una brisa fresca pasa por mi corazón
+Esto es vida, esto es felicidad
+Ahora nalmente lo siento
+Incluso cuando me siento deprimido todo el día, cuando te veo
+El sol comienza a entrar en mi cabeza
+Esta cosa asombrosa es amor
+Valió la pena la espera
+Dudé por un tiempo
+En caso de que vuelva a llorar como el amor de mi pasado
+Pero nunca me apuraste y me esperaste
+Así que suavemente te inltraste en mí
+Desde tu cabeza hasta tus pies, eres adorable
+Estoy tan orgulloso de que seas mi mujer
+Solía ser tan estoico pero ahora sonrío todo el día
+¿Qué me hiciste?
+Incluso tu sombra y tu espalda son tan adorables
+Solía avergonzarme de expresar amor pero ahora es natural
+Disfruto esperando y ahora incluso el aire es dulce
+Te amo tanto así
+Empecé a cuidarme
+Para hacerte feliz
+Incluso cuando me miro
+Puedo decir que me he convertido en una mejor persona
+Desde tu cabeza hasta tus pies, eres adorable
+Estoy tan orgulloso de que seas mi mujer
+Solía ser tan estoico pero ahora sonrío todo el día
+¿Qué me hiciste?
+Incluso tu sombra y tu espalda son tan adorables
+Solía avergonzarme de expresar amor pero ahora es natural
+Disfruto esperando y ahora incluso el aire es dulce
+Te amo tanto así
+Nanana Nanana
+Vamos a amar hasta el punto
+Donde todos los demás estarán celosos
+Y no pueden soportarlo más
+Prométeme una cosa, hasta que el mundo termine
+Solo sé adorable para mí. `
+            },
+            { 
+                continent: "asia", 
+                title: "GASSHOW - Yojiro Noda", 
+                image: "https://i.imgur.com/1hOeYwC.jpg", 
+                lyrics: `The flames ignite and rise
+Las olas furiosas engullen mil mentes y cada espíritu viviente,
+y una pieza de oración que deseaba que las miríadas de deidades nos salvaran a todos.
+No hay tímpano en el mar para escuchar tu voz desgarrada suplicando por vida.
+Podría seguir resonando sobre algún mar, ahora y para siempre.
+Tu aroma es donde regreso,
+esos finos dedos son a donde llego.
+Este día que construí con mil emociones,
+si incluso eso se convierte en una mentira, ya no quiero una verdad.
+Viviendo entre el cielo y la tierra que no muestran ira ni lágrimas,
+somos un rebaño de tontos, cercanos pero no iguales,
+dándole la espalda a la realidad y enloqueciendo de dolor.
+Las olas furiosas engullen mil mentes y cada espíritu viviente,
+y una pieza de oración
+por la tierra donde un número de años desapareció de repente en un instante.
+¿Qué puedo cantar para que la luz brote allí de nuevo?
+Por ahora, siembro esta melodía para guiar el alma perdida de mi amigo que regresa a casa.
+Porque nos encontramos el uno al otro, estoy aquí.
+Vacío como está, lo cuidaré aún más.
+¿Es un destino o por casualidad?
+Tu alma que se perdió entre ayer y hoy.
+Obtuve esta vida a cambio, así que mi cuerpo no es nada más que un recuerdo.
+Lo cuidaré hasta el final.
+Esta es la primera vez que hablo contigo, que desapareciste sin dejar rastro.
+Con mi voz temblorosa, deseando que puedas escucharme allí.`
+            },
+            { 
+                continent: "america", 
+                title: "La última atrocidad - Nacho Vegas", 
+                image: "https://i.imgur.com/V3PcrPz.jpg", 
+                lyrics: `¿Y si hacemos como si nada hubiera ocurrido?
+¿Y si empezamos de cero hoy mismo, amor mío?
+Estoy de acuerdo, cariño, empecemos pues de cero
+Ni nos conocemos ni nos conoceremos
+Y si las cosas fueran a partir de ahora distintas
+Si me miraras con ojos nuevos, mi vida
+Tendría que ser nueva, corazón, mi mente entera
+Para mirarte sin que me de percerguera
+¿Y si lo nuestro fuera pura cosa del destino?
+¿Querrías recorrer conmigo ese camino?
+Tú vete a dar la vuelta, cosa guapa
+Luego has diez veces el Camino de Santiago
+Tenemos años y años por delante
+Y un lustro que parece un siglo por detrás
+Hay una bomba en Tudera, te cercenará las piernas
+Reptarás hasta la puerta
+Y si yo fuera el último hombre en la Tierra
+¿Querrías repoblar conmigo este planeta?
+Así llevamos, tesoro, juntos más de cinco otoños
+Y aún no aprendiste ni a comerme bien el coño
+(¡no-no-no!)
+No tengo porque aguantar tales impertinencias
+¿Y si algún día se me agota la paciencia?
+Lo que se ha agotado ni a chingo te has enterado
+Es mi amor por ti, hemos terminado
+Que pasen años y paños en la vida
+Hay una bomba en Tudera, te cercenará las piernas
+Reptarás hasta la puerta
+Solo un día más y acabaría en desastre
+Solo un día más y una nueva atrocidad
+Solamente un día más
+Para tocar fondo y aún para escarbar
+Solo un día más y una nueva atrocidad
+¿Y si descubrieras lo que está vivo en nosotros
+Que estamos hechos justo el uno para el otro?
+¿Y si tú descubrieras lo que verte me produce?
+Ay, prenda mía, enciende de una vez las luces
+¿Y si pudiera hacer algo y cambiar la historia entera?
+Haría cualquier cosa que tú me pidieras
+Se me ocurre algo si tan fácil me lo pones (uh-uh, uh-uh)
+¿Por qué, dulzura, no te cortas los cojones?
+Y si todo fue mentira, todo fue mentira
+Todo lo que yo creí real
+Y si todo fue mentira, ¿qué hago ahora con mi vida?
+Esto es tan solo una sugerencia pero tal vez
+Piensa que desaparecer es siempre una opción
+Solo un día más para que se haga el silencio
+Solo un día y ya, no habrá más que oscuridad
+Solamente un día más
+Y esa sería tu última atrocidad
+Solo un día más y quedaremos en paz`
+            },
+            { 
+                continent: "europa", 
+                title: "L’enfer - Stromae", 
+                image: "https://i.imgur.com/Kq0GxEX.jpg", 
+                lyrics: `[Verso 1]
+No soy el único que se siente solo
+Es una cosa menos en mi cabeza
+Y si contara a todos nosotros
+Seríamos muchos
+Todo lo que alguna vez pensé
+Es loco cuánta gente ha pensado lo mismo
+Pero eso no me ayuda a sentirme menos solo
+En realidad
+[Estribillo]
+A veces he tenido pensamientos suicidas y no me enorgullezco de ello
+A veces piensas que la única manera es silenciarlos
+Todos esos pensamiеntos haciéndome pasar un inerno
+Todos esos pеnsamientos haciéndome pasar un inerno
+[Verso 2]
+¿Soy el unico que tiene una televisión
+Y el canal Culpabilidad?
+A veces debes apartar tu mente de eso
+Pero no demasiado
+De otro modo te dejara la cabeza loca otra vez
+Y será demasiado tarde para detenerlo
+Es entonces cuando me gustaria desaparecer todo
+En realidad
+See pop shows near Brooklyn
+Get tickets as low as $90
+You might also like
+I Can See You (Taylor’s Version) [From The Vault]
+Taylor Swift
+Ditto
+NewJeans (뉴진스)
+Special
+SZA
+[Estribillo]
+A veces he tenido pensamientos suicidas y no me enorgullezco de ello
+A veces piensas que la única manera es silenciarlos
+Todos esos pensamientos haciéndome pasar un inerno
+Todos esos pensamientos haciéndome pasar un inerno
+[Verso 3]
+Sabes algo, he estado pensando mucho
+Realmente no se que hacer contigo
+Pensándolo mucho
+Realmente el problema es contigo
+Sabes algo, he estado pensando mucho
+Realmente no se que hacer contigo
+Pensandolo mucho
+Realmente el problema es contigo`
+            },
+
+
+            { 
+            continent: "europa", 
+            title: "Tous Les Mêmes - Stromae", 
+            image: "https://i.imgur.com/OggnAAn.jpg", 
+            lyrics: `Todos Iguales
+            Ustedes hombres son todos iguales
+            Macho pero tacaños
+            Banda de débiles infieles
+            Tan predecible, no, no estoy seguro de que te lo merezcas
+            Tiene suerte de ser amado
+            Da las gracias
+            
+            Nos vemos, nos vemos
+            Nos vemos en la próxima pelea
+            Nos vemos, nos vemos
+            Nos vemos en el próximo período menstrual
+
+            Esta fue la última vez
+
+            Puedes creer que es solo una crisis
+            Echa un último vistazo a mi trasero
+            Está junto a mis maletas
+            
+            Dirás adiós a tu madre
+            La que te idealiza
+            Ni siquiera puedes ver lo que estás perdiendo
+            Con otra sería peor
+            ¿Qué, quieres terminar ahora?
+            
+            Solo lo decía para que reaccionaras
+            Tú lo estabas pensando
+            Nos vemos, nos vemos
+            Nos vemos en la próxima pelea
+            Nos vemos, nos vemos
+            Nos vemos en el próximo período menstrual`
+        }, // <-- SE CORRIGE: Se agrega la coma
+
+        { 
+            continent: "europa", 
+            title: "Stromae - L’enfer", 
+            image: "https://i.imgur.com/OggnAAn.jpg", 
+            lyrics: `El Infierno
+No soy el único que esta solo
+Algo menos en que pensar
+Y si contara cuantos somos
+Seriamos muchos
+Todo en lo que he pensado
+Es en decir que muchos otros ya lo han pensado
+Pero, a pesar de todo, me siento solo
+De hecho
+
+A veces he tenido pensamientos suicidas y no me siento orgulloso por ello
+A veces creemos que es la única manera para callarlos
+Estos pensamientos que me hacen vivir un infierno
+Estos pensamientos que me hacen vivir un infierno
+
+¿Soy el único que ve la tele
+Junto al canal culpabilidad?
+Pero hace falta cambiar de pensamientos
+Aunque muy seguido
+Sino, volverán a atormentar nuestra mente
+Y será demasiado tarde para que se detengan
+Aquí es donde quisiera olvidarme de todo
+De hecho
+
+A veces he tenido pensamientos suicidas y no me siento orgulloso por ello
+A veces creemos que es la única manera para callarlos
+Estos pensamientos que me hacen vivir el infierno
+Estos pensamientos que me hacen vivir el infierno
+
+Sabes, he pensado cuidadosamente
+Y realmente no sé qué hacer contigo
+Solamente, pensar
+Ese es justo el problema contigo
+Sabes, he pensado cuidadosamente
+Y realmente no sé qué hacer contigo
+Solamente pensar
+Ese es justo el problema contigo`
+        },
+
+{
+        continent: 'europa', 
+            title: 'Stromae - Fils de joie', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `Hijo de La Alegría
+Estar solo es difícil
+Y han pasado años
+Y es fácil juzgar
+Especialmente cuando no lo has probado
+La parte más difícil, bueno, fue la primera vez
+Entonces lo más difícil es saber cuándo será la última vez
+Es verdad, no estoy en contra de un poco de ternura de vez en cuando
+Y luego, esta vez, bueno, podría hacerlo insultándolo
+Sí, todo es negociable en la vida, contra pago
+Además, probablemente soy su mejor cliente
+
+¡Pero ay!
+Así que deja a mi mamá
+Sí, lo sé, es verdad que no es perfecto
+Él es un heroe
+Y siempre estaré orgulloso de hablar de ello
+Que hablaré de ello
+
+Soy un hijo de puta, como dicen
+Después de todo lo que ella hizo por ellos
+Perdona su estupidez
+¡Oh querida madre!
+Te deshumanizan
+Es más fácil
+La misma gente te corteja
+Y todos cierran los ojos
+
+¿Por qué todos me odian?
+Mientras soy yo quien les da de comer
+Sus vidas serían mucho más modestas
+Sin mí, habrían estado podridos
+La cama y la seguridad
+Tenga un precio señora
+Pues si en la vida todo hay que pagarlo
+Entonces nunca te enseñamos
+Me acusan de trata de personas
+Pero el 50, 40, 30 o 20% ya está bien
+No deberían pensar que se parecen demasiado a los modelos
+¡Damas, o debería decir putas!
+
+¡Pero ay!
+Así que deja a mi mamá
+Sí, lo sé, es verdad que no es perfecto
+Él es un heroe
+Y siempre estaré orgulloso de hablar de ello
+Que hablaré de ello
+
+Soy un hijo de puta, como dicen
+Después de todo lo que ella hizo por ellos
+Perdona su estupidez
+¡Oh querida madre!
+Te deshumanizan
+Es más fácil
+La misma gente te corteja
+Y todos cierran los ojos
+
+Se que es tu trabajo
+Pero tengo que hacer el mío, ¿no?
+Entre el tuyo y el mío
+La diferencia es que yo pago impuestos
+Vamos, muévase, señora
+Recupera tus papeles y lo que queda de tu dignidad
+Pobre mujer, pffff
+¡Búscate un trabajo de verdad!
+
+¡Pero ay! (Pero ¡oh!)
+Así que deja a mi mamá
+Sí lo sé (sí lo sé), es verdad que ella no es perfecta
+Él es un héroe (él es un héroe)
+Y siempre será un orgullo que hablaré de ello (que hablaré de ello)
+Que hablaré de ello (que hablaré de ello)
+
+Soy un hijo de puta, como dicen
+Después de todo lo que ella hizo por ellos
+Perdona su estupidez
+¡Oh querida madre!
+Te deshumanizan
+Es más fácil
+La misma gente te corteja
+Y todos cierran los ojos`
+
+        },
+        {
+        continent: 'europa', 
+            title: '"House of Memories" de Panic!', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `No Son Como Nosotros
+Pss, veo gente muerta
+(Mustard en el beat, zorra)
+
+Oye, Mustard en el beat, zorra
+Deebo, cualquiera de estos raperos son un blanco fácil
+Hombre herido, llama una ambulancia, dile: Respira, compa
+Voy a clavar a ese tipo en la cruz, va a caminar por ahí como Teezo
+¿Qué pasa con esos cabrones tratando de igualarse a Compton?
+La industria puede odiarme, que se jodan ellos y sus madres
+¿Cuántos enemigos tienes realmente? Bueno, tengo muchas opciones
+Voy a matar a ese tipo y cerrar este asunto, soy John Stockton
+Te voy a dar una paliza y escondo la Biblia si Dios lo ve
+A veces, tienes que salir y mostrarles a esos tipos
+El verdadero hombre del saco, soy el único que cambia el juego
+Voy a darle fin, siempre supe que él es una zorrita
+Saco el arma, como una extorsión, cosa de matones, igual que Death Row
+Oye, Drake, escuché que te gustan las chiquitas
+Es mejor que nunca vayas al bloque uno de la cárcel
+Para cualquier chica que hable con él y crea que están enamorados
+Solo asegúrate de esconderle a tu hermanita
+Me dicen que Chubbs es el único que recibe tus pagos sucios
+Y que PARTY ahora está en la fiesta llenándose de cocaína
+Y que Baka ya fue fichado por un crimen raro, ¿por qué él sigue por ahí?
+¿Mujeriegos Certificados? Pedófilos certificados
+
+Pow, pow, pow, pow, pow, pow, Dot, jódelos
+Pow, pow, pow, pow, pow, pow, voy a hacer mi magia
+¿Por qué estás troleando como una puta? ¿No te cansas?
+Intentando ponerles miedo, pero solo está poniendo una La Menor
+
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+
+¿Crees que la Bahía te va a dejar faltar el respeto a Pac, hombre?
+Creo que el concierto de Oakland será tu última parada, hombre
+Fallaste con Cole, no sé por qué sigues fingiendo
+¿Qué es un búho? Solo imbéciles con putas idiotas, eso es
+La audiencia no es tonta
+Moldea las historias como quieras, oye, Drake, ellos no son tontos
+La cueva del conejo es aún más profunda, puedo ir más lejos, lo prometo
+¿No es curioso? El B, de B-Rad, significa boludo, y tú eres el más buscado de Malibu
+No eres la ley, chico, solo eres la ayuda, sirve unos tragos o algo
+Desde 2009 la estoy rompiendo
+Ustedes se van a convertir en polvo, se van a despertar con un traje de madera
+¿Qué significa OVO? ¿Otra Vagina como Opción? Pendejo
+Es mejor que cambien de postura, se hicieron famosos en Compton
+Tal vez escriba esto para un doctorado, dile al astro del pop: Deja de esconderte
+Que se joda un subtítulo, quiero acción, no es accidente y tirarme adentro, va a terminar como un cadáver
+Te cogiste a la novia de Wayne mientras él estaba en la cárcel, eso fue planeado
+Después tatuaste su cara, como una puta pidiendo perdón
+Estoy feliz de que DeRoz haya vuelto a casa, ustedes tampoco lo merecían
+De Alondra a Central, es mejor que no hables de Serena
+Y tu amigo necesita ser citado, ese depredador solo anda con otros depredadores
+Ese nombre debe ser registrado y vigilado por el barrio
+Les pongo presión a estos tipos como si fuera un buen lean
+Sí, todos los ojos están en mí y voy a representar a Pac, oye
+Si me acusas de otra cosa, te haré tragar las palabras, oye
+Movimiento Sweet Chin Music y no voy a ser suave, oye
+¿Cuántas rimas me quedan en realidad? Oye
+Una, dos, tres, cuatro, cinco, cinco más, oye
+El Demonio es un mentiroso, él es un Dios devorador de chiquitas, oye
+Estos tipos pedófilos tienen que seguir escondiéndose, oye
+Estoy enrolando sus cuerpos como si fuera un porro, oye
+La ciudad está de vuelta en la cima, estamos en las calles, oye
+
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+Ellos no son como nosotros
+
+Érase una vez, todos estábamos encadenados
+Ese tipo todavía insistió, llamándonos esclavos
+Atlanta era la Meca, construíamos ferrocarriles y trenes
+Presten atención por un segundo, déjenme explicarlo mejor
+Los colonos estaban usando a los habitantes de la ciudad para enriquecerse aún más
+Avanzando a 2024, tienen el mismo objetivo
+Corren a Atlanta cuando necesitan plata
+Déjenme explicarles, este es el verdadero desafío de un hombre de verdad
+Llamaste a Future cuando no sonabas en las discotecas (oye, ¿qué?)
+Lil Baby te ayudó a mejorar tus jergas (¿qué?)
+21 te dio un falso respeto de la calle
+Thug te hizo sentir como si fueras un gánster en tu cabeza (oye, ¿qué?)
+Quavo dijo que podrías ser del Northside (¿qué?)
+2 Chainz dijo que eras bueno, pero mintió
+Corres a Atlanta cuando necesitas unos dólares
+No, no eres un colega de profesión, eres un maldito colonizador
+
+El problema de la familia y la verdad de los hechos es que
+Era el plan de Dios exponerles quién es el mentiroso
+
+Hum
+Hum
+Él es un fan, él es un fan, él es un fan (hum)
+Él es un fan, él es un fan, él es un
+
+Pervertido, él es un Dios devorador de chiquitas
+Pervertido, él es un Dios devorador de chiquitas
+Oye, oye, oye, oye, corre para salvar tu vida
+Oye, oye, oye, oye, corre para salvar tu vida
+Pervertido, él es un Dios devorador de chiquitas
+Pervertido, él es un Dios devorador de chiquitas
+Oye, oye, oye, oye, corre para salvar tu vida
+Oye, oye, oye, oye, corre para salvar tu vida
+
+Déjenme oírlos decir: OV-Pendejos (OV-Pendejos)
+Digan: OV-Pendejos
+Luego den un pasito hacia acá, un pasito hacia allá
+Luego den un pasito hacia acá, un pasito hacia allá
+
+¿Eres mi amigo?
+¿Estamos juntos en esto?
+Entonces da un pasito hacia acá, un pasito hacia allá
+Entonces da un pasito hacia acá, un pasito hacia allá`
+
+        },
+        {
+        continent: 'europa', 
+            title: 'Where Is My Mind? de Greg June', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `¿Dónde Está Mi Mente?
+Oh, detente
+
+Con los pies en el aire y la cabeza en el suelo
+Prueba este truco y dale vueltas, sí
+Tu cabeza se colapsará
+Pero no hay nada en ella, y te preguntarás
+
+¿Dónde está mi mente?
+¿Dónde está mi mente?
+¿Dónde está mi mente?
+Fuera en el agua
+¿Lo ves nadando?
+
+Estaba nadando en el Caribe
+Los animales se escondían detrás de las rocas
+Excepto el pececito
+Chocó conmigo, juro que estaba tratando de hablarme, koi koi
+
+¿Dónde está mi mente?
+¿Dónde está mi mente?
+¿Dónde está mi mente?
+Fuera en el agua
+¿Lo ves nadando?
+
+Con los pies en el aire y la cabeza en el suelo
+Prueba este truco y dale vueltas, sí
+Tu cabeza se colapsará
+Pero no hay nada en ella, y te preguntarás
+
+¿Dónde está mi mente?
+¿Dónde está mi mente?
+¿Dónde está mi mente?
+Fuera en el agua
+¿Lo ves nadando?
+
+Con los pies en el aire y la cabeza en el suelo
+Prueba este truco y dale vueltas, sí`
+
+        },
+        {
+        continent: 'europa', 
+            title: 'Creep Richard Cheese', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `Atrepador
+Cuando estabas aquí antes
+No podía mirarte a los ojos
+Eres como un ángel
+Tu piel me hace llorar
+Flotas como una pluma
+En un mundo hermoso
+Ojalá fuera especial
+Eres muy especial
+Pero soy un cretino
+Soy un bicho raro
+¿Qué demonios estoy haciendo aquí?
+No pertenezco aquí
+
+No me importa si duele
+Sólo quiero tener el control
+Quiero un cuerpo perfecto
+Quiero un alma perfecta
+Quiero que te des cuenta
+Cuando no estoy por aquí
+Eres muy especial
+Ojalá fuera especial
+Pero soy un cretino
+Soy un bicho raro
+¿Qué demonios estoy haciendo aquí?
+No pertenezco aquí
+
+Se está acabando otra vez
+Se está acabando
+Ella corre, corre, corre, corre, corre
+Lo que sea que te haga feliz
+Lo que quieras
+Eres muy especial
+Ojalá fuera especial
+Pero soy un cretino
+Soy un bicho raro
+¿Qué demonios estoy haciendo aquí?
+No pertenezco aquí
+No pertenezco aquí`
+
+        },
+        {
+        continent: 'europa', 
+            title: 'Ievan Polkka', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `Ievan Polkka
+Eh, qué divertido, y ribidibidín
+Rabiditán, rindán, renlandú
+Mabá, ribábá, baribabá
+Barirí, ribiribi, resistán, rendándu
+Yabar, rinlán, tentedán, denaro
+Warabá, rublublublublub, reieb
+Bariditán, rindán, denlarro
+Tatá, tatatatá, tútú, denyab
+
+Eh, qué divertido, y ribidibidín
+Rabiditán, rindán, renlandú
+Mabá, ribábá, baribabá
+Barirí, ribiribi, resistán, rendándu
+Yabar, rinlán, tentedán, denaro
+Warabá, rublublublublub, reieb
+Bariditán, rindán, denlarro
+Tatá, tatatatá, tútú, denyab
+
+¡Yo!
+
+Barirí, ribiribi, resistán, rendándu
+Eh, qué divertido, y ribidibidín
+Rabiditán, rindán, renlandú
+Mabá, ribábá, baribabá
+Barirí, ribiribi, resistán, rendándu
+Yabar, rinlán, tentedán, denaro
+Warabá, rinlán, tentedán, denaro
+Warabá, rinlán, tentedán, rinlán, tentedán
+Rinlán, rinlán, rinrín, rirí
+
+Eh, qué divertido, y ribidibidín
+Rabiditán, rindán, renlandú
+Mabá, ribábá, baribabá
+Barirí, ribiribi, resistán, rendándu
+Yabar, rinlán, tentedán, denaro
+Warabá, rublublublublub, reieb
+Bariditán, rindán, denlarro
+Tatá, tatatatá, tútú, denyab
+
+Eh, qué divertido, y ribidibidín
+Rabiditán, rindán, renlandú
+Mabá, ribábá, baribabá
+Barirí, ribiribi, resistán, rendándu
+Yabar, rinlán, tentedán, denaro
+Warabá, rublublublublub, reieb
+Bariditán, rindán, denlarro
+Tatá, tatatatá, tútú, denyab`
+
+        },
+        {
+        continent: 'europa', 
+            title: 'Sixteen Tons', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `Algunos dicen que un hombre está hecho de barro
+Un pobre hombre está hecho de músculo y sangre
+Muscle y sangre y piel y huesos
+Una mente débil y una espalda fuerte
+Cargas dieciséis toneladas, ¿qué obtienes?
+Otro día más viejo y más profundo en la deuda
+San Pedro no me llames porque no puedo ir
+Debo mi alma a la tienda de la compañía
+Nací una mañana cuando el sol no brillaba
+Cogí mi pala y caminé hacia la mina
+Cargué dieciséis toneladas de carbón número
+nueve
+Y el jefe dijo “bueno, bendiga mi alma
+Cargas dieciséis toneladas, ¿qué obtienes?
+Otro día más viejo y más profundo en la deuda
+San Pedro no me llames porque no puedo ir
+Debo mi alma a la tienda de la compañía
+Nací una mañana, estaba lloviendo
+Luchando y problemas son mi segundo nombre
+Me crié en el canebrake por una vieja mamá león
+Cain 't no-una mujer de tono alto me hace caminar
+por la línea
+Cargas dieciséis toneladas, ¿qué obtienes?
+Otro día más viejo y más profundo en la deuda
+San Pedro no me llames porque no puedo ir
+Debo mi alma a la tienda de la compañía
+Si me ves venir, mejor hazte a un lado
+Muchos hombres no lo hicieron, muchos hombres
+murieron
+Un puño de hierro, el otro de acero
+Si el correcto no te consigue, entonces el izquierdo
+lo hará
+Cargas dieciséis toneladas, ¿qué obtienes?
+Otro día más viejo y más profundo en la deuda
+San Pedro no me llames porque no puedo ir
+Debo mi alma a la tienda de la compañía`
+
+        },
+        {
+        continent: 'europa', 
+            title: 'Stromae - Tous Les Mêmes', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `Todos Iguales
+Ustedes hombres son todos iguales
+Macho pero tacaños
+Banda de débiles infieles
+Tan predecible, no, no estoy seguro de quete lo merezcas
+Tiene suerte de ser amado
+Da las gracias
+
+Nos vemos, nos vemos
+Nos vemos en la próxima pelea
+Nos vemos, nos vemos
+Nos vemos en el próximo período menstrual
+
+Esta fue la última vez
+Puedes creer que es solo una crisis
+Echa un último vistazo a mi trasero
+Está junto a mis maletas
+Dirás adiós a tu madre
+La que te idealiza
+Ni siquiera puedes ver lo que estás perdiendo
+Con otra sería peor
+
+¿Qué, quieres terminar ahora?
+Es el mundo al revés
+Solo lo decía para que reaccionaras
+Tú lo estabas pensando
+
+Nos vemos, nos vemos
+Nos vemos en la próxima pelea
+Nos vemos, nos vemos
+Nos vemos en el próximo período menstrual
+
+Fácil de decir, soy rídiculo
+Y que amo demasiado el bla-bla-bla
+Pero no no no, es importante
+Lo que llamas ragnagnas
+Sabes que la vida es niños
+Pero como siempre no es buen momento
+Oh sí, estás para hacerlos
+Pero para criarlos habrá ausentes
+
+Cuando ya no sea bella
+O, al menos al natural
+Detente. Sé que mientes
+Solo Kate Moss es eterna
+¡Fea o estúpida, nunca es bueno!
+¡Bestia o bella, nunca es bueno!
+¡Hermoso o yo, nunca es bueno!
+¡Yo o ella, nunca es bueno!
+
+Nos vemos, nos vemos
+Nos vemos en la próxima pelea
+Nos vemos, nos vemos
+Nos vemos en el próximo período menstrual
+
+Todos iguales, todos iguales
+Todos iguales y estamos hartos de eso
+Todos iguales, todos iguales
+Todos iguales y estamos hartos de eso
+Todos iguales, todos iguales
+Todos iguales y estamos hartos de eso
+Todos iguales, todos iguales
+Todos iguales`
+
+        },
+        {
+        continent: 'europa', 
+            title: 'Stromae - Ta Fête', 
+            image: 'https://i.imgur.com/OggnAAn.jpg', 
+            lyrics: `Tu fiesta
+Es hora, es hora de bailar
+Baila, no te preocupes, vas a bailar
+Swing, pero te van a mover
+Ponte drogado, pero te drogarás
+
+Te gustaría tener tu fiesta
+Tu madre también quiere dársela a ti, a tu fiesta
+El juez quiere darte tu fiesta
+Todos tendrán tu fiesta también
+
+Saliste demasiado, al menos eso es lo que dicen
+Hablan demasiado, es por eso que tus oídos silban
+¿De quién es la culpa? Es culpa de otra persona, ¿no?
+Son los otros. Sólo tienes un deseo
+
+Te gustaría tener tu fiesta
+Tu madre también quiere dársela a ti, a tu fiesta
+El juez quiere darte tu fiesta
+Todos tendrán tu fiesta también
+
+Te gustaría tener tu fiesta
+Tu madre también quiere dársela a ti, a tu fiesta
+El juez quiere darte tu fiesta
+Todos tendrán tu fiesta también`
+
+        }
+
+
+
+
+
+
+        ];
+
+        const cardsContainer = document.getElementById("cardsContainer");
+        const continentFilter = document.getElementById("continentFilter");
+        const songModal = new bootstrap.Modal(document.getElementById("songModal"));
+        const songTitle = document.getElementById("songTitle");
+        const songLyrics = document.getElementById("songLyrics");
+
+        function renderCards(filter = "all") {
+            cardsContainer.innerHTML = "";
+            let filteredData = filter === "all" ? data : data.filter(item => item.continent === filter);
+
+            filteredData.forEach((item) => {
+                let card = document.createElement("div");
+                card.classList.add("col-md-4");
+
+                card.innerHTML = `
+                    <div class="card bg-white text-dark">
+                        <img src="${item.image}" class="card-img-top" alt="${item.title}">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">${item.title}</h5>
+                            <button class="btn btn-success" onclick="showSong('${item.title}')">Ver Letra</button>
+                        </div>
+                    </div>
+                `;
+
+                cardsContainer.appendChild(card);
+            });
+        }
+
+        window.showSong = function(title) {
+            let selected = data.find(item => item.title === title);
+            if (selected) {
+                songTitle.textContent = selected.title;
+                songLyrics.textContent = selected.lyrics;
+                songModal.show();
+            }
+        };
+
+        continentFilter.addEventListener("change", function () {
+            renderCards(this.value);
+        });
+
+        renderCards();
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

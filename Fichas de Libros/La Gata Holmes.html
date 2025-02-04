@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.modal-content {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde pastel a verde esmeralda */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5); /* Sombra en tono verde neón */
+}
+
+/* Estilo del encabezado */
+.modal-header {
+    background: #1abc9c; /* Verde turquesa */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Estilo del botón de cierre */
+.btn-close {
+    filter: invert(1); /* Hace el botón blanco */
+}
+
+/* Estilo del cuerpo del modal */
+.modal-body {
+    font-size: 1.1em;
+    padding: 20px;
+    background: #2ecc71; /* Verde pastel */
+    border-radius: 10px;
+}
+
+/* Pie de modal con sombra */
+.modal-footer {
+    background: rgba(39, 174, 96, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Botón de cierre mejorado */
+.btn-secondary {
+    background: #16a085; /* Verde oscuro */
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background: #2ecc71; /* Verde claro al pasar el mouse */
+}
+
+/* Animación de aparición del modal */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.pequeno {
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1%;
+}
+
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.link-success {
+    color: #198754;
+    text-decoration: none;
+}
+
+a {
+    color: #0f5132;
+    text-decoration: none;
+    text-decoration-style: double;
+    text-anchor: start;
+    text-size-adjust: inherit;
+    text-emphasis: greenyellow;
+    font-variant: petite-caps;
+}
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Fichas de Libro</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-2"> <!-- Ocupa 4 de 12 columnas -->
+                <div class="card h-100">
+                    <img src="ima/sadelea_Victorian_era_filing_cabinet_4b4eaa77-8391-4519-9cd4-7af2bd840de7.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <h5 class="card-title">Lista por Genero</h5>
+                  <p class="card-text">
+                    <p><a href="Agatha.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Agatha Christie</a></p>
+                    <p><a href="La Gata Holmes.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">La Gata Holmes</a></p>
+                    <p><a href="mangas.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mangas</a></p>
+                    <p><a href="mitologia.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mitologia y Clasicos</a></p>
+                    <p><a href="pensar.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Pensar</a></p>
+                    <p><a href="Putomikel.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Putomikel</a></p>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-10"> <!-- Ocupa 8 de 12 columnas -->
+                <div class="card h-100">
+                <img src="ima/sadelea_una_estanteria_de_libros_8535b2dd-6731-4b92-a517-b5216eef96f1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Libros
+                  </h5>
+                  <p class="card-text">
+
+                
+                                    <div class="card-group">
+                                        <div class="card" id="card1">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card2">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card2">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card3">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card3">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card4">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card4">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card5">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card5">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card6">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card6">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="card-group">
+                                        <div class="card" id="card7">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card7">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card8">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card8">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card9">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card9">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card10">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card10">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card11">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card11">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card12">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card12">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card-group">
+                                        <div class="card" id="card13">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card13">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card14">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card14">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card15">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card15">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card16">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card16">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card17">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card17">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card18">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card18">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-group">
+                                        <div class="card" id="card19">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card19">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card20">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card20">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card21">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card21">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card22">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card22">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card23">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card23">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card24">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card24">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+          <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Función para cambiar la imagen según el botón seleccionado
+    function cambiarImagen(tipo) {
+        personajes.forEach(personaje => {
+            let imgElement = document.querySelector(`#${personaje.id} .card-img-top`);
+            if (imgElement) {
+                imgElement.src = personaje.imagenes[tipo];
+            }
+        });
+    }
+
+    // Función para abrir el modal con los datos del personaje
+    function abrirModal(personajeId) {
+        let personaje = personajes.find(p => p.id === personajeId);
+        if (personaje) {
+            document.getElementById("modalTitulo").textContent = personaje.nombre;
+            document.getElementById("modalDescripcion").textContent = personaje.descripcionLarga;
+            document.getElementById("modalImagen").src = document.querySelector(`#${personajeId} .card-img-top`).src;
+            let modal = new bootstrap.Modal(document.getElementById("modalPersonaje"));
+            modal.show();
+        }
+    }
+
+    // Asignar eventos a los botones de cambio de imagen
+    document.getElementById("btn-daz").addEventListener("click", () => cambiarImagen("daz"));
+    document.getElementById("btn-real").addEventListener("click", () => cambiarImagen("real"));
+    document.getElementById("btn-ia").addEventListener("click", () => cambiarImagen("ia"));
+
+    // Asignar eventos a los botones "Saber más"
+    document.querySelectorAll(".btn-saber-mas").forEach(btn => {
+        btn.addEventListener("click", function () {
+            abrirModal(this.dataset.personaje);
+        });
+    });
+});

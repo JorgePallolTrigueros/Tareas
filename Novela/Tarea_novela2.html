@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrado de Cards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .btn {
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #3d8b40;
+            color: white;
+        }
+
+        .row {
+            margin-bottom: 2rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Los Infuencers</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+        <li><a href="index.html">Inicio de la Novela</a></li>
+
+
+    </ul>
+</nav>
+
+<main class="container">
+    <div class="text-center mb-4">
+        <select id="categoryFilter" class="form-select w-50 mx-auto">
+            <option value="all">Mostrar todo</option>
+            <option value="politica">Política</option>
+            <option value="psicologia">Psicología</option>
+            <option value="entrevistadores">Entrevistadores</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="mitologia">Mitología</option>
+            <option value="psicopsiquis">PsicoPsiquis</option>
+            <option value="japon">Japón</option>
+            <option value="pensamiento-critico">Pensamiento Crítico</option>
+            <option value="music">Música</option>
+            <option value="literatura">Literatura</option>
+            <option value="historia">Historia</option>
+            <option value="radicalizacion">Radicalización</option>
+        </select>
+    </div>
+
+    <div id="cardsContainer" class="row g-3"></div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const data = [
+            { category: "politica", name: "Emanuel Rodríguez @ Peroncho" },
+            { category: "psicologia", name: "Psicología Animada" },
+            { category: "psicologia", name: "Mente Humana" },
+            { category: "psicologia", name: "Nicolasa" },
+            { category: "entrevistadores", name: "El Sentido De La Birra con Ricardo Moya" },
+            { category: "entrevistadores", name: "Carne Cruda The Wild Project" },
+            { category: "entrevistadores", name: "WIL pOWER" },
+            { category: "entrevistadores", name: "TAMAYO" },
+            { category: "ia", name: "Equator AI" },
+            { category: "ia", name: "Xavier Mitjana CIENCIA" },
+            { category: "ia", name: "Date un Vlog" },
+            { category: "mitologia", name: "Archivo Mitológico" },
+            { category: "mitologia", name: "Ensalada de Historias" },
+            { category: "mitologia", name: "Pol Gise" },
+            { category: "psicopsiquis", name: "Mitología@MitologiaHistoria•636" },
+            { category: "psicopsiquis", name: "Relatos Ancestrales" },
+            { category: "psicopsiquis", name: "Mitos & Leyendas Deconstruidos" },
+            { category: "psicopsiquis", name: "HelanyaH (mitologia)" },
+            { category: "psicopsiquis", name: "Bluecinante" },
+            { category: "japon", name: "YASUNOKI1967" },
+            { category: "pensamiento-critico", name: "La gata de Schrödinger" },
+            { category: "pensamiento-critico", name: "Herejes: El Podcast" },
+            { category: "pensamiento-critico", name: "La Navaja de Hitchens Podcast" },
+            { category: "pensamiento-critico", name: "Pero eso es oTra Historia" },
+            { category: "pensamiento-critico", name: "Curiosamente" },
+            { category: "pensamiento-critico", name: "Pablo Salum | LeyAntisectas" },
+            { category: "pensamiento-critico", name: "Sprouts Español" },
+            { category: "music", name: "Les Luthiers" },
+            { category: "music", name: "Miree" },
+            { category: "music", name: "PattyCake Productions" },
+            { category: "music", name: "Pascu y Rodri" },
+            { category: "music", name: "Stromae" },
+            { category: "music", name: "Smart Songs" },
+            { category: "music", name: "Black Gryph0n" },
+            { category: "literatura", name: "Hernán Casciari" },
+            { category: "historia", name: "Investigando la Historia con Carla Díaz" },
+            { category: "historia", name: "PutoMikel" },
+            { category: "historia", name: "Miriam Lyons" },
+            { category: "historia", name: "Ter" },
+            { category: "radicalizacion", name: "David Savedra" }
+        ];
+
+        const cardsContainer = document.getElementById("cardsContainer");
+        const categoryFilter = document.getElementById("categoryFilter");
+
+        function renderCards(filter = "all") {
+            cardsContainer.innerHTML = "";
+            let filteredData = filter === "all" ? data : data.filter(item => item.category === filter);
+            
+            filteredData.forEach((item) => {
+                let card = document.createElement("div");
+                card.classList.add("col-md-2");
+
+                card.innerHTML = `
+                    <div class="card bg-white text-dark p-2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">${item.name}</h5>
+                            <p class="card-text"><strong>${item.category.toUpperCase()}</strong></p>
+                        </div>
+                    </div>
+                `;
+
+                cardsContainer.appendChild(card);
+            });
+        }
+
+        categoryFilter.addEventListener("change", function () {
+            renderCards(this.value);
+        });
+
+        renderCards();
+    });
+</script>
+
+</body>
+</html>

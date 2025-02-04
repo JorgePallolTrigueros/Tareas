@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.modal-content {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde pastel a verde esmeralda */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5); /* Sombra en tono verde neón */
+}
+
+/* Estilo del encabezado */
+.modal-header {
+    background: #1abc9c; /* Verde turquesa */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Estilo del botón de cierre */
+.btn-close {
+    filter: invert(1); /* Hace el botón blanco */
+}
+
+/* Estilo del cuerpo del modal */
+.modal-body {
+    font-size: 1.1em;
+    padding: 20px;
+    background: #2ecc71; /* Verde pastel */
+    border-radius: 10px;
+}
+
+/* Pie de modal con sombra */
+.modal-footer {
+    background: rgba(39, 174, 96, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Botón de cierre mejorado */
+.btn-secondary {
+    background: #16a085; /* Verde oscuro */
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background: #2ecc71; /* Verde claro al pasar el mouse */
+}
+
+/* Animación de aparición del modal */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.pequeno {
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1%;
+}
+
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.link-success {
+    color: #198754;
+    text-decoration: none;
+}
+
+a {
+    color: #0f5132;
+    text-decoration: none;
+    text-decoration-style: double;
+    text-anchor: start;
+    text-size-adjust: inherit;
+    text-emphasis: greenyellow;
+    font-variant: petite-caps;
+}
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Listas Categorias</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-2"> <!-- Ocupa 4 de 12 columnas -->
+                <div class="card h-100">
+                    <img src="ima/DALL·E 2025-02-01 22.25.10 - A powerful illustration of a strongman in a vintage circus setting. The strongman is a muscular figure wearing a classic striped singlet, lifting a ma.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <h5 class="card-title">Listas Categorias</h5>
+                  <p class="card-text">
+                    <p><a href="Index1.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">HarteloFilos</a></p>
+                    <p><a href="Index2.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sumo</a></p>
+                    <p><a href="Index3.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sumo no Japones</a></p>
+                    <p><a href="Index4.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Strongman</a></p>
+                    <p><a href="Index5.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Lanzamiento de Peso</a></p>
+                    <p><a href="Index6.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Levantamiento de Piedra Vasco</a></p>
+                    <p><a href="Index7.html" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Luchadores Superpesados</a></p>
+
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-10"> <!-- Ocupa 8 de 12 columnas -->
+                <div class="card h-100">
+                <img src="ima/sadelea_photo_5_hermosos_y_jovenes_atletas_de_strongman_habland_41d66544-372b-4bbe-ad85-1a3fffe27196.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">
+
+                    <div class="container">
+                        <div class="row">
+                          <div class="col">
+
+                          </div>
+                          <div class="col-6">
+                            <h1>Levantamiento de Piedra Vasco</h1>
+                          </div>
+                          <div class="col">
+
+                          </div>
+                          <div class="row">
+                            <div class="col">
+  
+                            </div>
+                            <div class="col-6">
+                                Levantamiento de Piedra Vasco: Orígenes y Actualidad
+                                Orígenes del Levantamiento de Piedra Vasco
+                                El levantamiento de piedra, conocido en euskera como Harrijasotzea, es una de las formas más tradicionales de deporte rural vasco. Este deporte tiene raíces profundas en la historia y cultura del País
+                                Vasco.
+                                Antigüedad y Tradición
+                                Orígenes Agrícolas: El levantamiento de piedras se originó en las labores agrícolas y de construcción
+                                en el País Vasco, donde los trabajadores competían entre ellos para demostrar su fuerza levantando
+                                piedras.
+                                Evolución a Deporte: Con el tiempo, estas competiciones informales se transformaron en eventos
+                                organizados, especialmente durante estas y ferias locales, convirtiéndose en una parte importante
+                                de la cultura vasca.
+                                Desarrollo y Evolución
+                                El levantamiento de piedra ha evolucionado de ser una práctica laboral a un deporte con reglas y
+                                competiciones bien denidas.
+                                Categorías y Tipos de Piedras
+                                Tipos de Piedras: Existen varias formas y tamaños de piedras utilizadas en las competiciones, incluyendo piedras cúbicas, cilíndricas, esféricas y de formas irregulares.
+                                Peso de las Piedras: Las piedras pueden pesar desde unos pocos kilos hasta más de 300 kg. Las piedras
+                                más comunes utilizadas en las competiciones suelen pesar entre 100 y 200 kg.
+                                Técnicas de Levantamiento
+                                Levantamiento Clásico: La técnica más tradicional implica levantar la piedra desde el suelo hasta el
+                                hombro, donde se mantiene por un momento antes de dejarla caer.
+                                Variaciones Modernas: Con la evolución del deporte, se han desarrollado diferentes técnicas y estilos
+                                para levantar y manejar las piedras, buscando siempre la mayor eciencia y seguridad.
+                                Actualidad del Levantamiento de Piedra Vasco
+                                En la actualidad, el levantamiento de piedra es un deporte que sigue siendo muy popular en el País
+                                Vasco y en otras regiones con inuencia vasca.
+                                Competiciones y Eventos
+                                Campeonatos Regionales: Se organizan numerosos campeonatos a nivel local y regional, especialmente durante las estas tradicionales vascas como las Fiestas de San Fermín y las Fiestas de la Virgen
+                                Blanca.
+                                Festivales de Deporte Rural: El levantamiento de piedra es una de las pruebas destacadas en los
+                                festivales de deporte rural vasco, conocidos como Herri Kirolak, donde también se incluyen otras
+                                disciplinas como el corte de troncos y el arrastre de piedras.
+                                Atletas y Figuras Destacadas
+                                Perurena y otros Campeones: A lo largo de los años, varios atletas se han destacado en este deporte.
+                                Uno de los más famosos es Iñaki Perurena, quien no solo ha establecido numerosos récords, sino que
+                                también ha promovido la tradición del levantamiento de piedra y ha contribuido a su popularidad
+                                moderna.
+                                Nuevas Generaciones: Hoy en día, jóvenes atletas continúan practicando y compitiendo en este
+                                deporte, manteniendo viva la tradición y llevándola a nuevas audiencias.
+                                Impacto Cultural y Mediático
+                                Identidad Vasca: El levantamiento de piedra es un símbolo de la identidad y la cultura vasca. RepresenLevantamiento de
+                                Piedra Vasco
+                                ta la fuerza, la resistencia y la conexión con la tierra y la historia de la región.
+                                Cobertura Mediática: Con la ayuda de la televisión y las redes sociales, el levantamiento de piedra ha ganado
+                                visibilidad fuera del País Vasco, atrayendo el interés de personas de otras regiones y países.
+                                Conclusión
+                                El levantamiento de piedra vasco, o Harrijasotzea, es una disciplina deportiva que ha evolucionado desde sus
+                                orígenes agrícolas hasta convertirse en una parte integral de la cultura y las competiciones del País Vasco. En la
+                                actualidad, sigue siendo una práctica vigorosa y respetada, que simboliza la fuerza y la tradición del pueblo
+                                vasco. Las competiciones modernas y la creciente visibilidad mediática aseguran que esta antigua tradición
+                                siga viva y continúe inspirando a nuevas generaciones de atletas y acionado
+                            </div>
+                            <div class="col">
+  
+          

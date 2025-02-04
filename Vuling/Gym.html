@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.modal-content {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde pastel a verde esmeralda */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5); /* Sombra en tono verde neón */
+}
+
+/* Estilo del encabezado */
+.modal-header {
+    background: #1abc9c; /* Verde turquesa */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Estilo del botón de cierre */
+.btn-close {
+    filter: invert(1); /* Hace el botón blanco */
+}
+
+/* Estilo del cuerpo del modal */
+.modal-body {
+    font-size: 1.1em;
+    padding: 20px;
+    background: #2ecc71; /* Verde pastel */
+    border-radius: 10px;
+}
+
+/* Pie de modal con sombra */
+.modal-footer {
+    background: rgba(39, 174, 96, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Botón de cierre mejorado */
+.btn-secondary {
+    background: #16a085; /* Verde oscuro */
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background: #2ecc71; /* Verde claro al pasar el mouse */
+}
+
+/* Animación de aparición del modal */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.pequeno {
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1%;
+}
+
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.link-success {
+    color: #198754;
+    text-decoration: none;
+}
+
+a {
+    color: #0f5132;
+    text-decoration: none;
+    text-decoration-style: double;
+    text-anchor: start;
+    text-size-adjust: inherit;
+    text-emphasis: greenyellow;
+    font-variant: petite-caps;
+}
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>El mundo del Bulling</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+        <li><a href="Personajes_Index.html">Personajes de Peito</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="container">
+            <div class="row">
+              <div class="col">
+    
+              </div>
+              <div class="col-6">
+    
+
+
+    <b>Gold’s Gym </b>
+</br>
+
+        Venice está ubicado en Venice, un vecindario de Los Ángeles, California. La dirección exacta es:
+    </br>
+        <b>Gold’s Gym Venice</b></br>
+        360 Hampton Drive, Venice, CA 90291, Estados Unidos.
+        Este gimnasio es conocido por su proximidad a la playa de Venice,
+        una ubicación popular y vibrante en Los Ángeles, famosa por su
+        paseo marítimo, su ambiente artístico y su cultura del fitness.
+        hay gicnasios especial para culturistas que estan al air libre se sabe
+        algo de ellos en eeuu. En las peliculas aparecen
+        Sí, en los Estados Unidos existen gimnasios al aire libre que son
+        especialmente populares entre los culturistas. El más famoso de ellos
+        es el “Muscle Beach” en Venice Beach, California. Aquí hay algunos
+        detalles sobre estos gimnasios al aire libre:
+        Instalaciones: El gimnasio al aire libre cuenta con una variedad de
+        equipos de entrenamiento, incluyendo pesas libres, bancos y máquinas de resistencia. La atmósfera es vibrante, con muchos culturistas
+        y atletas entrenando mientras los turistas y locales observan.
+        Cultura y Comunidad: Muscle Beach es un lugar donde se celebra
+        la cultura del fitness. Es común ver exhibiciones y competiciones de
+        culturismo, así como eventos de fitness y salud.</p>
+        
+        
+        
+    </br>
+        
+    </br>
+        <b> Playa del Músculo Santa Mónica :</b></br>
+        Ubicación: Santa Monica, California.</br>
+        Historia: Aunque es menos conocido que su homólogo en Venice,
+        Muscle Beach Santa Monica es el lugar original donde comenzó el
+        fenómeno de los gimnasios al aire libre en los años 1930.
+        Instalaciones: Además de las áreas de entrenamiento con pesas, este
+        sitio también cuenta con equipos para gimnasia y acrobacias, lo que
+        atrae a una diversa gama de atletas y entusiastas del fitness.
+        Estos gimnasios al aire libre no solo ofrecen un ambiente único para
+        entrenar, sino que también son puntos de referencia históricos y culturales en la evolución del fitness y el culturismo en Estados Unidos.
+        Han aparecido en numerosas películas y programas de televisión, lo
+        que ha contribuido a su fama mundial.
+    </p> 
+    </br>
+        <b>Playa del Músculo Venecia :</b></br></br>
+        Ubicación: Venice Beach, Los Ángeles, California.
+        Historia: Inaugurado en 1934, Muscle Beach Venice es conocido
+        como la cuna del culturismo moderno. Ha sido un lugar emblemático para culturistas y entusiastas del fitness durante décadas.
+        Gold’s Gym Venice es famoso por varias razones:
+        Historia y Legado: Fundado en 1965 por Joe Gold, Gold’s Gym Venice es uno de los gimnasios más antiguos y reconocidos del mundo.
+        Ha jugado un papel crucial en la evolución del culturismo y el fitness
+        moderno.</p>
+    </br>
+        <b>Cuna del Culturismo:</b></br></br>
+         Conocido como “La Meca del Culturismo”,
+        Gold’s Gym Venice ha sido el hogar de numerosos culturistas legendarios, incluido Arnold Schwarzenegger. Durante las décadas de
+        1970 y 1980, muchos de los mejores culturistas del mundo entrenaban aquí.
+        Cultura y Comunidad: El gimnasio no solo es un lugar para entrenar, sino que también es un punto de encuentro para entusiasta del fitness, profesionales y celebridades del mundo del deporte y el entretenimiento. La atmósfera y la comunidad que se ha desarrollado a lo largo de los
+        años son únicas.
+    </br>
+</p>
+        <b>Exposición Mediática: </b></br></br>
+        
+        Gold’s Gym Venice ha aparecido en numerosas películas, documentales y programas de televisión, como el icónico documental de
+        culturismo “Pumping Iron” (1977), lo que ha contribuido a su fama internacional.
+        Innovación y Equipamiento: A lo largo de los años, Gold’s Gym Venice ha
+        sido conocido por contar con equipos de vanguardia y ofrecer instalaciones
+        de alta calidad, atrayendo tanto a profesionales como a aficionados serios del
+        fitness.
+    </br></p>
+        <b>Eventos y Competencias:</b></br></br>
+         El gimnasio ha sido sede de muchos
+        eventos y competencias de culturismo y fitness, lo que lo convierte en un epicentro de la actividad física y la preparación
+        atlética.</br>
+        En resumen, Gold’s Gym Venice se ha convertido en un ícono
+        del fitness y el culturismo debido a su rica historia, su influencia
+        en la cultura del ejercicio físico y su continua relevancia en la
+        industria del fitness</br>
+    </p>
+        <b>Bikers Against Child Abuse (BACA) </b></br>
+        es una organización internacional de motociclistas que se dedica a proteger a los niños que han sido víctimas de abuso.
+        BACA se compromete a crear un entorno seguro para estos niños, ofreciéndoles apoyo emocional y físico, y asegurándose de que no tengan miedo de su
+        entorno. Los miembros de BACA a menudo acompañan a los niños a juicios,
+        reuniones y otros eventos donde puedan sentirse vulnerables, proporcionando
+        una presencia de seguridad y protección.</br>
+    </p>
+        
+        <b> Resumen del grupo BACA:</b></br></br>
+        Misión: Empoderar a los niños víctimas de abuso para que no tengan miedo de
+        su entorno.</br>
+    </p>
+        
+        <b>Actividades: </b></br></br>
+        Proveer apoyo emocional y físico, acompañamiento en situaciones
+        potencialmente intimidantes, y creación de un entorno seguro para los niños.
+        Miembros: Motociclistas comprometidos con la protección infantil.
+        Estos dos grupos son ejemplos de cómo diferentes colectivos pueden unirse
+        para utilizar sus habilidades y presencia imponente para proteger y motivar a
+        aquellos que están en situaciones vulnerables, similar a la misión de la fundación Peito.
+        
+        
+
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
+

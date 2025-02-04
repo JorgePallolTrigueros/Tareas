@@ -1,0 +1,1628 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.modal-content {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde pastel a verde esmeralda */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5); /* Sombra en tono verde neón */
+}
+
+/* Estilo del encabezado */
+.modal-header {
+    background: #1abc9c; /* Verde turquesa */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Estilo del botón de cierre */
+.btn-close {
+    filter: invert(1); /* Hace el botón blanco */
+}
+
+/* Estilo del cuerpo del modal */
+.modal-body {
+    font-size: 1.1em;
+    padding: 20px;
+    background: #2ecc71; /* Verde pastel */
+    border-radius: 10px;
+}
+
+/* Pie de modal con sombra */
+.modal-footer {
+    background: rgba(39, 174, 96, 0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Botón de cierre mejorado */
+.btn-secondary {
+    background: #16a085; /* Verde oscuro */
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background: #2ecc71; /* Verde claro al pasar el mouse */
+}
+
+/* Animación de aparición del modal */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.pequeno {
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1%;
+}
+
+
+.card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+
+
+      .card-group {
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.link-success {
+    color: #198754;
+    text-decoration: none;
+}
+
+a {
+    color: #0f5132;
+    text-decoration: none;
+    text-decoration-style: double;
+    text-anchor: start;
+    text-size-adjust: inherit;
+    text-emphasis: greenyellow;
+    font-variant: petite-caps;
+}
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <header>
+      <h1>El Amor de Eros y Athenea</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-2"> <!-- Ocupa 4 de 12 columnas -->
+                <div class="card h-100">
+                    <img src="ima/asd.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <h5 class="card-title">Listas de Capitulos</h5>
+                  <p class="card-text">
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El inicio</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El viaje a Grercia</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El inicio</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Las casasa extrañas</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">El caballero de Ascleptio</a></p>
+                    <p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Los espectros</a></p>
+
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="col-md-10"> <!-- Ocupa 8 de 12 columnas -->
+                <div class="card h-100">
+                <img src="ima/asd.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="text-center mb-3">
+                        <button id="btn-daz" class="btn btn-success">Imágenes Daz</button>
+                        <button id="btn-real" class="btn btn-success">Imágenes Reales</button>
+                        <button id="btn-ia" class="btn btn-success">Imágenes IA</button>
+                    </div>
+                
+                                    <div class="card-group">
+                                        <div class="card" id="card1">
+                                            <img src="ima/1 (1).png" class="card-img-top" alt="Shum Caballero de Andromeda">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Shum</h5>
+                                                <p class="card-text"> 
+                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                     del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                     chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                     jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                     Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                      están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                       cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                       turquesa oscuro.  </span>
+                                                    </p>
+                                                    <button class="btn btn-outline-success btn-saber-mas" 
+                                                    data-personaje="card" data-bs-toggle="modal" 
+                                                    data-bs-target="#modal1">Saber más</button>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class="card" id="card2">
+                                            <img src="ima/1 (2).png" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Jabu </h5>
+                                                <p class="card-text">
+
+
+                                                    <span class="pequeno"> 
+                                                        
+                                                        De niño, Jabu dice estar agradecido con la familia Kido por haberlo acogido del orfanato y
+                                                         por ello permite que Saori lo trate de la peor manera, y siempre siendo muy respetuoso con
+                                                          ella y al señor Mitsumasa. Por tal motivo los demás niños le decían que era un perro faldero.
+                                                           Pero dicha sumisión no era su forma natural de ser, pues se muestra bastante confrontacional 
+                                                           con sus demás "medio hermanos" (compañeros en el anime). Esto ayudó a que Jabu se fuera 
+                                                           fortaleciendo con el tiempo, inspirado en Saori aún soportando todas sus duras pruebas.
+
+
+                                                        </span>
+                                                </p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1" data-bs-toggle="modal" data-bs-target="#modal2">Saber más</button>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                        <div class="card" id="card3">
+                                            <img src="ima/1 (3).png" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Shiru </h5>
+                                                <p class="card-text">
+                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                        del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                        chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                        jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                        Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                         están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                          cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                          turquesa oscuro.  </span>
+                                                </p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card1" data-bs-toggle="modal" data-bs-target="#modal3">Saber más</button>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                        <div class="card" id="card4">
+                                            <img src="ima/1 (4).png" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Yoga </h5>
+                                                <p class="card-text">
+
+                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                        del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                        chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                        jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                        Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                         están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                          cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                          turquesa oscuro.  </span>
+
+                                                </p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card2" data-bs-toggle="modal" data-bs-target="#modal4">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card5">
+                                            <img src="ima/1 (5).png" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Fenix</h5>
+                                                <p class="card-text">                                                     
+                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                    del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                    chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                    jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                    Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                     están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                      cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                      turquesa oscuro.  </span> </p>
+                                                      <button class="btn btn-outline-success btn-saber-mas" data-personaje="card3" data-bs-toggle="modal" data-bs-target="#modal5">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card6">
+                                            <img src="ima/1 (6).png" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Pegaso </h5>
+                                                <p class="card-text">                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                    del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                    chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                    jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                    Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                     están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                      cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                      turquesa oscuro.  </span></p>
+                                                      <button class="btn btn-outline-success btn-saber-mas" data-personaje="card4" data-bs-toggle="modal" data-bs-target="#modal6">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="card-group">
+                                        <div class="card" id="card7">
+                                            <img src="ima/1 (7).png" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Shaori </h5>
+                                                <p class="card-text">                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                    del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                    chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                    jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                    Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                     están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                      cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                      turquesa oscuro.  </span></p>
+                                                      <button class="btn btn-outline-success btn-saber-mas" data-personaje="card5" data-bs-toggle="modal" data-bs-target="#modal7">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card8">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ARIES </h5>
+                                                <p class="card-text">                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                    del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                    chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                    jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                    Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                     están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                      cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                      turquesa oscuro.  </span></p>
+                                                      <button class="btn btn-outline-success btn-saber-mas" data-personaje="card6" data-bs-toggle="modal" data-bs-target="#modal9">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card9">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> TAURO</h5>
+                                                <p class="card-text">                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                    del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                    chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                    jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                    Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                     están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                      cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                      turquesa oscuro.  </span></p>
+                                                      <button class="btn btn-outline-success btn-saber-mas" data-personaje="card7" data-bs-toggle="modal" data-bs-target="#modal10">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card10">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> GEMINIS</h5>
+                                                <p class="card-text">                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                    del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                    chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                    jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                    Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                     están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                      cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                      turquesa oscuro.  </span></p>
+                                                      <button class="btn btn-outline-success btn-saber-mas" data-personaje="card8" data-bs-toggle="modal" data-bs-target="#modal11">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card11">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> CANCER</h5>
+                                                <p class="card-text">                                                    <span class="pequeno"> es un joven de apariencia frágil, además de ser junto con Seiya el menor
+                                                    del grupo. Desde su presentación se ha expresado que es un joven bastante atractivo, pues las 
+                                                    chicas que estaban en el coliseo del Torneo Galáctico clamaban por él a gritos. En la serie 
+                                                    jamás se ha vuelto a hacer mención de su apariencia, salvo el comentario extraño de Algol de 
+                                                    Perseo cuándo éste se enfrentó a él diciéndole "niño lindo", pero es evidente que sus rasgos
+                                                     están inspirados en su constelación guardiana, Andrómeda, una constelación femenina. Su
+                                                      cabello en el manga es castaño claro y en el anime es de color verde, sus ojos son de un 
+                                                      turquesa oscuro.  </span></p>
+                                                      <button class="btn btn-outline-success btn-saber-mas" data-personaje="card9" data-bs-toggle="modal" data-bs-target="#modal11">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card12">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> LEO</h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card10" data-bs-toggle="modal" data-bs-target="#modal12">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card-group">
+                                        <div class="card" id="card13">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> VIRGO </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card11" data-bs-toggle="modal" data-bs-target="#modal13">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card14">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> LIBRA </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card12" data-bs-toggle="modal" data-bs-target="#modal14">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card15">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ESCORPIO </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card13" data-bs-toggle="modal" data-bs-target="#modal15">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card16">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> SAGITARIO </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card14" data-bs-toggle="modal" data-bs-target="#modal16">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card17">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CAPRICORNIO </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card15" data-bs-toggle="modal" data-bs-target="#modal17">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card18">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> ACUARIO </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card16" data-bs-toggle="modal" data-bs-target="#modal18">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-group">
+                                        <div class="card" id="card19">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> PISCIS </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card17" data-bs-toggle="modal" data-bs-target="#modal19">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card20">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> ASCLEPTIO </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card18" data-bs-toggle="modal" data-bs-target="#modal20">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card21">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card19" data-bs-toggle="modal" data-bs-target="#modal21">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card22">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> EROS</h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card21" data-bs-toggle="modal" data-bs-target="#modal22">Saber más</button>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card" id="card23">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card22" data-bs-toggle="modal" data-bs-target="#modal23">Saber más</button>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="card24">
+                                            <img src="hercules_daz.jpg" class="card-img-top" alt="Hércules">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> </h5>
+                                                <p class="card-text"></p>
+                                                <button class="btn btn-outline-success btn-saber-mas" data-personaje="card23" data-bs-toggle="modal" data-bs-target="#modal24">Saber más</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+<!--  Este es el modales-->
+
+
+
+
+
+
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel2">Shun - Caballero de Andrómeda</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <!-- Columna de Imagen -->
+                        <div class="col-md-4 text-center">
+                            <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                        </div>
+
+                        <!-- Columna de Texto -->
+                        <div class="col-md-8">
+                        Después de obtener el Cloth de Unicorn, Jabu sigue manteniendo su respeto con Saori y el difunto Kido Mitsumasa, ahora presentándose casi como su buen guardaespaldas. Incluso sigue siendo confrontacional con sus compañeros, mostrándose muy confiado de su fuerza y llegando a ser bastante engreído.
+                                                        
+                        Tras su combate contra Shun, interrumpido por la llegada de Ikki, y siendo derrotado fácilmente por este, decide volver a su lugar de entrenamiento. Al volver se muestra más centrado, ya no tan impulsivo, sabiendo en qué momento debe o no combatir. Incluso parece haber dejado atrás sus diferencias personales con Seiya, pues ahora solo ve el bien común de la consigna que tiene como Santo, acudiendo siempre a la ayuda de sus amigos. Posteriormente no intenta lucirse ante Saori por su admiración, sino que pelea por ella como su diosa.
+                        
+                        En el spin-off Saint Seiya Ω, se muestra interesado por la nueva generación y bien dispuesto a entregar enseñanzas a los Saints novatos. Se muestra pasivo en su vida normal, aunque manteniendo su aire burlesco y rebelde con sus enemigos. 
+                        
+                        Desde que regresó al campo de batalla en dicho spin-off, Jabu ha mostrado no dudar en ayudar a sus amigos y compañeros, así como a los civiles, cuando están en problemas. Tanto así que, mientras todos peleaban en la guerra en Pallas Belda, él viajaba por todo el mundo derrotando a los Soldados Pallasites. 
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Jabu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row d-flex align-items-center">
+                                <!-- Columna de Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                                </div>
+        
+                                <!-- Columna de Texto -->
+                                <div class="col-md-8">
+                                    <p>
+                                        Después de obtener el Cloth de Unicorn, Jabu sigue manteniendo su respeto con Saori y el difunto Kido Mitsumasa, ahora presentándose casi como su buen guardaespaldas. 
+                                        Incluso sigue siendo confrontacional con sus compañeros, mostrándose muy confiado de su fuerza y llegando a ser bastante engreído.
+                                    </p>
+                                    <p>
+                                        Tras su combate contra Shun, interrumpido por la llegada de Ikki, y siendo derrotado fácilmente por este, decide volver a su lugar de entrenamiento. 
+                                        Al volver se muestra más centrado, ya no tan impulsivo, sabiendo en qué momento debe o no combatir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Shiru</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row d-flex align-items-center">
+                                <!-- Columna de Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                                </div>
+        
+                                <!-- Columna de Texto -->
+                                <div class="col-md-8">
+                                    <p>
+                                   66
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Yoga</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row d-flex align-items-center">
+                                <!-- Columna de Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                                </div>
+        
+                                <!-- Columna de Texto -->
+                                <div class="col-md-8">
+                                    <p>
+                                     g
+                                         </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Fenix</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row d-flex align-items-center">
+                                <!-- Columna de Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                                </div>
+        
+                                <!-- Columna de Texto -->
+                                <div class="col-md-8">
+                                    <p>
+                                      f
+                                         </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Pegaso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row d-flex align-items-center">
+                                <!-- Columna de Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                                </div>
+        
+                                <!-- Columna de Texto -->
+                                <div class="col-md-8">
+                                    <p>
+                                        d
+                                         </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Shaori</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row d-flex align-items-center">
+                                <!-- Columna de Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                                </div>
+        
+                                <!-- Columna de Texto -->
+                                <div class="col-md-8">
+                                    <p>
+                                        d
+                                         </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> <!-- Hace el modal más ancho -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel2">Shaori</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row d-flex align-items-center">
+                                <!-- Columna de Imagen -->
+                                <div class="col-md-4 text-center">
+                                    <img src="ima/1 (1).png" class="img-fluid rounded" alt="Shun - Caballero de Andromeda">
+                                </div>
+        
+                                <!-- Columna de Texto -->
+                                <div class="col-md-8">
+                                    <p>
+                                        d
+                                         </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- Aries Mu -->
+<div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-aries">Mu de Aries</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/mu.png" class="img-fluid rounded" alt="Mu de Aries">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Mu es el Caballero de Oro de Aries y el mejor reparador de armaduras. Es un personaje tranquilo y poderoso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tauro Aldebarán -->
+<div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modalLabel8" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-tauro">Aldebarán de Tauro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/tauro.png" class="img-fluid rounded" alt="Aldebarán de Tauro">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Aldebarán es el Caballero de Oro de Tauro, un guerrero de gran fuerza física y lealtad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Géminis Saga -->
+<div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modalLabel9" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Saga de Géminis</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Aries Mu -->
+<div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modalLabel10" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-aries">Mu de Aries</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/mu.png" class="img-fluid rounded" alt="Mu de Aries">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Mu es el Caballero de Oro de Aries y el mejor reparador de armaduras. Es un personaje tranquilo y poderoso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tauro Aldebarán -->
+<div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modalLabel11" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-tauro">Aldebarán de Tauro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/tauro.png" class="img-fluid rounded" alt="Aldebarán de Tauro">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Aldebarán es el Caballero de Oro de Tauro, un guerrero de gran fuerza física y lealtad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tauro Aldebarán -->
+<div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modalLabel12" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-tauro">Geminis</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/tauro.png" class="img-fluid rounded" alt="Aldebarán de Tauro">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Aldebarán es el Caballero de Oro de Tauro, un guerrero de gran fuerza física y lealtad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Géminis Saga -->
+<div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="modalLabel13" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Cancer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="modalLabel14" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Leo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal17" tabindex="-1" aria-labelledby="modalLabel15" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Virgo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal18" tabindex="-1" aria-labelledby="modalLabel616" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Libra</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modal19" tabindex="-1" aria-labelledby="modalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Escorpio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal20" tabindex="-1" aria-labelledby="modalLabel18" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Sagitario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="modal21" tabindex="-1" aria-labelledby="modalLabe19" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Capricornio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal22" tabindex="-1" aria-labelledby="modalLabel620" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Acuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal23" tabindex="-1" aria-labelledby="modalLabel21" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Piscis</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal24" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Eros</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal25" tabindex="-1" aria-labelledby="modalLabel-geminis" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel-geminis">Ascleptio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="ima/geminis.png" class="img-fluid rounded" alt="Saga de Géminis">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Saga es el Caballero de Géminis, un personaje con una doble personalidad y una de las fuerzas más poderosas del Santuario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--  Este es el modales-->
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+          <script>
+
+
+
+function abrirModal(personajeId) {
+    let personaje = personajes.find(p => p.id === personajeId);
+    if (personaje) {
+        document.getElementById("modalTitulo").textContent = personaje.nombre;
+        document.getElementById("modalDescripcion").textContent = personaje.descripcionLarga;
+        document.getElementById("modalImagen").src = personaje.imagenes.daz; // Carga la imagen DAZ por defecto
+
+        let modal = new bootstrap.Modal(document.getElementById("modalPersonaje"));
+        modal.show();
+
+
+    } else {
+        console.error(`Personaje con ID "${personajeId}" no encontrado.`);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Función para cambiar la imagen según el botón seleccionado
+    function cambiarImagen(tipo) {
+        personajes.forEach(personaje => {
+            let imgElement = document.querySelector(`#${personaje.id} .card-img-top`);
+            if (imgElement) {
+                imgElement.src = personaje.imagenes[tipo];
+            }
+        });
+    }
+
+
+
+    // Asignar eventos a los botones de cambio de imagen
+    document.getElementById("btn-daz").addEventListener("click", () => cambiarImagen("daz"));
+    document.getElementById("btn-real").addEventListener("click", () => cambiarImagen("real"));
+    document.getElementById("btn-ia").addEventListener("click", () => cambiarImagen("ia"));
+
+    // Asignar eventos a los botones "Saber más"
+    document.querySelectorAll(".btn-saber-mas").forEach(btn => {
+        btn.addEventListener("click", function () {
+            abrirModal(this.dataset.personaje);
+        });
+    });
+});
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Función para cambiar la imagen según el botón seleccionado
+    function cambiarImagen(tipo) {
+        personajes.forEach(personaje => {
+            let imgElement = document.querySelector(`#${personaje.id} .card-img-top`);
+            if (imgElement) {
+                imgElement.src = personaje.imagenes[tipo];
+            }
+        });
+    }
+
+    // Función para abrir el modal con los datos del personaje
+
+
+    // Asignar eventos a los botones de cambio de imagen
+    document.getElementById("btn-daz").addEventListener("click", () => cambiarImagen("daz"));
+    document.getElementById("btn-real").addEventListener("click", () => cambiarImagen("real"));
+    document.getElementById("btn-ia").addEventListener("click", () => cambiarImagen("ia"));
+
+    // Asignar eventos a los botones "Saber más"
+    document.querySelectorAll(".btn-saber-mas").forEach(btn => {
+        btn.addEventListener("click", function () {
+            abrirModal(this.dataset.personaje);
+        });
+    });
+});

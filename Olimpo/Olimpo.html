@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de Pagos</title>
+  <style>
+
+
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px; /* Espacio entre columnas */
+}
+
+.lista-dioses {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 18%; /* Cambia de 30% a 18% para que entren 5 columnas */
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px; /* Evita que los divs sean demasiado pequeños en pantallas estrechas */
+}
+
+
+
+        .dios {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .dios:last-child {
+            border-bottom: none;
+        }
+
+        .dios span {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .leyenda {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eee;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .reset {
+            margin-top: 20px;
+            padding: 10px;
+            background: #d9534f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .reset:hover {
+            background: #c9302c;
+        }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 0.5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    h2, h3 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+  <header>
+    <h1>Calendario de Pagos</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../organigrama.html">Organigrama Semanal</a></li>
+      <li><a href="../calendario_de_pagos.html">Calendario de Pagos</a></li>
+      <li><a href="Index.html">Tareas</a></li>
+      <li><a href="Olimpo.html">Olimpo</a></li>   
+
+    </ul>
+  </nav>
+
+    <h2>¿Cómo preguntar por el Olimpo en el siglo XXI?</h2>
+
+    <h3>1. Creando un mundo como el de J.K. Rowling, pero con héroes y dioses de la mitología griega</h3>
+    <p>Quiero escribir un libro donde los héroes y dioses de la mitología griega existan en una sociedad moderna. En este mundo:</p>
+    <ul>
+      <li>Los eventos de los mitos ya ocurrieron en el pasado.</li>
+      <li>El Inframundo ha cambiado y ahora es un conjunto de urbanizaciones.</li>
+      <li>Hades usa manga larga porque así lo ha decidido su familia con Perséfone.</li>
+      <li>Los protagonistas que murieron en la historia pueden vivir allí como deseen.</li>
+    </ul>
+
+    <h3>2. ¿Cómo proceder para desarrollar la historia?</h3>
+    <p>Algunas cuestiones clave a resolver:</p>
+    <ul>
+      <li>¿Cómo evolucionó la sociedad de los dioses y héroes?</li>
+      <li>¿Qué conflictos existen en este nuevo mundo?</li>
+      <li>¿Cómo interactúan con los humanos modernos?</li>
+    </ul>
+
+    <h3>3. ¿Cómo clasificar a los dioses y héroes?</h3>
+    <p>Algunas posibles formas de clasificación:</p>
+    <ul>
+      <li><strong>Primarios</strong>: Dioses primordiales como Caos, Nix, Urano y Gea.</li>
+      <li><strong>Segunda generación</strong>: Titanes y dioses olímpicos.</li>
+      <li><strong>Héroes divinizados</strong>: Aquellos mortales elevados al rango de dioses.</li>
+    </ul>
+
+    <h3>4. Primer personaje: Nix</h3>
+    <h4>Referencia mitológica</h4>
+    <p>Nix es la diosa primordial de la noche, una de las entidades más antiguas de la mitología griega.</p>
+
+    <h4>Su culto en la era helenística</h4>
+    <p>En los tiempos helenísticos, Nix no tenía templos dedicados en gran escala, pero su presencia era importante en misterios y rituales de la noche.</p>
+
+    <h4>Preguntas sobre su adaptación a este mundo moderno:</h4>
+    <ul>
+      <li>¿Qué personalidad tendría Nix en este mundo?</li>
+      <li>¿Cómo viviría en las urbanizaciones del Inframundo?</li>
+      <li>¿Cómo sería su entorno y su influencia en la sociedad?</li>
+    </ul>
+
+    <h2>Conclusión</h2>
+    <p>Este mundo moderno de dioses y héroes ofrece muchas posibilidades narrativas. ¿Cómo podrían interactuar con el mundo actual? ¿Qué problemas enfrentarían? Explorar estas cuestiones ayudará a construir una historia coherente y envolvente.</p>
+
+    <main>
+      <div class="contenedor">
+        <div class="lista-dioses" id="diosesPrimarios">
+            <h2>Dioses Primarios</h2>
+        </div>
+        <div class="lista-dioses" id="dioses">
+            <h2>Dioses Olímpicos</h2>
+        </div>
+        <div class="lista-dioses" id="otrosDioses">
+            <h2>Otros Dioses</h2>
+        </div>
+        <div class="lista-dioses" id="titanes">
+            <h2>Titanes</h2>
+        </div>
+        <div class="lista-dioses" id="heroes">
+            <h2>Héroes</h2>
+        </div>
+    </div>
+    
+    <div class="contenedor">
+        <div class="lista-dioses" id="figurasLegendarias">
+            <h2>Figuras Legendarias</h2>
+        </div>
+        <div class="lista-dioses" id="inframundo">
+            <h2>Inframundo</h2>
+        </div>
+    </div>
+      <div class="leyenda">
+          <h3>✔ Leyenda - Tareas por Dios</h3>
+          <p>📜 Referencia mitológica</p>
+          <p>🏛️ Investigación sobre su culto en la era helenística</p>
+          <p>🌍 Descripción de su adaptación al mundo moderno</p>
+          <p>📖 Creación de un cuento sobre su nueva historia</p>
+      </div>
+  
+      <button class="reset" onclick="resetearTareas()">Restablecer Tareas</button>
+  </main>
+  
+  <script>
+
+const diosesPrimordiales = [
+    { id: 1, nombre: "Caos" },
+    { id: 2, nombre: "Nyx" },
+    { id: 3, nombre: "Erebo" },
+    { id: 4, nombre: "Gea" },
+    { id: 5, nombre: "Urano" },
+    { id: 6, nombre: "Tártaro" },
+    { id: 7, nombre: "Éter" },
+    { id: 8, nombre: "Oizys" },
+    { id: 9, nombre: "Tanatos" },
+    { id: 10, nombre: "Eurimedonte" }
+];
+
+const titanes = [
+    { id: 11, nombre: "Cronos" },
+    { id: 12, nombre: "Japeto" },
+    { id: 13, nombre: "Atlas" },
+    { id: 14, nombre: "Mnemósine" },
+    { id: 15, nombre: "Prometeo" },
+    { id: 16, nombre: "Epimeteo" },
+    { id: 17, nombre: "Helios" },
+    { id: 18, nombre: "Céfiro" },
+    { id: 19, nombre: "Tetis" },
+    { id: 20, nombre: "Feo" }
+];
+
+const diosesOlimpicos = [
+    { id: 21, nombre: "Zeus" },
+    { id: 22, nombre: "Hera" },
+    { id: 23, nombre: "Poseidón" },
+    { id: 24, nombre: "Hades" },
+    { id: 25, nombre: "Deméter" },
+    { id: 26, nombre: "Atenea" },
+    { id: 27, nombre: "Apolo" },
+    { id: 28, nombre: "Artemisa" },
+    { id: 29, nombre: "Hermes" },
+    { id: 30, nombre: "Dionisio" },
+    { id: 31, nombre: "Afrodita" },
+    { id: 32, nombre: "Hefesto" },
+    { id: 33, nombre: "Ares" },
+    { id: 34, nombre: "Hestia" },
+    { id: 35, nombre: "Perséfone" }
+];
+
+const otrosDioses = [
+    { id: 36, nombre: "Asclepio" },
+    { id: 37, nombre: "Eros" },
+    { id: 38, nombre: "Anteros" },
+    { id: 39, nombre: "Psique" },
+    { id: 40, nombre: "Hércules" },
+    { id: 41, nombre: "Helitia" },
+    { id: 42, nombre: "Peito" },
+    { id: 43, nombre: "Némesis" },
+    { id: 44, nombre: "Nike" },
+    { id: 45, nombre: "Iris" },
+    { id: 46, nombre: "Macaria" },
+    { id: 47, nombre: "Potos" },
+    { id: 48, nombre: "Himnos" },
+    { id: 49, nombre: "Oneiros" },
+    { id: 50, nombre: "Moros" },
+    { id: 51, nombre: "Ápate" },
+    { id: 52, nombre: "Ampelo" },
+    { id: 53, nombre: "Euclea" },
+    { id: 54, nombre: "Eupheme" },
+    { id: 55, nombre: "Filotes" },
+    { id: 56, nombre: "Fobos" },
+    { id: 57, nombre: "Cedalion" }
+];
+
+const heroes = [
+    { id: 58, nombre: "Aquiles" },
+    { id: 59, nombre: "Héctor" },
+    { id: 60, nombre: "Eneas" },
+    { id: 61, nombre: "Ulises" },
+    { id: 62, nombre: "Teseo" },
+    { id: 63, nombre: "Perseo" },
+    { id: 64, nombre: "Jasón" },
+    { id: 65, nombre: "Meleagro" },
+    { id: 66, nombre: "Patroclo" },
+    { id: 67, nombre: "Menelao" },
+    { id: 68, nombre: "Orestes" },
+    { id: 69, nombre: "Orión" },
+    { id: 70, nombre: "Céfalo" },
+    { id: 71, nombre: "Telamón" },
+    { id: 72, nombre: "Linceo" },
+    { id: 73, nombre: "Iphicles" },
+    { id: 74, nombre: "Diomedes" },
+    { id: 75, nombre: "Idomeneo" },
+    { id: 76, nombre: "Ayak" },
+    { id: 77, nombre: "Castor" },
+    { id: 78, nombre: "Pólux" },
+    { id: 79, nombre: "Quirón" }
+];
+
+const figurasLegendarias = [
+    { id: 80, nombre: "Antígona" },
+    { id: 81, nombre: "Alcestis" },
+    { id: 82, nombre: "Atalanta" },
+    { id: 83, nombre: "Abdero" },
+    { id: 84, nombre: "Arcadio" },
+    { id: 85, nombre: "Peleo" },
+    { id: 86, nombre: "Harmonia" }
+];
+
+const inframundo = [
+    { id: 87, nombre: "Minos" },
+    { id: 88, nombre: "Radamantis" },
+    { id: 89, nombre: "Éaco" },
+    { id: 90, nombre: "Cloto" },
+    { id: 91, nombre: "Láquesis" },
+    { id: 92, nombre: "Átropos" },
+    { id: 93, nombre: "Alecto" },
+    { id: 94, nombre: "Megera" },
+    { id: 95, nombre: "Tisífone" },
+    { id: 96, nombre: "Pandora" }
+];
+
+
+  
+      let tareas = JSON.parse(localStorage.getItem("tareasDioses")) || {};
+  
+      function generarLista(idDiv, lista) {
+          const contenedor = document.getElementById(idDiv);
+          contenedor.innerHTML = "";
+  
+          lista.forEach((dios) => {
+              if (!tareas[dios.id]) {
+                  tareas[dios.id] = { ref: false, culto: false, adaptacion: false, cuento: false };
+              }
+  
+              let div = document.createElement("div");
+              div.className = "dios";
+              div.innerHTML = `
+                  <span>${dios.nombre}</span>
+                  <input type="checkbox" id="ref-${dios.id}" ${tareas[dios.id].ref ? "checked" : ""} 
+                      onchange="actualizarTarea(${dios.id}, 'ref')">
+                  <label for="ref-${dios.id}">📜 Referencia mitológica</label>
+                  <br>
+                  <input type="checkbox" id="culto-${dios.id}" ${tareas[dios.id].culto ? "checked" : ""} 
+                      onchange="actualizarTarea(${dios.id}, 'culto')">
+                  <label for="culto-${dios.id}">🏛️ Culto en la era helenística</label>
+                  <br>
+                  <input type="checkbox" id="adaptacion-${dios.id}" ${tareas[dios.id].adaptacion ? "checked" : ""} 
+                      onchange="actualizarTarea(${dios.id}, 'adaptacion')">
+                  <label for="adaptacion-${dios.id}">🌍 Adaptación al mundo moderno</label>
+                  <br>
+                  <input type="checkbox" id="cuento-${dios.id}" ${tareas[dios.id].cuento ? "checked" : ""} 
+                      onchange="actualizarTarea(${dios.id}, 'cuento')">
+                  <label for="cuento-${dios.id}">📖 Cuento</label>
+              `;
+              contenedor.appendChild(div);
+          });
+      }
+  
+      function actualizarTarea(id, campo) {
+          tareas[id][campo] = !tareas[id][campo];
+          localStorage.setItem("tareasDioses", JSON.stringify(tareas));
+      }
+  
+      function resetearTareas() {
+    if (confirm("¿Restablecer todas las tareas?")) {
+        localStorage.removeItem("tareasDioses");
+        tareas = {};  // Reiniciar el objeto tareas
+        generarLista("diosesPrimarios", diosesPrimordiales);
+        generarLista("dioses", diosesOlimpicos);
+        generarLista("otrosDioses", otrosDioses);
+        generarLista("titanes", titanes);
+        generarLista("figurasLegendarias", figurasLegendarias);
+        generarLista("inframundo", inframundo);
+        generarLista("heroes", heroes);
+
+
+
+    }
+}
+  
+
+  </script>
+
+
+
+
+
+</body>
+</html>

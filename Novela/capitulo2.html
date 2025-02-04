@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paginación debajo del capítulo */
+.pagination-container {
+    margin-top: 30px;
+}
+
+/* Estilos de los botones de paginación */
+.page-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.page-button.active {
+    background-color: #155724;
+    box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.5);
+}
+
+/* Distribución en tres filas */
+@media (max-width: 768px) {
+    .page-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 250px;
+      }
+
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+/* Estilos para imágenes */
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para diferentes posiciones de imagen */
+.img-arriba {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.img-abajo {
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    .capitulo-texto {
+        font-size: 1rem;
+    }
+
+    .img-capitulo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .img-arriba, .img-abajo {
+        width: 90%;
+    }
+}
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>El Bullin, un mito griego </h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+        <header class="text-center p-3 bg-success text-white">
+            <h1>Capítulo 1: El Inicio de la Leyenda</h1>
+        </header>
+    
+        <div class="container mt-4">
+            <!-- Sección con imagen a la izquierda -->
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="imagen1.jpg" class="img-fluid img-capitulo" alt="Imagen 1">
+                </div>
+                <div class="col-md-8">
+                    <article class="capitulo-texto">
+                        <p>
+
+                            pasar. Al principio me asuste hasta que me di cuenta porque se habían quedado tan quietos. Quien podía haberlos
+                            parado en seco. Yo le deje pasar al reconocer quien era
+                            realmente. Reconocí que era un chico guapísimo, albino,
+                            melena blanca y revoltosa, con bonitos ojos azules claros
+                            y brillantes. Llevaba una camisa de cuero marrón con
+                            flecos, con un águila en la espalda y el forro hecho de
+                            plumas, visible porque la llevaba desabrochada. Su estilo
+                            era impresionante y muy reconocible
+                            . Cuando llego al centro de la pista, donde Gamibedes
+                            estaba con una bandeja con nuestros cocteles exclusivos
+                            que habíamos los erotes sacado al mercado recientemente
+                            . Este chico le cogió de la mano, tiro la bandeja. Me sentó
+                            fatal que los tirara. cogió a Ganímedes como una muñeca
+                            y le plantó un beso en toda la boca. Si sin pedir permiso,
+                            lo que confirmo quien era, Gamibedes respondió cerrando los ojos y devolviéndoselo. Por cierto, el beso en la
+                            boca lo inventamos para comprobar si una mujer bebía o
+                            no. Si el machismo ha sido el mismo siempre
+                            Poseidón, que estaba con sus amantes Nerites y Pélope,
+                            uno a cada brazo, observó la escena con sorpresa.
+                            “—Oye, bro, mira a ver si ha bebido y a qué sabe.”
+                            Nos quedamos en silencio. Todos dejamos de bailar, la
+                            música se detuvo y guardamos silencio. Al momento, de
+                            su boca salió una voz muy reconocible y temible a partes
+                            iguales.
+                            “—Sabe a nectar divino” —dijo cuando dejó de besarlo.
+                            La música volvió a resonar. Apolo, con su melena dorada
+                            y ojos que brillaban como el sol mismo, volvió a coger su
+                            guitarra y dio la orden a su grupo de seguir tocando. No
+                            creo que haga falta deciros quién formaba su grupo, solo
+                            os daré una pista: ninguno de ellos es una musa.
+                            No me preocupaba la reacción de Hera. Después de más
+                            de 1500 años de terapia, había asumido que su marido
+                            no iba a cambiar. Ganímedes me dijo que el beso le había
+                            recordado a la Helade.
+                            En medio del salón, el ambiente había cambiado. La
+                            tensión inicial se disipó rápidamente, reemplazada por
+                            una energía renovada. Las luces de colores comenzaron a
+                            parpadear de nuevo, reflejándose en las paredes blancas
+                            y los elegantes muebles. La multitud volvió a moverse al
+                            ritmo de la música, y el aire se llenó de risas y conversaciones animadas.
+                            Apolo, con su guitarra en mano, dirigía a su grupo con
+                            maestría. Los acordes vibraban a través del espacio,
+                            creando una atmósfera mágica. Psique, con su sonrisa
+                            serena y sus gestos calmados, se acercó a Hera, quien
+                            observaba la escena con una mezcla de resignación y
+                            aceptación. Le dijo siempre su consejo para ella “Liberate”. Ella no dijo nada.
+                            En un rincón del salón, Poseidón se reía junto a Nerites
+                            y Pélope, disfrutando de la velada. El chico albino, ahora
+                            el centro de atención, se unió a la fiesta como si siempre
+                            hubiera pertenecido allí. Ganímedes, con una expresión
+                            de sorpresa aún en su rostro, se recuperó rápidamente y
+                            volvió a integrarse en la celebración con nosotros. Estos
+                            dos se despidieron como un par de tortolitos. Se fue
+                            donde estaba Hera. la puerta de salida y le hizo una carantoña. Hera se derritio por el como lo llevaba haciendo
+                            hace millones de años. Pero aparte del Pride, este salón
+                            también ha visto fiestas de dolor. Por ejemplo, hubo una
+                            ola de tristeza a raíz de que Hera fuera menos implacable
+                            con su marido. Hera, como diosa del matrimonio, influía
+                            en los casamientos con sus cambios de estado de ánimo,
+                            lo que provocó nueva ola de divorcios, lo que deprimió a
+                            Himeneo, el dios de las ceremonias nupciales. La conclusión final fue una fiesta organizada por Apolo para
+                            nuestro compañero. Ya que a pesar de sus rolletes , se
+                            segian queriendo.
+                            Esa noche, Himeneo no soltaba la botella. “¿Por qué?”
+                            —decía con desesperación—. “¿No se dan cuenta de lo
+                            duro que es este trabajo?” Potos, como no, estuvo al quite
+                            y no lo dejó solo. Él es el Erote de la pérdida o el anhelo.
+                            Psique también estuvo a su lado, ayudándolo a reincorporarse. Ella es la que comprende no solo la mente humana,
+                            sino también la nuestra. Le decia que el que se creara una
+                            ley de divorcio. No llevaria a que la gente se divorciara
+                            mas. Sino que se daria oportunidad a romper, lo que
+                            nunca debio unir.
+                            El salón, normalmente iluminado y lleno de vida, esa noche tenía un aire melancólico. Las luces eran más tenues,
+                            reflejando el estado de ánimo sombrío de los presentes.
+                            Himeneo, con su toga desaliñada y sus ojos vidriosos,
+                            se tambaleaba ligeramente mientras sostenía la botella.
+                            Potos, con su semblante sereno pero atento, lo mantenía
+                            en pie, rodeándolo con su manto. El traje de Himeneo
+                            que era el mismo que todos. Solo se nos distiguia el color.
+                            El sullo era naranja amarillento ilumino mi salon
+                        </p>
+                    </article>
+                </div>
+            </div>
+    
+            <!-- Sección con imagen a la derecha -->
+            <div class="row align-items-center flex-row-reverse mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="imagen2.jpg" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+            </div>
+    
+            <!-- Imagen arriba -->
+            <div class="row align-items-center flex-row-reverse mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="imagen2.jpg" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+                <div class="col-md-8">
+                    <article class="capitulo-texto">
+                        <p>
+                            Mi Psique
+Todo dentro y fuera del Olimpo lo sabe: si tienes
+problemas en la cabeza o malos sueños, lláma a Psique.
+No esque este celoso, estoy orgulloso. El cambio y los
+retos no han sido fáciles desde que decidimos evolucionar al margen que vosotros. En esta dimensión espiritual
+nos hemos enfrentado a muchas diatribas. Por ejemplo,
+¿debíamos volver a ser una religión para vosotros, para
+ayudaros a lidiar con lo desconocido, las incertidumbres
+y cómo justificarnos ante vosotros mismos, reafirmaros y
+poder esconder vuestras amoralidades, asumiendo vuestras culpas para lavar vuestras conciencias? Vamos, lo que
+hacemos los dioseso ser Mitologia que hace lo mismo ,
+pero sin explicar el mas halla, solo como sois.
+Al final decidimos que ser mitologia es mas
+sencillo. Lo que conllevo a lo siguiente. Debiamos ser
+Arquetipos para vosotros.
+Por lo cual ella nos enseño a afrontar la conversión en arquetipos, cómo debíamos lidiar con el paso del
+tiempo y cómo construir nuestra propia sociedad.
+A pesar de los millones de pacientes que tiene
+aquí, ella necesitaba más y yo se lo concedí. En la fiesta
+de las Saturnales, ya sabéis, la que vosotros replanteasteis y llamasteis Navidad, hablé con Destino. Tras varias
+ofrendas, conseguí que me concediera un deseo: reuniría
+en la Tierra al grupo de jóvenes con problemas anímicos,
+personales y sentimentales de lo más complejos. Hiria a
+ellos para entender la Psique humana aparte de la de aqui
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <article class="capitulo-texto">
+                <p>
+                    ¿Por qué en la Tierra, si ya nos habíamos ido?
+                    Porque no nos habéis dejado. Cada año se publican
+                    libros, series de TV, videos en redes sociales, etc., sobre
+                    nosotros. Es cierto que algunos son muy locos. Cierta
+                    película de Hércules para niños, todavía la está asimilando el propio aludido.
+                    Amo a Psique porque ella es todo lo que yo no
+                    soy. Ella comprende tanto la mente humana como la
+                    nuestra, siempre buscando formas de ayudar y sanar. Su
+                    fortaleza y empatía son inigualables, y su capacidad para
+                    encontrar luz incluso en los momentos más oscuros es lo
+                    que la hace tan especial. Su amor no se basa en la devoción ciega, sino en la comprensión profunda y el apoyo
+                    constante. Ella es la que me completa y me inspira a ser
+                    mejor, no solo como dios, sino como ente.</p>
+            </article>
+    
+            <!-- Paginación debajo del capítulo -->
+            <div class="pagination-container text-center mt-5">
+                <div id="pagination" class="d-flex flex-wrap justify-content-center"></div>
+            </div>
+    
+        </div>
+     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+<script> 
+    document.addEventListener("DOMContentLoaded", function () {
+        const totalCapitulos = 32;
+        const paginationContainer = document.getElementById("pagination");
+    
+        let filaActual = document.createElement("div");
+        filaActual.classList.add("d-flex", "justify-content-center", "flex-wrap", "mb-2");
+    
+        for (let i = 1; i <= totalCapitulos; i++) {
+            let button = document.createElement("button");
+            button.classList.add("page-button", "btn", "btn-primary", "m-1"); // Agrega estilos Bootstrap si lo usas
+            button.textContent = i;
+            button.dataset.capitulo = i;
+    
+            // Al hacer clic, se redirige al capítulo
+            button.addEventListener("click", function () {
+                seleccionarCapitulo(i);
+            });
+    
+            filaActual.appendChild(button);
+    
+            // Insertar una nueva fila cada 10 botones
+            if (i % 10 === 0 || i === totalCapitulos) {
+                paginationContainer.appendChild(filaActual);
+                filaActual = document.createElement("div");
+                filaActual.classList.add("d-flex", "justify-content-center", "flex-wrap", "mb-2");
+            }
+        }
+    });
+    
+    // Función para manejar la selección del capítulo y redirigir
+    function seleccionarCapitulo(capitulo) {
+        // Quitar la clase "active" de todos los botones
+        document.querySelectorAll(".page-button").forEach(btn => {
+            btn.classList.remove("active");
+        });
+    
+        // Añadir la clase "active" al botón seleccionado
+        let seleccionado = document.querySelector(`.page-button[data-capitulo="${capitulo}"]`);
+        if (seleccionado) {
+            seleccionado.classList.add("active");
+    
+            // Redirigir al capítulo correspondiente
+            window.location.href = `capitulo${capitulo}.html`;
+        }
+    }
+    </script>
+    

@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paginación debajo del capítulo */
+.pagination-container {
+    margin-top: 30px;
+}
+
+/* Estilos de los botones de paginación */
+.page-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.page-button.active {
+    background-color: #155724;
+    box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.5);
+}
+
+/* Distribución en tres filas */
+@media (max-width: 768px) {
+    .page-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 250px;
+      }
+
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+/* Estilos para imágenes */
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para diferentes posiciones de imagen */
+.img-arriba {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.img-abajo {
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    .capitulo-texto {
+        font-size: 1rem;
+    }
+
+    .img-capitulo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .img-arriba, .img-abajo {
+        width: 90%;
+    }
+}
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <h1>Barbarian</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+        <header class="text-center p-3 bg-success text-white">
+            <h1>Capítulo 2: El Asalto</h1>
+        </header>
+    
+        <div class="container mt-4">
+            <!-- Sección con imagen a la izquierda -->
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="imagen1.jpg" class="img-fluid img-capitulo" alt="Imagen 1">
+                </div>
+            </div>
+    
+            <!-- Sección con imagen a la derecha -->
+            <div class="row align-items-center flex-row-reverse mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="imagen2.jpg" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+                <div class="col-md-8">
+                    <article class="capitulo-texto">
+                        <p>
+                            Parte 2:
+                            Encuentro con el Intruso
+                            Michael observaba desde detrás de un árbol cómo
+                            Clifton y Ethan se acercaban. Había saltado la verja
+                            hacia adentro para activar las alarmas a propósito,
+                            atrayendo así a los guardias.
+                            El jardín que separaba la lujosa mansión de la
+                            entrada al garaje era extenso, con setos bien recortados, flores exóticas y una fuente central. Clifton,
+                            con su habitual expresión de furia, salió corriendo
+                            desde la puerta principal, su objetivo claro en la
+                            mente.
+                            Clifton vio a Michael saltar nuevamente la verja,
+                            esta vez hacia afuera.
+                            Clifton: Gritando furioso ¡Oye, tú!
+                            Michael: ¡Ey! Muy bien, dale un poco de jugo. (Le
+                            indica a su ayudante, Kit, que comience a electrificar la puerta grande).
+                            Clifton corrió hacia la verja, decidido a atraparlo.
+                            Con un esfuerzo descomunal, abrió la puerta a
+                            pulso, sintiendo algo pegajoso en las barras.
+                            Michael: ¡Ah! Buenos días, Clifton. Un día bastante electrizante, ¿no crees?
+                            Clifton comenzó a temblar, sus manos pegadas a
+                            la puerta debido a las descargas eléctricas. Intentó
+                            soltarse, pero no podía despegarse.
+                            Clifton: ¿Qué... qué demonios?
+                            Ethan, viendo a su amigo desde la distancia y sin
+                            percatarse de Michael, empezó a reír.
+                            Ethan: ¡Ah! ¡Ah! ¡Clifton! Clifton, ¿es eso lo nuevo
+                            del breakdance? Oye, eso es bastante bueno.
+                            En ese momento, Ethan vio a Michael y, sin pensarlo, corrió hacia la verja y agarró uno de los
+                            barrotes para moverla.
+                            Michael: Sigan así, puedo conseguirles un par de
+                            semanas en Las Vegas. Ja ja.
+                            Michael se acercó a Clifton, disfrutando del espectáculo de su sufrimiento.
+                            Michael: Bueno, ahora te haré una pregunta, una
+                            vez, y será mejor que encuentres la respuesta correcta. ¿Dónde está Bonnie?
+                            Clifton, aún tratando de soltarse, le lanzó una mirada de odio.
+                            Clifton: No... no sé de qué hablas.
+                            Michael: Vamos, Clifton. No te hagas el duro. Vas a
+                            confesar el secuestro de mi compañera.
+                            Clifton se rió, pero su risa se mezcló con un gemido de dolor. Comenzó a sudar profusamente, el
+                            miedo se asomaba en sus ojos.
+                            Ethan: Desde lo lejos ¡Clifton, aguanta! (Ethan, sin
+                            pensarlo, cometió el mismo error y fue electrocutado al agarrar la verja).
+                            Clifton: ¡No, Ethan, no lo hagas!
+                            Pero era demasiado tarde. Ethan empezó a temblar
+                            y sudar, sufriendo las mismas descargas.
+                            Michael: ¡Ah, esto es aún mejor de lo que esperaba! Dos por el precio de uno.
+                            Michael se paseaba frente a ellos, riéndose.
+                            Michael: ¿Dónde está Bonnie? Les daré una última
+                            oportunidad antes de subir la intensidad.
+                            Clifton, jadeando y casi sin fuerzas: Está... en el
+                            astillero.
+                            Michael: ¿Qué astillero?
+                            Ethan: Entre espasmos Punto del cazador.
+                            Michael: ¿Qué edificio?
+                            Clifton, con voz temblorosa: El edificio de electrónica.
+                            Michael: Kit, ¿lo tienes?
+                            Kit: Sí, Michael. El edificio de electrónica en Hunter’s Point.
+                            Michael: Bien, avisa a Devin para que las autorida
+                        </p>
+                    </article>
+                </div>
+            </div>
+    
+            <!-- Imagen arriba -->
+            <div class="row align-items-center flex-row-reverse mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="imagen2.jpg" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+                <div class="col-md-8">
+                    <article class="capitulo-texto">
+                        <p>
+                            Clifton y Ethan comenzaron a despertar, medio
+aturdidos por la electrificación. Apenas habían
+entendido los derechos mientras eran arrestados.
+Solo comprendieron una palabra: secuestro.
+Despertaron en una celda oscura, con barrotes
+gruesos y una luz tenue que parpadeaba en el
+techo. Los hermanos, siempre los duros, sintieron
+el miedo clavarse en sus estómagos. Aun así, como
+gorilas bien entrenados, fingieron entereza. Se
+apretaron las manos como lo hacían de niños para
+darse fuerzas cuando su padre de acogida tenía
+uno de sus repentinos ataques de ira.
+En ese momento, la puerta chirriante de la celda se
+abrió y Mike entró, el hombre que los había noqueado electrificándolos. Al verlo, Clifton y Ethan
+perdieron los nervios y se lanzaron contra los
+barrotes, queriendo matarlo.
+—¡Hora de la comida! ¿Cómo los tratan, chicos?
+—dijo Mike, con voz sarcástica.
+—¡Te arrancaré la cabeza, cuello de lápiz! —gritó
+Clifton, furioso.
+—Vamos, sin resentimientos. Mi lema es “lo pasado, pasado”. Cada perro tiene su día —dijo Mike,
+con arrogancia.
+—¡No te diremos nada, blandito! —gritó Ethan,
+con ira.
+—Venga, no me digas eso, me haces daño a mi
+corazoncito. Además, lo de hablar, ya lo creo —respondió Mike, con una sonrisa confiada.
+—¿Cómo? —dijo Ethan, confuso.
+—Oh, con esto —dijo Mike, mientras sacaba un
+dispositivo extraño, provocando que los gemelos se
+echaran hacia atrás.
+—¿Qué coño es eso? —dijo Clifton, asustado.
+—Es solo un pequeño inductor del dolor —respondió Mike, disfrutando de su poder sobre ellos.
+—¿Inductor del dolor? —preguntó Ethan, incrédulo.
+—Sí. Lo último en tecnología de tortura. Es parte de un programa computarizado para probar
+los niveles de tolerancia. ¿Ves este dial? Va desde
+“perforar el nervio de un diente malo” hasta “ser
+quemado en la hoguera”. ¿Cuál prefieres? Bueno,
+entonces, ¿por qué no empezamos con el viejo taladro en la zona nerviosa y subimos por la escalera? —dijo Mike, deleitándose en su explicación.
+—¿Qué quieres saber? —preguntó Clifton, nervioso.
+—¿Por qué noqueasteis a esos tipos del gimnasio
+de vuestra dueña? ¿Les disteis una buena paliza?
+¿Pelea de anabolizantes? —dijo Mike, disfrutando
+de la confusión de los hermanos.
+—No atacamos a nadie —dijo Ethan, con miedo.
+—La policía tiene tus huellas dactilares y alguien
+te identificó al salir de la escena. Haced lo que
+queráis. Sin respuesta. Bueno, entonces ¿por qué
+no nos saltamos el número uno y llegamos hasta el
+trece? —dijo Mike, aumentando la tensión.
+—¡Margot nos dijo que los calláramos! —confesó
+Clifton, sudando.
+—¿Qué podían decirnos? —preguntó Mike, interesado.
+—No lo sabemos. Ella no nos lo dijo —dijo Ethan,
+desesperado.
+—Esa es la verdad —dijo Clifton, ambos hermanos
+viendo a Mike acariciar el arma, conscientes de
+que estaban en un gran lío.
+—Bueno, muchas gracias, chicos. Ah, por cierto,
+deberíais conseguir una de estas pequeñas pistolas
+de agua. Son realmente ingeniosas —dijo Mike,
+con una sonrisa maliciosa mientras se dirigía a la
+puerta, dejando a los hermanos en pánico.
+Alex “El Toro” Mendoza
+Descripción: Alex Mendoza, conocido como “El
+Toro”, es un ex-marine con un pasado oscuro que
+ha dedicado su vida a ayudar a jóvenes que han
+sido utilizados, vendidos o manipulados
+Escenario: Alex trabaja como guardia de seguridad. Conoce a Clifton y Ethan en la prision, sabe
+que se estan haciendo los duros, pero que estan
+acojonados
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+    
+            <!-- Paginación debajo del capítulo -->
+            <div class="pagination-container text-center mt-5">
+                <div id="pagination" class="d-flex flex-wrap justify-content-center"></div>
+            </div>
+    
+        </div>
+     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const totalCapitulos = 32;
+    const paginationContainer = document.getElementById("pagination");
+
+    // Generar los botones de paginación en 3 filas
+    let filaActual = document.createElement("div");
+    filaActual.classList.add("d-flex", "justify-content-center");
+
+    for (let i = 1; i <= totalCapitulos; i++) {
+        let button = document.createElement("button");
+        button.classList.add("page-button");
+        button.textContent = i;
+        button.dataset.capitulo = i;
+        button.addEventListener("click", function () {
+            seleccionarCapitulo(i);
+        });
+
+        filaActual.appendChild(button);
+
+        // Insertar una nueva fila cada 10 botones
+        if (i % 10 === 0 || i === totalCapitulos) {
+            paginationContainer.appendChild(filaActual);
+            filaActual = document.createElement("div");
+            filaActual.classList.add("d-flex", "justify-content-center");
+        }
+    }
+});
+
+// Función para manejar la selección del capítulo
+function seleccionarCapitulo(capitulo) {
+    document.querySelectorAll(".page-button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    let seleccionado = document.querySelector(`.page-button[data-capitulo="${capitulo}"]`);
+    if (seleccionado) {
+        seleccionado.classList.add("active");
+        alert(`Capítulo ${capitulo} seleccionado`);
+    }
+}
+
+
+</script>
+

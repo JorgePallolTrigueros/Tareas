@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organigrama Semanal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #3d8b40;
+    text-transform: uppercase;
+}
+
+.capitulo-texto {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #2d5d34;
+    line-height: 1.8;
+    padding: 15px;
+}
+
+.img-capitulo {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paginación debajo del capítulo */
+.pagination-container {
+    margin-top: 30px;
+}
+
+/* Estilos de los botones de paginación */
+.page-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.page-button.active {
+    background-color: #155724;
+    box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.5);
+}
+
+/* Distribución en tres filas */
+@media (max-width: 768px) {
+    .page-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 250px;
+      }
+
+      /* Recorte de imágenes */
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .row {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Barbarian</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="organigrama.html">Organigrama Semanal</a></li>
+        <li><a href="calendario_de_pagos.html">Calendario de Pagos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+        <header class="text-center p-3 bg-success text-white">
+            <h1>Capítulo 1: Maldito invitado</h1>
+        </header>
+    
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Imágenes a los lados -->
+                <div class="col-md-3 text-center">
+                    <img src="ima/ima1 (9).png" class="img-fluid img-capitulo" alt="Imagen 1">
+                </div>
+                
+                <div class="col-md-6">
+                    <article class="capitulo-texto">
+                        <p>
+                            La sala de seguridad, una habitación estrecha
+                            y abarrotada de monitores, se encuentran Clifton
+                            y Ethan. La luz azulada de las pantallas parpadea,
+                            iluminando sus cuerpos musculosos cubiertos de
+                            sudor. Los monitores muestran diversas áreas de
+                            la propiedad, proporcionando una vista en tiempo
+                            real de cada rincón.
+                            Clifton y Ethan, los guardias de seguridad, son
+                            gemelos idénticos con largas melenas oscuras que
+                            caen sobre sus hombros anchos y musculosos.
+                            Sus cuerpos, tallados a la perfección a través de
+                            años de entrenamiento riguroso, son más adornos
+                            de carne que verdaderos vigilantes de seguridad.
+                            Sirven más bien como objetos decorativos para el
+                            deleite de la dueña de la mansión, quien los hizo
+                            entrenar con pantalones cortos y camisetas de
+                            tirantes ajustadas que mostraban cada fibra de sus
+                            músculos. A menudo, ella los observaba mientras
+                            se ejercitaban, disfrutando del espectáculo de sus
+                            cuerpos cincelados moviéndose y flexionándose
+                            con cada repetición.
+                            La rutina diaria de Clifton y Ethan consistía más
+                            en demostrar su fuerza y físico que en realmente
+                            vigilar las cámaras de seguridad. Con camisetas
+                            de tirantes de colores distintos, Clifton solía llevar
+                            una azul, mientras que Ethan prefería una roja,
+                            facilitando así la distinción entre ellos. Sus músculos, siempre brillantes de sudor, resaltaban en
+                            contraste con sus ropas ajustadas, y aunque sabían
+                            que estaban allí más por su apariencia que por sus
+                            habilidades, aceptaban su situación con una mezcla de resignación y pragmatismo.
+                            A veces se sentían incómodos, conscientes de que
+                            su presencia era más ornamental que funcional.
+                            Sin embargo, Clifton y Ethan venían de un pasado
+                            difícil, lleno de privaciones y violencia. Crecieron
+                            en un barrio pobre y peligroso, donde las peleas
+                            callejeras y las luchas por la supervivencia eran el
+                            pan de cada día. Descubrieron el culturismo como
+                            una forma de escapar de ese entorno, un medio
+                            para canalizar su ira y frustración hacia algo constructivo.
+                            Aunque no se sienten completamente cómodos en
+                            su rol actual, Clifton y Ethan saben que no podrían
+                            aspirar a más sin volver a sus cruentos orígenes.
+                            La mansión y su trabajo, aunque humillantes en
+                            ocasiones, les ofrecían seguridad y estabilidad,
+                            algo que jamás habían tenido antes. Su jefa, una
+                            mujer exigente y controladora, disfrutaba viéndolos entrenar, deleitándose con la forma en que sus
+                            cuerpos reaccionaban al esfuerzo físico.
+                            En el momento en que suena la alarma, Clifton
+                            estaba levantando pesas y Ethan practicaba flexiones. La habitación huele a una mezcla de sudor
+                            y metal, con pesas esparcidas por el suelo y una
+                            radio que reproduce música rock de los años 80 en
+                            un rincón.
+                            Clifton, al escuchar el ruido, se detiene y presta
+                            atención.
+                            Clifton: Escuchando atentamente Está en la puerta
+                            principal.
+                            Ethan, sin mucha preocupación, sigue con sus
+                            flexiones.
+                            Ethan: Probablemente sólo sea la ardilla otra vez.
+                            Clifton deja caer las pesas con un ruido sordo y se
+                            encamina hacia la puerta, sus músculos tensos y
+                            listos para la acción.
+                            Clifton: Iré a comprobarlo. DE ACUERDO.
+                            Mientras Clifton se dirige hacia la puerta, Ethan
+                            sigue entrenando, sin tomarse demasiado en serio
+                            la alarma, confiado en su fuerza bruta más que en
+                            su capacidad para manejar una verdadera emergencia.
+                        </p>
+
+                    </article>
+                </div>
+    
+                <div class="col-md-3 text-center">
+                    <img src="ima/ima1 (8).png" class="img-fluid img-capitulo" alt="Imagen 2">
+                </div>
+            </div>
+    
+            <div class="text-center mt-4">
+                <img src="imagen3.jpg" class="img-fluid img-capitulo img-arriba" alt="Imagen 3">
+            </div>
+    
+            <article class="capitulo-texto">
+
+            </article>
+    
+            <div class="text-center mt-4">
+                <img src="imagen4.jpg" class="img-fluid img-capitulo img-abajo" alt="Imagen 4">
+            </div>
+
+            <div class="text-center mt-4">
+                <img src="imagen4.jpg" class="img-fluid img-capitulo img-abajo" alt="Imagen 4">
+            </div> 
+        </div>
+            <!-- Paginación debajo del capítulo -->
+            <div class="pagination-container text-center mt-5">
+                <div id="pagination" class="d-flex flex-wrap justify-content-center"></div>
+            </div>
+    
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const totalCapitulos = 32;
+    const paginationContainer = document.getElementById("pagination");
+
+    // Generar los botones de paginación en 3 filas
+    let filaActual = document.createElement("div");
+    filaActual.classList.add("d-flex", "justify-content-center");
+
+    for (let i = 1; i <= totalCapitulos; i++) {
+        let button = document.createElement("button");
+        button.classList.add("page-button");
+        button.textContent = i;
+        button.dataset.capitulo = i;
+        button.addEventListener("click", function () {
+            seleccionarCapitulo(i);
+        });
+
+        filaActual.appendChild(button);
+
+        // Insertar una nueva fila cada 10 botones
+        if (i % 10 === 0 || i === totalCapitulos) {
+            paginationContainer.appendChild(filaActual);
+            filaActual = document.createElement("div");
+            filaActual.classList.add("d-flex", "justify-content-center");
+        }
+    }
+});
+
+// Función para manejar la selección del capítulo
+function seleccionarCapitulo(capitulo) {
+    document.querySelectorAll(".page-button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    let seleccionado = document.querySelector(`.page-button[data-capitulo="${capitulo}"]`);
+    if (seleccionado) {
+        seleccionado.classList.add("active");
+        alert(`Capítulo ${capitulo} seleccionado`);
+    }
+}
+
+
+
+</script>
+
